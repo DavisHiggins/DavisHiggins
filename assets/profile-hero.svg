@@ -54,12 +54,6 @@
     <path class="dash" d="M798 128C858 88 956 90 1010 141C1064 192 1048 268 982 290C915 312 818 286 782 229C756 187 765 151 798 128Z" stroke="#4B9FE1" stroke-opacity="0.75" stroke-width="1.3"/>
   </g>
 
-  <g transform="translate(84 72)">
-    <rect x="0" y="0" width="172" height="48" rx="24" fill="#FFFFFF" fill-opacity="0.075" stroke="#B8D9F3" stroke-opacity="0.23"/>
-    <circle cx="27" cy="24" r="6" fill="#4B9FE1" class="pulse"/>
-    <text x="46" y="30" class="mono" fill="#DDEEFF" font-size="15" letter-spacing="1.8">SYSTEM ONLINE</text>
-  </g>
-
   <text x="84" y="168" class="sans" fill="#F7FBFF" font-size="66" font-weight="800" letter-spacing="-2.8">Davis Higgins</text>
   <text x="88" y="211" class="mono" fill="#B8D9F3" font-size="22" letter-spacing="0.5">Data Science × AI × Web Systems</text>
   <rect x="84" y="236" width="540" height="3" rx="2" fill="url(#blueGlow)"/>
