@@ -1,13 +1,22 @@
 <p align="center">
-  <img src="./assets/profile-hero.svg" alt="Davis Higgins — Data Science, AI, and Web Systems" width="100%" />
+  <img src="./assets/dh-logo.png" alt="Davis Higgins DH logo" width="140" />
 </p>
 
-<h3 align="center">Building sharper systems for smarter decisions.</h3>
+<p align="center">
+  <img src="./assets/profile-hero.svg" alt="Davis Higgins - Data Science, AI, and Web Systems" width="100%" />
+</p>
 
 <p align="center">
-  <a href="https://davishiggins.com">Portfolio</a> ·
-  <a href="https://higginsd.com">Higgins Digital</a> ·
-  <a href="https://propifyai.davishiggins.com">Propify</a> ·
+  <strong>Building sharper systems for smarter decisions.</strong>
+</p>
+
+<p align="center">
+  <a href="https://davishiggins.com">Portfolio</a>
+  &middot;
+  <a href="https://higginsd.com">Higgins Digital</a>
+  &middot;
+  <a href="https://propifyai.davishiggins.com">Propify</a>
+  &middot;
   <a href="mailto:dhiggi15@charlotte.edu">Email</a>
 </p>
 
@@ -19,7 +28,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/terminal-card.svg" alt="Terminal introduction" width="92%" />
+  <img src="./assets/terminal-card.svg" alt="Terminal introduction" width="96%" />
 </p>
 
 <img src="./assets/section-divider.svg" width="100%" alt="section divider" />
@@ -31,7 +40,7 @@
 Davis Higgins
 
 > operating_mode
-Data Science × AI × Web Systems
+Data Science x AI x Web Systems
 
 > current_mission
 Build useful systems, ship polished products, and turn data into better decisions.
@@ -40,12 +49,28 @@ Build useful systems, ship polished products, and turn data into better decision
 <!-- CURRENT_FOCUS:START -->
 ### Currently Building
 
-| System | Status |
-|---|---|
-| [Higgins Digital](https://higginsd.com) | Scaling a premium website studio for real businesses |
-| [Propify](https://propifyai.davishiggins.com) | Building an AI sports analytics and projection platform |
-| [DavisHiggins.com](https://davishiggins.com) | Designing a personal interactive portfolio and builder OS |
-| [CrownCodeAI](https://crowncode.higginsd.com) | Creating Claude-powered website generation workflows |
+<table>
+
+<tr>
+  <td width="28%" valign="top"><a href="https://higginsd.com"><strong>Higgins Digital</strong></a></td>
+  <td width="72%" valign="top">Scaling a premium website studio for real businesses</td>
+</tr>
+
+<tr>
+  <td width="28%" valign="top"><a href="https://propifyai.davishiggins.com"><strong>Propify</strong></a></td>
+  <td width="72%" valign="top">Building an AI sports analytics and projection platform</td>
+</tr>
+
+<tr>
+  <td width="28%" valign="top"><a href="https://davishiggins.com"><strong>DavisHiggins.com</strong></a></td>
+  <td width="72%" valign="top">Designing a personal interactive portfolio and builder OS</td>
+</tr>
+
+<tr>
+  <td width="28%" valign="top"><a href="https://crowncode.higginsd.com"><strong>CrownCodeAI</strong></a></td>
+  <td width="72%" valign="top">Creating Claude-powered website generation workflows</td>
+</tr>
+</table>
 <!-- CURRENT_FOCUS:END -->
 
 <img src="./assets/section-divider.svg" width="100%" alt="section divider" />
@@ -53,12 +78,48 @@ Build useful systems, ship polished products, and turn data into better decision
 <!-- FEATURED_PROJECTS:START -->
 ## Featured Systems
 
-| Project | What it does | Stack | Links |
-|---|---|---|---|
-| Propify | AI sports analytics platform with projection logic, clean UX, and data-driven betting research tools. | `Next.js` · `Python` · `ML` · `Sports Data` | [Live](https://propifyai.davishiggins.com) |
-| Higgins Digital | Website studio for premium redesigns, client acquisition systems, and high-converting business sites. | `Next.js` · `Vercel` · `UI/UX` · `Automation` | [Live](https://higginsd.com) |
-| DavisHiggins.com | Personal site rebuilt as an interactive portfolio with motion design, tabs, and project storytelling. | `Next.js` · `GSAP` · `Framer Motion` · `Three.js` | [Live](https://davishiggins.com) |
-| CrownCodeAI | AI-assisted website generation system built around Claude workflows, brand kits, and implementation files. | `Claude` · `Next.js` · `Prompt Systems` · `Productization` | [Live](https://crowncode.higginsd.com) |
+<table>
+
+<tr>
+  <td valign="top">
+    <strong>Propify</strong><br/>
+    <sub>AI sports analytics platform with projection logic, clean UX, and data-driven betting research tools.</sub><br/><br/>
+    <code>Next.js</code> &middot; <code>Python</code> &middot; <code>ML</code> &middot; <code>Sports Data</code>
+    <br/><br/>
+    <a href="https://propifyai.davishiggins.com">Live</a>
+  </td>
+</tr>
+
+<tr>
+  <td valign="top">
+    <strong>Higgins Digital</strong><br/>
+    <sub>Website studio for premium redesigns, client acquisition systems, and high-converting business sites.</sub><br/><br/>
+    <code>Next.js</code> &middot; <code>Vercel</code> &middot; <code>UI/UX</code> &middot; <code>Automation</code>
+    <br/><br/>
+    <a href="https://higginsd.com">Live</a>
+  </td>
+</tr>
+
+<tr>
+  <td valign="top">
+    <strong>DavisHiggins.com</strong><br/>
+    <sub>Personal site rebuilt as an interactive portfolio with motion design, tabs, and project storytelling.</sub><br/><br/>
+    <code>Next.js</code> &middot; <code>GSAP</code> &middot; <code>Framer Motion</code> &middot; <code>Three.js</code>
+    <br/><br/>
+    <a href="https://davishiggins.com">Live</a>
+  </td>
+</tr>
+
+<tr>
+  <td valign="top">
+    <strong>CrownCodeAI</strong><br/>
+    <sub>AI-assisted website generation system built around Claude workflows, brand kits, and implementation files.</sub><br/><br/>
+    <code>Claude</code> &middot; <code>Next.js</code> &middot; <code>Prompt Systems</code> &middot; <code>Productization</code>
+    <br/><br/>
+    <a href="https://crowncode.higginsd.com">Live</a>
+  </td>
+</tr>
+</table>
 <!-- FEATURED_PROJECTS:END -->
 
 ## Build Stack
@@ -66,19 +127,19 @@ Build useful systems, ship polished products, and turn data into better decision
 <table>
   <tr>
     <td><strong>Frontend</strong></td>
-    <td>Next.js · React · TypeScript · Tailwind · GSAP · Framer Motion · Three.js</td>
+    <td>Next.js &middot; React &middot; TypeScript &middot; Tailwind &middot; GSAP &middot; Framer Motion &middot; Three.js</td>
   </tr>
   <tr>
     <td><strong>Data</strong></td>
-    <td>Python · SQL · pandas · scikit-learn · Power BI · Tableau · Excel</td>
+    <td>Python &middot; SQL &middot; pandas &middot; scikit-learn &middot; Power BI &middot; Tableau &middot; Excel</td>
   </tr>
   <tr>
     <td><strong>AI / Automation</strong></td>
-    <td>Claude Code · Codex · OpenAI workflows · Supabase · local command systems</td>
+    <td>Claude Code &middot; Codex &middot; OpenAI workflows &middot; Supabase &middot; local command systems</td>
   </tr>
   <tr>
     <td><strong>Business Systems</strong></td>
-    <td>Lead generation · client sites · analytics dashboards · project operating systems</td>
+    <td>Lead generation &middot; client sites &middot; analytics dashboards &middot; project operating systems</td>
   </tr>
 </table>
 
@@ -94,24 +155,69 @@ Build useful systems, ship polished products, and turn data into better decision
 <!-- SHIP_LOG:START -->
 ## Recent Ship Log
 
-| Date | Shipment | Detail |
-|---|---|---|
-| 2026-06 | Higgins Building Group rebuild system | Built implementation direction for a higher-quality hero montage, gallery upgrades, and client-ready site polish. |
-| 2026-06 | Claude Code command center plan | Designed a system for tracking projects, unfinished tasks, build history, and next actions across local work. |
-| 2026-06 | DavisHiggins.com visual rebuild | Planned individual tab experiences, portfolio sections, 21st.dev components, and Luke Baffait-inspired motion. |
-| 2026-06 | Higgins Digital content engine | Created brand positioning, carousel post strategy, website transformation stories, and service framing. |
+<table>
+
+<tr>
+  <td width="18%" valign="top"><code>2026-06</code></td>
+  <td width="82%" valign="top">
+    <strong>Higgins Building Group rebuild system</strong><br/>
+    <sub>Built implementation direction for a higher-quality hero montage, gallery upgrades, and client-ready site polish.</sub>
+  </td>
+</tr>
+
+<tr>
+  <td width="18%" valign="top"><code>2026-06</code></td>
+  <td width="82%" valign="top">
+    <strong>Claude Code command center plan</strong><br/>
+    <sub>Designed a system for tracking projects, unfinished tasks, build history, and next actions across local work.</sub>
+  </td>
+</tr>
+
+<tr>
+  <td width="18%" valign="top"><code>2026-06</code></td>
+  <td width="82%" valign="top">
+    <strong>DavisHiggins.com visual rebuild</strong><br/>
+    <sub>Planned individual tab experiences, portfolio sections, 21st.dev components, and Luke Baffait-inspired motion.</sub>
+  </td>
+</tr>
+
+<tr>
+  <td width="18%" valign="top"><code>2026-06</code></td>
+  <td width="82%" valign="top">
+    <strong>Higgins Digital content engine</strong><br/>
+    <sub>Created brand positioning, carousel post strategy, website transformation stories, and service framing.</sub>
+  </td>
+</tr>
+</table>
 <!-- SHIP_LOG:END -->
 
-## GitHub Activity
+## GitHub Command Center
 
-<!-- Replace this section later with self-hosted stats if you want total control. -->
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img
+        src="https://github-readme-stats.vercel.app/api?username=DavisHiggins&show_icons=true&include_all_commits=true&rank_icon=github&hide_border=true&border_radius=18&bg_color=0B1B2B&title_color=B8D9F3&text_color=F7FBFF&icon_color=4B9FE1&ring_color=4B9FE1&card_width=460&custom_title=Davis%20Higgins%20GitHub%20Stats"
+        width="100%"
+        alt="Davis Higgins GitHub stats"
+      />
+    </td>
+    <td width="50%" valign="top">
+      <img
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=DavisHiggins&layout=compact&langs_count=8&hide_border=true&border_radius=18&bg_color=0B1B2B&title_color=B8D9F3&text_color=F7FBFF&card_width=460&custom_title=Top%20Languages&hide=html,css"
+        width="100%"
+        alt="Davis Higgins top languages"
+      />
+    </td>
+  </tr>
+</table>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=DavisHiggins&show_icons=true&hide_border=true&bg_color=0B1B2B&title_color=B8D9F3&text_color=F7FBFF&icon_color=4B9FE1" alt="Davis Higgins GitHub stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DavisHiggins&layout=compact&hide_border=true&bg_color=0B1B2B&title_color=B8D9F3&text_color=F7FBFF" alt="Top languages" />
+  <img
+    src="https://streak-stats.demolab.com?user=DavisHiggins&hide_border=true&border_radius=18&background=0B1B2B&stroke=B8D9F3&ring=4B9FE1&fire=B8D9F3&currStreakLabel=B8D9F3&sideLabels=F7FBFF&currStreakNum=F7FBFF&sideNums=F7FBFF&dates=B8D9F3"
+    width="96%"
+    alt="Davis Higgins GitHub streak"
+  />
 </p>
 
 ## Contribution Trail
@@ -120,7 +226,7 @@ Build useful systems, ship polished products, and turn data into better decision
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/output/github-contribution-grid-snake.svg" />
-    <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/output/github-contribution-grid-snake.svg" />
+    <img width="100%" alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/output/github-contribution-grid-snake.svg" />
   </picture>
 </p>
 

@@ -3,8 +3,6 @@ name: Update Profile README
 on:
   workflow_dispatch:
   schedule:
-    # Runs daily at 8:12 AM America/New_York during daylight time / 7:12 AM during standard time.
-    # GitHub cron schedules run in UTC.
     - cron: "12 12 * * *"
   push:
     paths:
@@ -16,9 +14,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: update-profile-readme
+  cancel-in-progress: true
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repository
