@@ -78,14 +78,14 @@
   <text x="76" y="226" class="sans" fill="#B8D9F3" font-size="24" font-weight="650">Data Science, AI Systems, and Premium Web Builds</text>
   <rect x="76" y="250" width="720" height="2" rx="1" fill="#4B9FE1" opacity="0.34"/>
   <rect x="76" y="249" width="720" height="4" rx="2" fill="url(#line)" opacity="0.9"/>
-  <text x="78" y="294" class="sans" fill="#E7F3FF" font-size="24" font-weight="520">Data Science Student Building AI Tools, Dashboards, and Digital Platforms</text>
+  <text x="78" y="292" class="sans" fill="#E7F3FF" font-size="18" font-weight="520">Data Science Student Building AI Tools, Dashboards, and Digital Platforms</text>
 
   <g transform="translate(846 34)">
     <circle cx="6" cy="20" r="4" fill="#4B9FE1">
       <animate attributeName="fill" values="#4B9FE1;#B8D9F3;#F7FBFF;#4B9FE1" dur="4.6s" repeatCount="indefinite"/>
       <animate attributeName="r" values="4;5.8;4" dur="4.6s" repeatCount="indefinite"/>
     </circle>
-    <text x="20" y="25" class="mono" fill="#F7FBFF" font-size="15" font-weight="700">Digital Branding
+    <text x="93" y="25" class="mono" fill="#F7FBFF" font-size="15" font-weight="700" text-anchor="middle">Digital Branding
       <animate attributeName="fill" values="#F7FBFF;#B8D9F3;#4B9FE1;#F7FBFF" dur="4.6s" repeatCount="indefinite"/>
     </text>
     <line x1="20" y1="35" x2="166" y2="35" stroke="#4B9FE1" stroke-opacity="0.62" stroke-width="2" stroke-linecap="round">
@@ -97,19 +97,19 @@
       <animate attributeName="fill" values="#B8D9F3;#4B9FE1;#F7FBFF;#B8D9F3" dur="5.1s" repeatCount="indefinite"/>
       <animate attributeName="r" values="4;5.8;4" dur="5.1s" repeatCount="indefinite"/>
     </circle>
-    <text x="20" y="25" class="mono" fill="#F7FBFF" font-size="15" font-weight="700">Full-Stack Engineering
+    <text x="120" y="25" class="mono" fill="#F7FBFF" font-size="15" font-weight="700" text-anchor="middle">Full-Stack Engineering
       <animate attributeName="fill" values="#F7FBFF;#4B9FE1;#B8D9F3;#F7FBFF" dur="5.1s" repeatCount="indefinite"/>
     </text>
     <line x1="20" y1="35" x2="220" y2="35" stroke="#B8D9F3" stroke-opacity="0.62" stroke-width="2" stroke-linecap="round">
       <animate attributeName="stroke" values="#B8D9F3;#4B9FE1;#B8D9F3" dur="5.1s" repeatCount="indefinite"/>
     </line>
   </g>
-  <g transform="translate(812 268)">
+  <g transform="translate(760 268)">
     <circle cx="6" cy="20" r="4" fill="#F7FBFF">
       <animate attributeName="fill" values="#F7FBFF;#4B9FE1;#B8D9F3;#F7FBFF" dur="5.6s" repeatCount="indefinite"/>
       <animate attributeName="r" values="4;5.8;4" dur="5.6s" repeatCount="indefinite"/>
     </circle>
-    <text x="20" y="25" class="mono" fill="#F7FBFF" font-size="15" font-weight="700">SEO Growth
+    <text x="66" y="25" class="mono" fill="#F7FBFF" font-size="15" font-weight="700" text-anchor="middle">SEO Growth
       <animate attributeName="fill" values="#F7FBFF;#B8D9F3;#4B9FE1;#F7FBFF" dur="5.6s" repeatCount="indefinite"/>
     </text>
     <line x1="20" y1="35" x2="112" y2="35" stroke="#4B9FE1" stroke-opacity="0.62" stroke-width="2" stroke-linecap="round">

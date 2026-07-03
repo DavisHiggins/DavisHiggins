@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/profile-hero-animated.svg?v=20260703-3" alt="Davis Higgins - Data Science, AI, and Web Systems" width="100%" />
+  <img src="./assets/profile-hero-animated.svg?v=20260703-4" alt="Davis Higgins - Data Science, AI, and Web Systems" width="100%" />
 </p>
 
 <p align="center">
@@ -27,6 +27,10 @@
   <img src="https://img.shields.io/badge/AI%20Systems-0B1B2B?style=for-the-badge&labelColor=0B1B2B&color=B8D9F3" alt="AI Systems" />
   <img src="https://img.shields.io/badge/Web%20Products-0B1B2B?style=for-the-badge&labelColor=0B1B2B&color=4B9FE1" alt="Web Products" />
   <img src="https://img.shields.io/badge/Analytics-0B1B2B?style=for-the-badge&labelColor=0B1B2B&color=B8D9F3" alt="Analytics" />
+</p>
+
+<p align="center">
+  <img src="./assets/logo-marquee.svg" alt="Animated logo marquee" width="96%" />
 </p>
 
 <p align="center">
@@ -195,41 +199,12 @@ Build useful systems, ship polished products, and turn data into better decision
 
 ## GitHub Command Center
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <img
-        src="https://github-readme-stats.vercel.app/api?username=DavisHiggins&show_icons=true&include_all_commits=true&rank_icon=github&hide_border=true&border_radius=18&bg_color=0B1B2B&title_color=B8D9F3&text_color=F7FBFF&icon_color=4B9FE1&ring_color=4B9FE1&card_width=560&custom_title=Davis%20Higgins%20GitHub%20Stats"
-        width="100%"
-        alt="Davis Higgins GitHub stats"
-      />
-    </td>
-    <td width="50%" valign="top">
-      <img
-        src="./assets/top-languages-stack.svg"
-        width="100%"
-        alt="Davis Higgins top languages, main stack, and main tools"
-      />
-    </td>
-  </tr>
-</table>
-
 <p align="center">
   <img
-    src="https://streak-stats.demolab.com?user=DavisHiggins&hide_border=true&border_radius=18&background=0B1B2B&stroke=B8D9F3&ring=4B9FE1&fire=B8D9F3&currStreakLabel=B8D9F3&sideLabels=F7FBFF&currStreakNum=F7FBFF&sideNums=F7FBFF&dates=B8D9F3"
+    src="./assets/top-languages-stack.svg"
     width="96%"
-    alt="Davis Higgins GitHub streak"
+    alt="Davis Higgins top languages, main stack, and main tools"
   />
-</p>
-
-## Contribution Trail
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/output/github-contribution-grid-snake.svg" />
-    <img width="100%" alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/output/github-contribution-grid-snake.svg" />
-  </picture>
 </p>
 
 <img src="./assets/section-divider.svg" width="100%" alt="section divider" />
