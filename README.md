@@ -1,8 +1,4 @@
 <p align="center">
-  <img src="./assets/dh-logo.png" alt="Davis Higgins DH logo" width="140" />
-</p>
-
-<p align="center">
   <img src="./assets/profile-hero.svg" alt="Davis Higgins - Data Science, AI, and Web Systems" width="100%" />
 </p>
 
