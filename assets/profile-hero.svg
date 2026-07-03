@@ -75,7 +75,7 @@
   <rect x="76" y="250" width="668" height="3" rx="2" fill="url(#line)"/>
   <text x="78" y="294" class="sans" fill="#E7F3FF" font-size="24" font-weight="520">Building sharper systems for smarter decisions.</text>
 
-  <g transform="translate(842 52)">
+  <g transform="translate(878 54)">
     <rect class="signalCard" x="0" y="0" width="230" height="48" rx="15" fill="#071525" fill-opacity="0.82" stroke="#B8D9F3" stroke-opacity="0.18"/>
     <text x="20" y="30" class="mono" fill="#F7FBFF" font-size="15">AI Product Systems</text>
   </g>
@@ -83,7 +83,7 @@
     <rect class="signalCard" x="0" y="0" width="226" height="48" rx="15" fill="#071525" fill-opacity="0.82" stroke="#B8D9F3" stroke-opacity="0.18"/>
     <text x="20" y="30" class="mono" fill="#F7FBFF" font-size="15">Analytics Dashboards</text>
   </g>
-  <g transform="translate(764 248)">
+  <g transform="translate(804 266)">
     <rect class="signalCard" x="0" y="0" width="220" height="48" rx="15" fill="#071525" fill-opacity="0.82" stroke="#B8D9F3" stroke-opacity="0.18"/>
     <text x="20" y="30" class="mono" fill="#F7FBFF" font-size="15">Higgins Digital</text>
   </g>
