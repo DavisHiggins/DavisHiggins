@@ -1,19 +1,25 @@
 <p align="center">
-  <img src="./assets/profile-hero-animated.svg" alt="Davis Higgins - Data Science, AI, and Web Systems" width="100%" />
+  <img src="./assets/profile-hero-animated.svg?v=20260703-3" alt="Davis Higgins - Data Science, AI, and Web Systems" width="100%" />
 </p>
 
 <p align="center">
-  <strong>Building sharper systems for smarter decisions.</strong>
+  <strong>Data Science Student Building AI Tools, Dashboards, and Digital Platforms</strong>
 </p>
 
 <p align="center">
-  <a href="https://davishiggins.com">Portfolio</a>
-  &middot;
-  <a href="https://higginsd.com">Higgins Digital</a>
-  &middot;
+  <a href="https://davishiggins.com">Digital Hub</a>
+  &nbsp;|&nbsp;
+  <a href="https://davishiggins.com/#portfolio">Portfolio</a>
+  &nbsp;|&nbsp;
   <a href="https://propifyai.davishiggins.com">Propify</a>
-  &middot;
-  <a href="mailto:dhiggi15@charlotte.edu">Email</a>
+  &nbsp;|&nbsp;
+  <a href="https://notes.davishiggins.com">Curated Notes</a>
+  &nbsp;|&nbsp;
+  <a href="mailto:davishiggins@icloud.com">Email</a>
+</p>
+
+<p align="center">
+  <img src="./assets/profile-link-pulse.svg" width="64%" alt="Animated profile navigation accent" />
 </p>
 
 <p align="center">
@@ -193,16 +199,16 @@ Build useful systems, ship polished products, and turn data into better decision
   <tr>
     <td width="50%" valign="top">
       <img
-        src="https://github-readme-stats.vercel.app/api?username=DavisHiggins&show_icons=true&include_all_commits=true&rank_icon=github&hide_border=true&border_radius=18&bg_color=0B1B2B&title_color=B8D9F3&text_color=F7FBFF&icon_color=4B9FE1&ring_color=4B9FE1&card_width=460&custom_title=Davis%20Higgins%20GitHub%20Stats"
+        src="https://github-readme-stats.vercel.app/api?username=DavisHiggins&show_icons=true&include_all_commits=true&rank_icon=github&hide_border=true&border_radius=18&bg_color=0B1B2B&title_color=B8D9F3&text_color=F7FBFF&icon_color=4B9FE1&ring_color=4B9FE1&card_width=560&custom_title=Davis%20Higgins%20GitHub%20Stats"
         width="100%"
         alt="Davis Higgins GitHub stats"
       />
     </td>
     <td width="50%" valign="top">
       <img
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=DavisHiggins&layout=compact&langs_count=8&hide_border=true&border_radius=18&bg_color=0B1B2B&title_color=B8D9F3&text_color=F7FBFF&card_width=460&custom_title=Top%20Languages&hide=html,css"
+        src="./assets/top-languages-stack.svg"
         width="100%"
-        alt="Davis Higgins top languages"
+        alt="Davis Higgins top languages, main stack, and main tools"
       />
     </td>
   </tr>

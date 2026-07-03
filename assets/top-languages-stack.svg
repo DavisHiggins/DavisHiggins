@@ -1,0 +1,72 @@
+<svg width="560" height="322" viewBox="0 0 560 322" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Top languages, main stack, and main tools">
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="560" y2="322" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#081624"/>
+      <stop offset="0.55" stop-color="#0B1B2B"/>
+      <stop offset="1" stop-color="#102C47"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="-120" y1="0" x2="680" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4B9FE1"/>
+      <stop offset="0.42" stop-color="#B8D9F3"/>
+      <stop offset="0.58" stop-color="#F7FBFF"/>
+      <stop offset="1" stop-color="#4B9FE1"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-180 0" to="180 0" dur="5.8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#4B9FE1" flood-opacity="0.32"/>
+    </filter>
+    <style>
+      .sans { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+      .chip { animation: chipPulse 6s ease-in-out infinite; }
+      .chip2 { animation-delay: .8s; }
+      .chip3 { animation-delay: 1.6s; }
+      .chip4 { animation-delay: 2.4s; }
+      @keyframes chipPulse { 0%,100% { opacity: .78; } 50% { opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="559" height="321" rx="18" fill="url(#panel)" stroke="#B8D9F3" stroke-opacity="0.12"/>
+  <rect x="24" y="24" width="512" height="2" rx="1" fill="url(#accent)" filter="url(#glow)"/>
+  <text x="28" y="58" class="sans" fill="#B8D9F3" font-size="20" font-weight="750">Top Languages</text>
+  <text x="28" y="83" class="mono" fill="#DDEEFF" font-size="12">Python / TypeScript / JavaScript / SQL</text>
+
+  <g transform="translate(28 106)">
+    <g class="chip">
+      <rect x="0" y="0" width="102" height="34" rx="17" fill="#4B9FE1" fill-opacity="0.16" stroke="#4B9FE1" stroke-opacity="0.55"/>
+      <circle cx="17" cy="17" r="4" fill="#4B9FE1">
+        <animate attributeName="fill" values="#4B9FE1;#B8D9F3;#4B9FE1" dur="4.4s" repeatCount="indefinite"/>
+      </circle>
+      <text x="30" y="22" class="mono" fill="#F7FBFF" font-size="13" font-weight="700">Python</text>
+    </g>
+    <g class="chip chip2" transform="translate(116 0)">
+      <rect x="0" y="0" width="138" height="34" rx="17" fill="#B8D9F3" fill-opacity="0.12" stroke="#B8D9F3" stroke-opacity="0.48"/>
+      <circle cx="17" cy="17" r="4" fill="#B8D9F3">
+        <animate attributeName="fill" values="#B8D9F3;#4B9FE1;#B8D9F3" dur="4.9s" repeatCount="indefinite"/>
+      </circle>
+      <text x="30" y="22" class="mono" fill="#F7FBFF" font-size="13" font-weight="700">TypeScript</text>
+    </g>
+    <g class="chip chip3" transform="translate(268 0)">
+      <rect x="0" y="0" width="136" height="34" rx="17" fill="#4B9FE1" fill-opacity="0.14" stroke="#4B9FE1" stroke-opacity="0.48"/>
+      <circle cx="17" cy="17" r="4" fill="#4B9FE1">
+        <animate attributeName="fill" values="#4B9FE1;#F7FBFF;#4B9FE1" dur="5.2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="30" y="22" class="mono" fill="#F7FBFF" font-size="13" font-weight="700">JavaScript</text>
+    </g>
+    <g class="chip chip4" transform="translate(418 0)">
+      <rect x="0" y="0" width="82" height="34" rx="17" fill="#B8D9F3" fill-opacity="0.12" stroke="#B8D9F3" stroke-opacity="0.48"/>
+      <circle cx="17" cy="17" r="4" fill="#B8D9F3">
+        <animate attributeName="fill" values="#B8D9F3;#4B9FE1;#B8D9F3" dur="5.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="30" y="22" class="mono" fill="#F7FBFF" font-size="13" font-weight="700">SQL</text>
+    </g>
+  </g>
+
+  <text x="28" y="178" class="sans" fill="#8FCAE8" font-size="15" font-weight="720">Main Stack</text>
+  <text x="28" y="202" class="mono" fill="#B8D9F3" font-size="12">React, Next.js, Tailwind CSS, Three.js, GSAP,</text>
+  <text x="28" y="221" class="mono" fill="#B8D9F3" font-size="12">Framer Motion, Supabase, Cloudflare, Vercel</text>
+
+  <text x="28" y="258" class="sans" fill="#8FCAE8" font-size="15" font-weight="720">Main Tools</text>
+  <text x="28" y="282" class="mono" fill="#B8D9F3" font-size="12">Claude Code, Power BI, Git Bash, VS Code, Obsidian,</text>
+  <text x="28" y="301" class="mono" fill="#B8D9F3" font-size="12">Zoho, Google Analytics, Base44, Figma</text>
+</svg>
