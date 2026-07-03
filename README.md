@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/profile-hero.svg" alt="Davis Higgins - Data Science, AI, and Web Systems" width="100%" />
+  <img src="./assets/profile-hero-animated.svg" alt="Davis Higgins - Data Science, AI, and Web Systems" width="100%" />
 </p>
 
 <p align="center">
