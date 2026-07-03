@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Propify",
+    "description": "AI sports analytics platform with projection logic, clean UX, and data-driven betting research tools.",
+    "stack": ["Next.js", "Python", "ML", "Sports Data"],
+    "live": "https://propifyai.davishiggins.com",
+    "repo": ""
+  },
+  {
+    "name": "Higgins Digital",
+    "description": "Website studio for premium redesigns, client acquisition systems, and high-converting business sites.",
+    "stack": ["Next.js", "Vercel", "UI/UX", "Automation"],
+    "live": "https://higginsd.com",
+    "repo": ""
+  },
+  {
+    "name": "DavisHiggins.com",
+    "description": "Personal site rebuilt as an interactive portfolio with motion design, tabs, and project storytelling.",
+    "stack": ["Next.js", "GSAP", "Framer Motion", "Three.js"],
+    "live": "https://davishiggins.com",
+    "repo": ""
+  },
+  {
+    "name": "CrownCodeAI",
+    "description": "AI-assisted website generation system built around Claude workflows, brand kits, and implementation files.",
+    "stack": ["Claude", "Next.js", "Prompt Systems", "Productization"],
+    "live": "https://crowncode.higginsd.com",
+    "repo": ""
+  }
+]

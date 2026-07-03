@@ -1,0 +1,9 @@
+{
+  "name": "davishiggins-profile-readme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Animated GitHub profile README system for Davis Higgins.",
+  "scripts": {
+    "update": "node scripts/update-profile.js"
+  }
+}

@@ -1,0 +1,44 @@
+name: Generate Contribution Snake
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs daily. GitHub cron schedules run in UTC.
+    - cron: "27 12 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      - name: Generate snake SVGs
+        uses: Platane/snk@v3
+        with:
+          github_user_name: DavisHiggins
+          outputs: |
+            dist/github-contribution-grid-snake.svg?color_snake=#4B9FE1&color_dots=#EBEDF0,#B8D9F3,#7FB8E8,#4B9FE1,#1F6FAE
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#B8D9F3
+
+      - name: Publish snake SVGs to output branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          mkdir -p /tmp/snake-dist
+          cp -R dist/. /tmp/snake-dist/
+
+          git fetch origin output || true
+          git switch --orphan output
+          rm -rf ./* .github assets data scripts package.json package-lock.json README.md .gitignore 2>/dev/null || true
+          cp -R /tmp/snake-dist/. .
+
+          git add .
+          git commit -m "Generate contribution snake" || exit 0
+          git push -f origin output
