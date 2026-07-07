@@ -211,6 +211,5 @@ Build useful systems, ship polished products, and turn data into better decision
 
 <p align="center">
   <a href="https://davishiggins.com"><img src="https://img.shields.io/badge/davishiggins.com-0B1B2B?style=for-the-badge&labelColor=0B1B2B&color=4B9FE1" alt="davishiggins.com" /></a>
-  <a href="https://higginsd.com"><img src="https://img.shields.io/badge/Higgins%20Digital-0B1B2B?style=for-the-badge&labelColor=0B1B2B&color=B8D9F3" alt="Higgins Digital" /></a>
-  <a href="mailto:dhiggi15@charlotte.edu"><img src="https://img.shields.io/badge/Email-0B1B2B?style=for-the-badge&labelColor=0B1B2B&color=4B9FE1" alt="Email" /></a>
+  <a href="mailto:davishiggins@icloud.com"><img src="https://img.shields.io/badge/Email-0B1B2B?style=for-the-badge&labelColor=0B1B2B&color=4B9FE1" alt="Email" /></a>
 </p>
