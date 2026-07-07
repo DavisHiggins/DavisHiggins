@@ -162,7 +162,15 @@ Build useful systems, ship polished products, and turn data into better decision
 <table>
 
 <tr>
-  <td width="18%" valign="top"><code>04/2026</code></td>
+  <td width="18%" valign="top"><code>2026-06</code></td>
+  <td width="82%" valign="top">
+    <strong>Higgins Building Group rebuild system</strong><br/>
+    <sub>Built implementation direction for a higher-quality hero montage, gallery upgrades, and client-ready site polish.</sub>
+  </td>
+</tr>
+
+<tr>
+  <td width="18%" valign="top"><code>2026-06</code></td>
   <td width="82%" valign="top">
     <strong>Claude Code command center plan</strong><br/>
     <sub>Designed a system for tracking projects, unfinished tasks, build history, and next actions across local work.</sub>
@@ -170,15 +178,15 @@ Build useful systems, ship polished products, and turn data into better decision
 </tr>
 
 <tr>
-  <td width="18%" valign="top"><code>06/2026</code></td>
+  <td width="18%" valign="top"><code>2026-06</code></td>
   <td width="82%" valign="top">
-    <strong>DavisHiggins.com V3</strong><br/>
-    <sub>Planned rebuild of davishiggins.com into a digital experience that better represents my professional skills.</sub>
+    <strong>DavisHiggins.com visual rebuild</strong><br/>
+    <sub>Planned individual tab experiences, portfolio sections, 21st.dev components, and Luke Baffait-inspired motion.</sub>
   </td>
 </tr>
 
 <tr>
-  <td width="18%" valign="top"><code>05/2026</code></td>
+  <td width="18%" valign="top"><code>2026-06</code></td>
   <td width="82%" valign="top">
     <strong>Higgins Digital content engine</strong><br/>
     <sub>Created brand positioning, carousel post strategy, website transformation stories, and service framing.</sub>
