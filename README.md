@@ -27,25 +27,6 @@
   <img src="https://img.shields.io/badge/Analytics-0B1B2B?style=for-the-badge&labelColor=0B1B2B&color=B8D9F3" alt="Analytics" />
 </p>
 
-<p align="center">
-  <img src="./assets/terminal-card.svg" alt="Terminal introduction" width="96%" />
-</p>
-
-<img src="./assets/section-divider.svg" width="100%" alt="section divider" />
-
-## System Status
-
-```bash
-> whoami
-Davis Higgins
-
-> operating_mode
-Data Science x AI x Web Systems
-
-> current_mission
-Build useful systems, ship polished products, and turn data into better decisions.
-```
-
 <img src="./assets/section-divider.svg" width="100%" alt="section divider" />
 
 ## GitHub Command Center
@@ -57,5 +38,3 @@ Build useful systems, ship polished products, and turn data into better decision
     alt="Davis Higgins top languages, main stack, and main tools"
   />
 </p>
-
-<img src="./assets/section-divider.svg" width="100%" alt="section divider" />
