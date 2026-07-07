@@ -50,33 +50,6 @@ Data Science x AI x Web Systems
 Build useful systems, ship polished products, and turn data into better decisions.
 ```
 
-<!-- CURRENT_FOCUS:START -->
-### Currently Building
-
-<table>
-
-<tr>
-  <td width="28%" valign="top"><a href="https://higginsd.com"><strong>Higgins Digital</strong></a></td>
-  <td width="72%" valign="top">Scaling a premium website studio for real businesses</td>
-</tr>
-
-<tr>
-  <td width="28%" valign="top"><a href="https://propifyai.davishiggins.com"><strong>Propify</strong></a></td>
-  <td width="72%" valign="top">Building an AI sports analytics and projection platform</td>
-</tr>
-
-<tr>
-  <td width="28%" valign="top"><a href="https://davishiggins.com"><strong>DavisHiggins.com</strong></a></td>
-  <td width="72%" valign="top">Designing a personal interactive portfolio and builder OS</td>
-</tr>
-
-<tr>
-  <td width="28%" valign="top"><a href="https://crowncode.higginsd.com"><strong>CrownCodeAI</strong></a></td>
-  <td width="72%" valign="top">Creating Claude-powered website generation workflows</td>
-</tr>
-</table>
-<!-- CURRENT_FOCUS:END -->
-
 <img src="./assets/section-divider.svg" width="100%" alt="section divider" />
 
 <!-- FEATURED_PROJECTS:START -->
