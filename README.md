@@ -11,8 +11,6 @@
   &nbsp;|&nbsp;
   <a href="https://davishiggins.com/#portfolio">Portfolio</a>
   &nbsp;|&nbsp;
-  <a href="https://propifyai.davishiggins.com">Propify</a>
-  &nbsp;|&nbsp;
   <a href="https://notes.davishiggins.com">Curated Notes</a>
   &nbsp;|&nbsp;
   <a href="mailto:davishiggins@icloud.com">Email</a>
