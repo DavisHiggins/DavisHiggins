@@ -1,134 +1,65 @@
-<svg viewBox="0 0 570 180" xmlns="http://www.w3.org/2000/svg" role="img"
+<svg viewBox="0 0 570 166" xmlns="http://www.w3.org/2000/svg" role="img"
      aria-label="Propify: Sports analytics and projection platform.">
   
   <defs>
-    <linearGradient id="blueLine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7BAFD4" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#C8E7FA" stop-opacity="1"/>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7BAFD4" stop-opacity=".85"/>
       <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="panelFill" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#122235" stop-opacity=".94"/>
-      <stop offset=".55" stop-color="#08111B" stop-opacity=".9"/>
-      <stop offset="1" stop-color="#050B12" stop-opacity=".96"/>
+    <linearGradient id="panelFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0D1B2A"/>
+      <stop offset="1" stop-color="#080F18"/>
     </linearGradient>
     <radialGradient id="blueGlow">
-      <stop offset="0" stop-color="#7BAFD4" stop-opacity=".28"/>
+      <stop offset="0" stop-color="#7BAFD4" stop-opacity=".20"/>
       <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
     </radialGradient>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M42 0H0V42" fill="none" stroke="#7BAFD4" stroke-opacity=".055"/>
-    </pattern>
     
   </defs>
 
   <style>
     
-    :root {
-      --bg: #03070B;
-      --panel: #08111B;
-      --panel-2: #0B1622;
-      --blue: #7BAFD4;
-      --blue-light: #C8E7FA;
-      --white: #F7FBFF;
-      --muted: #8EA2B4;
-      --line: #193142;
-    }
     .display {
       font-family: "Arial Black", "Helvetica Neue", Inter, Arial, sans-serif;
       font-weight: 900;
     }
-    .sans {
-      font-family: "Helvetica Neue", Inter, Arial, sans-serif;
-    }
-    .mono {
-      font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
-    }
-    .trace {
-      stroke-dasharray: 42 260;
-      animation: trace 6.5s linear infinite;
-    }
-    .trace-slow {
-      stroke-dasharray: 74 440;
-      animation: trace 10s linear infinite reverse;
-    }
-    .wire {
-      stroke-dasharray: 8 12;
-      animation: wire 16s linear infinite;
-    }
+    .sans { font-family: "Helvetica Neue", Inter, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; }
     .rise {
-      opacity: 1;
-      animation: rise .8s cubic-bezier(.2,.7,.2,1) forwards;
+      opacity: 0;
+      animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards;
     }
-    .fade {
-      animation: fade 4.8s ease-in-out infinite;
-    }
-    .float {
-      animation: float 5.5s ease-in-out infinite;
-    }
-    .pulse {
-      animation: pulse 3.4s ease-in-out infinite;
-    }
-    .sweep {
-      animation: sweep 7s linear infinite;
-    }
-    @keyframes trace { to { stroke-dashoffset: -604; } }
-    @keyframes wire { to { stroke-dashoffset: -320; } }
     @keyframes rise {
-      from { opacity: 0; transform: translateY(12px); }
-      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
-    @keyframes fade {
-      0%,100% { opacity: .28; }
-      50% { opacity: 1; }
-    }
-    @keyframes float {
-      0%,100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-    @keyframes pulse {
-      0%,100% { opacity: .45; }
-      50% { opacity: 1; }
-    }
-    @keyframes sweep {
-      from { transform: translateX(-240px); }
-      to { transform: translateX(1440px); }
-    }
+    .pulse { animation: pulse 3.6s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: .5; } 50% { opacity: 1; } }
     @media (prefers-reduced-motion: reduce) {
-      .trace,.trace-slow,.wire,.rise,.fade,.float,.pulse,.sweep {
-        animation: none !important;
-      }
-      .rise { opacity: 1; }
+      .rise, .pulse { animation: none !important; opacity: 1 !important; }
     }
 
-    .shift { animation: shift 5s ease-in-out infinite; }
-    .shift,.view { transition: transform .32s ease, fill .32s ease; }
-    svg:hover .shift { animation-play-state: paused; transform: translateX(12px); }
-    svg:hover .view { transform: translateX(5px); fill: #F7FBFF; }
-    @keyframes shift { 0%,100%{transform:translateX(0)} 50%{transform:translateX(8px)} }
-    @media (prefers-reduced-motion: reduce) { .shift { animation:none; } }
+    .panel, .view { transition: stroke .3s ease, transform .3s ease, fill .3s ease; }
+    svg:hover .panel { stroke: #7BAFD4; }
+    svg:hover .view { transform: translateX(4px); fill: #F7FBFF; }
   </style>
-  <rect width="570" height="180" rx="22" fill="#03070B"/>
-  <rect x="2" y="2" width="566" height="176" rx="20" fill="url(#panelFill)"
-        stroke="#193142" stroke-width="2"/>
-  <rect class="trace" x="2" y="2" width="566" height="176" rx="20" fill="none"
-        stroke="#7BAFD4" stroke-width="2.5" style="animation-delay:-1.11s"/>
-  <text x="28" y="34" class="mono" fill="#7BAFD4" font-size="11" font-weight="700"
+  <rect width="570" height="166" rx="20" fill="#03070B"/>
+  <rect class="panel" x="1.5" y="1.5" width="567" height="163" rx="19"
+        fill="#080F18" stroke="#162836" stroke-width="1.5"/>
+  <rect x="28" y="1" width="60" height="2" fill="url(#edge)"/>
+
+  <text x="28" y="38" class="mono" fill="#7BAFD4" font-size="11" font-weight="700"
         letter-spacing="2.2">03 / SPORTS ANALYTICS</text>
-  <text x="540" y="34" class="mono" fill="#C8E7FA" font-size="10"
+  <text x="542" y="38" class="mono" fill="#C8E7FA" font-size="10"
         letter-spacing="1.8" text-anchor="end">LIVE</text>
-  <g class="shift" style="animation-delay:-0.69s">
-    <text x="28" y="77" class="display" fill="#F7FBFF" font-size="25"
-          letter-spacing="-1">Propify</text>
-    <text x="28" y="105" class="sans" fill="#8EA2B4" font-size="14">Sports analytics and projection platform.</text>
-  </g>
-  <line x1="28" y1="126" x2="542" y2="126" stroke="#193142"/>
-  <text x="28" y="153" class="mono" fill="#8EA2B4" font-size="10.5"
-        letter-spacing="1.3">PYTHON · FASTAPI · NEXT.JS · MACHINE LEARNING</text>
-  <text x="542" y="158" class="sans view" fill="#C8E7FA" font-size="13"
-        font-weight="700" text-anchor="end">VIEW ↗</text>
+
+  <text x="28" y="80" class="display" fill="#F7FBFF" font-size="24"
+        letter-spacing="-1">Propify</text>
+  <text x="28" y="107" class="sans" fill="#8395A6" font-size="13.5">Sports analytics and projection platform.</text>
+
+  <line x1="28" y1="128" x2="542" y2="128" stroke="#162836"/>
+  <text x="28" y="152" class="mono" fill="#8395A6" font-size="10.5"
+        letter-spacing="1.3">PYTHON · FASTAPI · NEXT.JS</text>
+  <text x="542" y="152" class="sans view" fill="#7BAFD4" font-size="12.5"
+        font-weight="700" text-anchor="end">VIEW &#8599;</text>
 </svg>

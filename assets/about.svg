@@ -1,151 +1,83 @@
-<svg viewBox="0 0 1200 430" xmlns="http://www.w3.org/2000/svg" role="img"
-     aria-label="About Davis Higgins">
+<svg viewBox="0 0 1200 166" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Davis Higgins at a glance: Charlotte NC, studying Data Science and AI, analyst at Kewaunee Scientific, founder of Higgins Digital">
   
   <defs>
-    <linearGradient id="blueLine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7BAFD4" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#C8E7FA" stop-opacity="1"/>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7BAFD4" stop-opacity=".85"/>
       <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="panelFill" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#122235" stop-opacity=".94"/>
-      <stop offset=".55" stop-color="#08111B" stop-opacity=".9"/>
-      <stop offset="1" stop-color="#050B12" stop-opacity=".96"/>
+    <linearGradient id="panelFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0D1B2A"/>
+      <stop offset="1" stop-color="#080F18"/>
     </linearGradient>
     <radialGradient id="blueGlow">
-      <stop offset="0" stop-color="#7BAFD4" stop-opacity=".28"/>
+      <stop offset="0" stop-color="#7BAFD4" stop-opacity=".20"/>
       <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
     </radialGradient>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M42 0H0V42" fill="none" stroke="#7BAFD4" stroke-opacity=".055"/>
-    </pattern>
     
   </defs>
 
   <style>
-    :root {
-      --bg: #03070B;
-      --panel: #08111B;
-      --panel-2: #0B1622;
-      --blue: #7BAFD4;
-      --blue-light: #C8E7FA;
-      --white: #F7FBFF;
-      --muted: #8EA2B4;
-      --line: #193142;
-    }
     .display {
       font-family: "Arial Black", "Helvetica Neue", Inter, Arial, sans-serif;
       font-weight: 900;
     }
-    .sans {
-      font-family: "Helvetica Neue", Inter, Arial, sans-serif;
-    }
-    .mono {
-      font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
-    }
-    .trace {
-      stroke-dasharray: 42 260;
-      animation: trace 6.5s linear infinite;
-    }
-    .trace-slow {
-      stroke-dasharray: 74 440;
-      animation: trace 10s linear infinite reverse;
-    }
-    .wire {
-      stroke-dasharray: 8 12;
-      animation: wire 16s linear infinite;
-    }
+    .sans { font-family: "Helvetica Neue", Inter, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; }
     .rise {
-      opacity: 1;
-      animation: rise .8s cubic-bezier(.2,.7,.2,1) forwards;
+      opacity: 0;
+      animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards;
     }
-    .fade {
-      animation: fade 4.8s ease-in-out infinite;
-    }
-    .float {
-      animation: float 5.5s ease-in-out infinite;
-    }
-    .pulse {
-      animation: pulse 3.4s ease-in-out infinite;
-    }
-    .sweep {
-      animation: sweep 7s linear infinite;
-    }
-    @keyframes trace { to { stroke-dashoffset: -604; } }
-    @keyframes wire { to { stroke-dashoffset: -320; } }
     @keyframes rise {
-      from { opacity: 0; transform: translateY(12px); }
-      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
-    @keyframes fade {
-      0%,100% { opacity: .28; }
-      50% { opacity: 1; }
-    }
-    @keyframes float {
-      0%,100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-    @keyframes pulse {
-      0%,100% { opacity: .45; }
-      50% { opacity: 1; }
-    }
-    @keyframes sweep {
-      from { transform: translateX(-240px); }
-      to { transform: translateX(1440px); }
-    }
+    .pulse { animation: pulse 3.6s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: .5; } 50% { opacity: 1; } }
     @media (prefers-reduced-motion: reduce) {
-      .trace,.trace-slow,.wire,.rise,.fade,.float,.pulse,.sweep {
-        animation: none !important;
-      }
-      .rise { opacity: 1; }
+      .rise, .pulse { animation: none !important; opacity: 1 !important; }
     }
 </style>
-  <rect width="1200" height="430" rx="26" fill="#03070B"/>
-  <rect x="22" y="22" width="770" height="386" rx="24" fill="url(#panelFill)"
-        stroke="#193142" stroke-width="2"/>
-  <rect class="trace-slow" x="22" y="22" width="770" height="386" rx="24"
-        fill="none" stroke="#7BAFD4" stroke-width="2.5"/>
-  <rect x="816" y="22" width="362" height="386" rx="24" fill="url(#panelFill)"
-        stroke="#193142" stroke-width="2"/>
-  <rect class="trace" x="816" y="22" width="362" height="386" rx="24"
-        fill="none" stroke="#C8E7FA" stroke-width="2.5"/>
-
-  <g class="rise" style="animation-delay:.12s">
-    <text x="60" y="78" class="mono" fill="#7BAFD4" font-size="13" font-weight="700"
-          letter-spacing="3">PROFILE / ABOUT</text>
-    <text x="60" y="135" class="display" fill="#F7FBFF" font-size="37"
-          letter-spacing="-1.6">DATA. INTELLIGENCE. CRAFT.</text>
-    <text x="60" y="184" class="sans" fill="#C8E7FA" font-size="21" font-weight="700">
-      I turn complex ideas into useful digital products.
-    </text>
-    <text x="60" y="230" class="sans" fill="#8EA2B4" font-size="18">
-      <tspan x="60" dy="0">I’m a data analyst, AI builder, and web developer working across</tspan>
-      <tspan x="60" dy="29">analytics, automation, full-stack products, and high-craft design.</tspan>
-      <tspan x="60" dy="29">I study Data Science and AI at UNC Charlotte, build business</tspan>
-      <tspan x="60" dy="29">intelligence at Kewaunee Scientific, and lead Higgins Digital.</tspan>
-    </text>
-    <text x="60" y="366" class="mono" fill="#F7FBFF" font-size="13" letter-spacing="1.8">
-      BUILDING SYSTEMS THAT FEEL CLEAR, USEFUL, AND MEMORABLE.
-    </text>
+  <rect width="1200" height="166" rx="24" fill="#03070B"/>
+  
+  <g class="rise" style="animation-delay:0.08s">
+    <rect x="24" y="24" width="272" height="118" rx="18" fill="#080F18"
+          stroke="#162836" stroke-width="1.5"/>
+    <rect x="48" y="24" width="52" height="2" fill="url(#edge)"/>
+    <text x="48" y="68" class="mono" fill="#7BAFD4" font-size="11"
+          font-weight="700" letter-spacing="2.4">LOCATION</text>
+    <text x="48" y="106" class="sans" fill="#F7FBFF" font-size="19"
+          font-weight="750">Charlotte, NC</text>
   </g>
 
-  <g class="rise" style="animation-delay:.38s">
-    <text x="852" y="72" class="mono" fill="#7BAFD4" font-size="12" letter-spacing="3">SIGNAL</text>
-    <line x1="852" y1="92" x2="1142" y2="92" stroke="#193142"/>
-    <text x="852" y="132" class="mono" fill="#8EA2B4" font-size="12" letter-spacing="2">LOCATION</text>
-    <text x="1142" y="132" class="sans" fill="#F7FBFF" font-size="17" font-weight="700" text-anchor="end">Charlotte, NC</text>
-    <text x="852" y="184" class="mono" fill="#8EA2B4" font-size="12" letter-spacing="2">ROLE</text>
-    <text x="1142" y="184" class="sans" fill="#F7FBFF" font-size="17" font-weight="700" text-anchor="end">Data Analyst</text>
-    <text x="852" y="236" class="mono" fill="#8EA2B4" font-size="12" letter-spacing="2">STUDIO</text>
-    <text x="1142" y="236" class="sans" fill="#F7FBFF" font-size="17" font-weight="700" text-anchor="end">Higgins Digital</text>
-    <text x="852" y="288" class="mono" fill="#8EA2B4" font-size="12" letter-spacing="2">DISCIPLINES</text>
-    <text x="1142" y="288" class="sans" fill="#F7FBFF" font-size="17" font-weight="700" text-anchor="end">Data · AI · Web</text>
-    <line x1="852" y1="316" x2="1142" y2="316" stroke="#193142"/>
-    <circle cx="862" cy="354" r="5" fill="#7BAFD4" class="pulse"/>
-    <text x="880" y="360" class="mono" fill="#C8E7FA" font-size="12" letter-spacing="1.5">OPEN TO INTERNSHIP + PROJECT WORK</text>
+  <g class="rise" style="animation-delay:0.15s">
+    <rect x="316" y="24" width="272" height="118" rx="18" fill="#080F18"
+          stroke="#162836" stroke-width="1.5"/>
+    <rect x="340" y="24" width="52" height="2" fill="url(#edge)"/>
+    <text x="340" y="68" class="mono" fill="#7BAFD4" font-size="11"
+          font-weight="700" letter-spacing="2.4">STUDYING</text>
+    <text x="340" y="106" class="sans" fill="#F7FBFF" font-size="19"
+          font-weight="750">Data Science + AI</text>
   </g>
+
+  <g class="rise" style="animation-delay:0.22s">
+    <rect x="608" y="24" width="272" height="118" rx="18" fill="#080F18"
+          stroke="#162836" stroke-width="1.5"/>
+    <rect x="632" y="24" width="52" height="2" fill="url(#edge)"/>
+    <text x="632" y="68" class="mono" fill="#7BAFD4" font-size="11"
+          font-weight="700" letter-spacing="2.4">ANALYST</text>
+    <text x="632" y="106" class="sans" fill="#F7FBFF" font-size="19"
+          font-weight="750">Kewaunee Scientific</text>
+  </g>
+
+  <g class="rise" style="animation-delay:0.29s">
+    <rect x="900" y="24" width="272" height="118" rx="18" fill="#080F18"
+          stroke="#162836" stroke-width="1.5"/>
+    <rect x="924" y="24" width="52" height="2" fill="url(#edge)"/>
+    <text x="924" y="68" class="mono" fill="#7BAFD4" font-size="11"
+          font-weight="700" letter-spacing="2.4">FOUNDER</text>
+    <text x="924" y="106" class="sans" fill="#F7FBFF" font-size="19"
+          font-weight="750">Higgins Digital</text>
+  </g>
+
 </svg>

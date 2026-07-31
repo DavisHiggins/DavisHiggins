@@ -1,64 +1,55 @@
 <div align="center">
-  <a href="https://davishiggins.com" aria-label="Visit Davis Higgins's complete digital hub">
-    <img src="./assets/dh-logo.png" width="230" alt="Davis Higgins DH logo" />
-  </a>
+  <img src="./assets/hero.svg" width="100%" alt="Davis Higgins — data analyst, AI builder, and web developer based in Charlotte, North Carolina" />
 </div>
 
-<br />
-
-<div align="center">
-  <img src="./assets/hero.svg" width="100%" alt="Davis Higgins — Data Analyst, AI Builder, Web Developer, and Founder" />
-</div>
-
-<br />
-
 <p align="center">
-  <a href="mailto:davishiggins@icloud.com"><img src="./assets/nav-email.svg" height="38" alt="Email Davis Higgins" /></a>
-  <a href="https://linkedin.com/in/davishiggins"><img src="./assets/nav-linkedin.svg" height="38" alt="Davis Higgins on LinkedIn" /></a>
-  <a href="https://davishiggins.com"><img src="./assets/nav-website.svg" height="38" alt="Davis Higgins website" /></a>
-  <a href="https://portfolio.davishiggins.com"><img src="./assets/nav-portfolio.svg" height="38" alt="Davis Higgins portfolio" /></a>
-  <a href="https://higginsd.com"><img src="./assets/nav-agency.svg" height="38" alt="Higgins Digital web agency" /></a>
-</p>
-
-<p align="center">
-  <a href="mailto:davishiggins@icloud.com">Email</a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://linkedin.com/in/davishiggins">LinkedIn</a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://davishiggins.com">Website</a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://portfolio.davishiggins.com">Portfolio</a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://higginsd.com">Agency</a>
+  <a href="mailto:davishiggins@icloud.com"><img src="./assets/nav-email.svg" height="36" alt="Email Davis Higgins" /></a>
+  <a href="https://linkedin.com/in/davishiggins"><img src="./assets/nav-linkedin.svg" height="36" alt="Davis Higgins on LinkedIn" /></a>
+  <a href="https://davishiggins.com"><img src="./assets/nav-website.svg" height="36" alt="Davis Higgins website" /></a>
+  <a href="https://portfolio.davishiggins.com"><img src="./assets/nav-portfolio.svg" height="36" alt="Davis Higgins portfolio" /></a>
+  <a href="https://higginsd.com"><img src="./assets/nav-agency.svg" height="36" alt="Higgins Digital web agency" /></a>
 </p>
 
 <br />
-<br />
 
-<a id="about"></a>
-<img src="./assets/section-01-about.svg" width="100%" alt="01 — About" />
+## 01 — About
 
-<br />
+I'm a junior at UNC Charlotte studying Data Science with a minor in Artificial
+Intelligence, and I spend most of my time turning messy problems into systems
+people can actually use.
 
-<img src="./assets/about.svg" width="100%" alt="About Davis Higgins" />
+That work splits three ways. At **Kewaunee Scientific** I build the business
+intelligence layer — Power BI and Zoho Analytics dashboards, KPI reporting, and
+the data governance that keeps all of it trustworthy. Through **Higgins Digital**,
+the studio I founded, I design and ship high-performance websites for real
+businesses. And on my own time I build tools: agentic systems, sports analytics
+models, and AI workflows that remove the boring parts of a day.
 
-<br />
-<br />
+The common thread is that I don't think of data, design, and engineering as
+separate disciplines. A dashboard nobody reads is a design failure. A beautiful
+site that loads slowly is an engineering failure. I'd rather own the whole line
+from raw data to the thing a person finally looks at.
 
-<a id="system-map"></a>
-<img src="./assets/section-02-system-map.svg" width="100%" alt="02 — System Map" />
-
-<br />
-
-<img src="./assets/system-map.svg" width="100%" alt="System map of the Davis Higgins digital ecosystem" />
-
-<br />
-<br />
-
-<a id="projects"></a>
-<img src="./assets/section-03-projects.svg" width="100%" alt="03 — Projects" />
+<img src="./assets/about.svg" width="100%" alt="At a glance: Charlotte NC, studying Data Science and AI, analyst at Kewaunee Scientific, founder of Higgins Digital" />
 
 <br />
+
+## 02 — System Map
+
+Everything I build hangs off one identity. `davishiggins.com` is the hub, and
+each surface below it exists for a specific audience — a client, a reader, a
+recruiter, a chapter of ninety guys — rather than being another copy of the same
+portfolio. The map below is the current shape of that system.
+
+<img src="./assets/system-map.svg" width="100%" alt="System map of the Davis Higgins digital ecosystem, with davishiggins.com as the hub" />
+
+<br />
+
+## 03 — Projects
+
+Ten products, all live or actively being built. A few are commercial, a few are
+experiments that earned their keep, and one is the operating system I use to run
+my own week.
 
 <p align="center">
   <a href="https://cade.davishiggins.com"><img src="./assets/project-cards/01-cade.svg" width="49%" alt="Cade" /></a>
@@ -81,63 +72,76 @@
   <a href="https://ai.davishiggins.com"><img src="./assets/project-cards/10-ai-workflow-os.svg" width="49%" alt="AI Workflow OS" /></a>
 </p>
 
-<details>
-  <summary><strong>Accessible project directory</strong></summary>
-  <br />
-
-  | Project | Surface | Purpose |
-  |---|---|---|
-  | [Cade](https://cade.davishiggins.com) | Agentic system | Personal agentic operating system with persistent, structured memory |
-  | [Higgins Digital](https://higginsd.com) | Web studio | High-performance websites and digital branding for real businesses |
-  | [Propify](https://propifyai.davishiggins.com) | Sports analytics | Sports analytics and projection platform |
-  | [CrownCodeAI](https://crowncode.higginsd.com) | AI tool | AI-powered website generation concept and tool |
-  | [Davis Higgins Portfolio](https://portfolio.davishiggins.com) | Personal platform | Interactive portfolio and project hub |
-  | [Phi Delta Theta Chaplain Platform](https://chaplain.davishiggins.com) | Community tool | Chapter leadership and spiritual growth platform |
-  | [Photos & Frames](https://photos.davishiggins.com) | Photography | Photography, gallery, and digital archive |
-  | [Curated Notes](https://notes.davishiggins.com) | Writing | Editorial platform for original articles and notes |
-  | [davishiggins.com V2](https://v2.davishiggins.com) | Personal platform | Full personal site and portfolio rebuild |
-  | [AI Workflow OS](https://ai.davishiggins.com) | AI education | Practical courses and guides for people new to AI |
-</details>
-
-<br />
-<br />
-
-<a id="statistics-overview"></a>
-<img src="./assets/section-04-statistics.svg" width="100%" alt="04 — Statistics Overview" />
+| Project | Surface | What it does |
+|---|---|---|
+| [Cade](https://cade.davishiggins.com) | Agentic system | Personal agentic operating system with persistent, structured memory |
+| [Higgins Digital](https://higginsd.com) | Web studio | High-performance websites and digital branding for real businesses |
+| [Propify](https://propifyai.davishiggins.com) | Sports analytics | Sports analytics and projection platform |
+| [CrownCodeAI](https://crowncode.higginsd.com) | AI tool | AI-powered website generation concept and tool |
+| [Davis Higgins Portfolio](https://portfolio.davishiggins.com) | Personal platform | Interactive portfolio and project hub |
+| [Phi Delta Theta Chaplain Platform](https://chaplain.davishiggins.com) | Community tool | Chapter leadership and spiritual growth platform |
+| [Photos & Frames](https://photos.davishiggins.com) | Photography | Photography, gallery, and digital archive |
+| [Curated Notes](https://notes.davishiggins.com) | Writing | Editorial platform for original articles and notes |
+| [davishiggins.com V2](https://v2.davishiggins.com) | Personal platform | Full personal site and portfolio rebuild |
+| [AI Workflow OS](https://ai.davishiggins.com) | AI education | Practical courses and guides for people new to AI |
 
 <br />
 
-<img src="./assets/statistics-overview.svg" width="100%" alt="Statistics overview for Davis Higgins" />
+## 04 — Statistics Overview
+
+Measured output across analytics, web work, and school. The dashboard count is
+production work at Kewaunee; the website count spans personal and client builds
+through Higgins Digital.
+
+<img src="./assets/statistics-overview.svg" width="100%" alt="Statistics overview: 20+ dashboards built, 15+ websites launched, 10 active projects, 3.89 GPA" />
+
+Five-time Chancellor's List · Excellence in Writing award · B.S. Data Science,
+minor in Artificial Intelligence, UNC Charlotte.
 
 <br />
+
+## 05 — Contribution Graph
+
+A rolling twelve-month view of my public commit history, regenerated daily.
+**Currently showing August 2025 through July 2026.**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/output/github-contribution-grid-snake.svg" />
-  <img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/output/github-contribution-grid-snake.svg" width="100%" alt="Animated GitHub contribution history for Davis Higgins" />
+  <img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/output/github-contribution-grid-snake.svg" width="100%" alt="Animated snake traversing Davis Higgins's GitHub contribution graph for the trailing twelve months" />
 </picture>
 
 <br />
+
+## 06 — Current Positions
+
+**Data Analyst** — Kewaunee Scientific · *Jun 2025 – Present*<br />
+Data analytics work spanning Power BI and Zoho Analytics dashboards, KPI
+reporting, CRM/estimating auditing, and data governance.
+
+**Founder & Web Developer** — Higgins Digital · *Jan 2026 – Present*<br />
+Founder of a web design and development studio building high-performance,
+brand-forward websites for real businesses.
+
+**Creative Director & Digital Commerce Lead** — Lakeside Sport Club · *July 2026 – Present*<br />
+Founded and manage a premium e-commerce apparel brand, leading brand strategy,
+product development, website experience, merchandising, and digital commerce
+operations.
+
+**VP of Philanthropy & Chaplain** — Phi Delta Theta · *Sep 2025 – Present*<br />
+Chapter leadership across philanthropy and the chaplain role, including a custom
+digital resource hub for Bible studies, leadership notes, and faith-centered
+materials.
+
 <br />
 
-<a id="route"></a>
-<img src="./assets/section-05-route.svg" width="100%" alt="05 — Route" />
+## 07 — Stack
 
-<br />
-
-<img src="./assets/experience.svg" width="100%" alt="Davis Higgins experience timeline" />
-
-<br />
-<br />
-
-<a id="stack"></a>
-<img src="./assets/section-06-stack.svg" width="100%" alt="06 — Stack" />
-
-<br />
+Python and SQL for the analysis, Next.js and TypeScript for the interfaces,
+and Claude Code threaded through most of how I actually work day to day.
 
 <img src="./assets/stack.svg" width="100%" alt="Davis Higgins technology, design, analytics, and strategy stack" />
 
-<br />
 <br />
 
 <a href="mailto:davishiggins@icloud.com">
