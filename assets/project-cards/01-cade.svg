@@ -2,18 +2,27 @@
      aria-label="Cade: Personal agentic operating system with persistent memory.">
   
   <defs>
+    <linearGradient id="blueLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7BAFD4" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#C8E7FA" stop-opacity="1"/>
+      <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
+    </linearGradient>
     <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#7BAFD4" stop-opacity=".85"/>
       <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="panelFill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0D1B2A"/>
-      <stop offset="1" stop-color="#080F18"/>
+    <linearGradient id="panelFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#122235" stop-opacity=".94"/>
+      <stop offset=".55" stop-color="#08111B" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#050B12" stop-opacity=".96"/>
     </linearGradient>
     <radialGradient id="blueGlow">
-      <stop offset="0" stop-color="#7BAFD4" stop-opacity=".20"/>
+      <stop offset="0" stop-color="#7BAFD4" stop-opacity=".24"/>
       <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
     </radialGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#7BAFD4" stroke-opacity=".055"/>
+    </pattern>
     
   </defs>
 
@@ -25,28 +34,46 @@
     }
     .sans { font-family: "Helvetica Neue", Inter, Arial, sans-serif; }
     .mono { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; }
+    .trace {
+      stroke-dasharray: 42 260;
+      animation: trace 6.5s linear infinite;
+    }
+    .trace-slow {
+      stroke-dasharray: 74 440;
+      animation: trace 10s linear infinite reverse;
+    }
+    .wire {
+      stroke-dasharray: 8 12;
+      animation: wire 16s linear infinite;
+    }
     .rise {
       opacity: 0;
       animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards;
     }
+    .pulse { animation: pulse 3.6s ease-in-out infinite; }
+    @keyframes trace { to { stroke-dashoffset: -604; } }
+    @keyframes wire { to { stroke-dashoffset: -320; } }
     @keyframes rise {
       from { opacity: 0; transform: translateY(8px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-    .pulse { animation: pulse 3.6s ease-in-out infinite; }
     @keyframes pulse { 0%,100% { opacity: .5; } 50% { opacity: 1; } }
     @media (prefers-reduced-motion: reduce) {
-      .rise, .pulse { animation: none !important; opacity: 1 !important; }
+      .trace, .trace-slow, .wire, .rise, .pulse {
+        animation: none !important;
+        opacity: 1 !important;
+      }
     }
 
-    .panel, .view { transition: stroke .3s ease, transform .3s ease, fill .3s ease; }
+    .panel, .view, .rail { transition: stroke .3s ease, transform .3s ease, fill .3s ease, opacity .3s ease; }
     svg:hover .panel { stroke: #7BAFD4; }
     svg:hover .view { transform: translateX(4px); fill: #F7FBFF; }
+    svg:hover .rail { opacity: 1; }
   </style>
   <rect width="570" height="166" rx="20" fill="#03070B"/>
   <rect class="panel" x="1.5" y="1.5" width="567" height="163" rx="19"
-        fill="#080F18" stroke="#162836" stroke-width="1.5"/>
-  <rect x="28" y="1" width="60" height="2" fill="url(#edge)"/>
+        fill="url(#panelFill)" stroke="#193142" stroke-width="1.5"/>
+  <rect class="rail" x="28" y="1" width="72" height="2" fill="url(#edge)" opacity=".7"/>
 
   <text x="28" y="38" class="mono" fill="#7BAFD4" font-size="11" font-weight="700"
         letter-spacing="2.2">01 / AGENTIC SYSTEM</text>
@@ -55,10 +82,10 @@
 
   <text x="28" y="80" class="display" fill="#F7FBFF" font-size="24"
         letter-spacing="-1">Cade</text>
-  <text x="28" y="107" class="sans" fill="#8395A6" font-size="13.5">Personal agentic operating system with persistent memory.</text>
+  <text x="28" y="107" class="sans" fill="#8EA2B4" font-size="13.5">Personal agentic operating system with persistent memory.</text>
 
-  <line x1="28" y1="128" x2="542" y2="128" stroke="#162836"/>
-  <text x="28" y="152" class="mono" fill="#8395A6" font-size="10.5"
+  <line x1="28" y1="128" x2="542" y2="128" stroke="#193142"/>
+  <text x="28" y="152" class="mono" fill="#8EA2B4" font-size="10.5"
         letter-spacing="1.3">CLAUDE · OBSIDIAN · NEXT.JS</text>
   <text x="542" y="152" class="sans view" fill="#7BAFD4" font-size="12.5"
         font-weight="700" text-anchor="end">VIEW &#8599;</text>

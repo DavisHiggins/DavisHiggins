@@ -72,18 +72,23 @@ my own week.
   <a href="https://ai.davishiggins.com"><img src="./assets/project-cards/10-ai-workflow-os.svg" width="49%" alt="AI Workflow OS" /></a>
 </p>
 
-| Project | Surface | What it does |
-|---|---|---|
-| [Cade](https://cade.davishiggins.com) | Agentic system | Personal agentic operating system with persistent, structured memory |
-| [Higgins Digital](https://higginsd.com) | Web studio | High-performance websites and digital branding for real businesses |
-| [Propify](https://propifyai.davishiggins.com) | Sports analytics | Sports analytics and projection platform |
-| [CrownCodeAI](https://crowncode.higginsd.com) | AI tool | AI-powered website generation concept and tool |
-| [Davis Higgins Portfolio](https://portfolio.davishiggins.com) | Personal platform | Interactive portfolio and project hub |
-| [Phi Delta Theta Chaplain Platform](https://chaplain.davishiggins.com) | Community tool | Chapter leadership and spiritual growth platform |
-| [Photos & Frames](https://photos.davishiggins.com) | Photography | Photography, gallery, and digital archive |
-| [Curated Notes](https://notes.davishiggins.com) | Writing | Editorial platform for original articles and notes |
-| [davishiggins.com V2](https://v2.davishiggins.com) | Personal platform | Full personal site and portfolio rebuild |
-| [AI Workflow OS](https://ai.davishiggins.com) | AI education | Practical courses and guides for people new to AI |
+<details>
+  <summary><strong>Accessible project directory</strong></summary>
+  <br />
+
+  | Project | Surface | Purpose |
+  |---|---|---|
+  | [Cade](https://cade.davishiggins.com) | Agentic system | Personal agentic operating system with persistent, structured memory |
+  | [Higgins Digital](https://higginsd.com) | Web studio | High-performance websites and digital branding for real businesses |
+  | [Propify](https://propifyai.davishiggins.com) | Sports analytics | Sports analytics and projection platform |
+  | [CrownCodeAI](https://crowncode.higginsd.com) | AI tool | AI-powered website generation concept and tool |
+  | [Davis Higgins Portfolio](https://portfolio.davishiggins.com) | Personal platform | Interactive portfolio and project hub |
+  | [Phi Delta Theta Chaplain Platform](https://chaplain.davishiggins.com) | Community tool | Chapter leadership and spiritual growth platform |
+  | [Photos & Frames](https://photos.davishiggins.com) | Photography | Photography, gallery, and digital archive |
+  | [Curated Notes](https://notes.davishiggins.com) | Writing | Editorial platform for original articles and notes |
+  | [davishiggins.com V2](https://v2.davishiggins.com) | Personal platform | Full personal site and portfolio rebuild |
+  | [AI Workflow OS](https://ai.davishiggins.com) | AI education | Practical courses and guides for people new to AI |
+</details>
 
 <br />
 
@@ -93,17 +98,10 @@ Measured output across analytics, web work, and school. The dashboard count is
 production work at Kewaunee; the website count spans personal and client builds
 through Higgins Digital.
 
-<img src="./assets/statistics-overview.svg" width="100%" alt="Statistics overview: 20+ dashboards built, 15+ websites launched, 10 active projects, 3.89 GPA" />
+<img src="./assets/statistics-overview.svg" width="100%" alt="Statistics overview: 20+ dashboards built, 15+ websites launched, 10 active projects, 3.89 GPA, five-time Chancellor's List" />
 
-Five-time Chancellor's List · Excellence in Writing award · B.S. Data Science,
-minor in Artificial Intelligence, UNC Charlotte.
-
-<br />
-
-## 05 — Contribution Graph
-
-A rolling twelve-month view of my public commit history, regenerated daily.
-**Currently showing August 2025 through July 2026.**
+A rolling twelve-month view of my public commit history, regenerated daily —
+**currently showing August 2025 through July 2026.**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/output/github-contribution-grid-snake-dark.svg" />
@@ -113,29 +111,16 @@ A rolling twelve-month view of my public commit history, regenerated daily.
 
 <br />
 
-## 06 — Current Positions
+## 05 — Current Positions
 
-**Data Analyst** — Kewaunee Scientific · *Jun 2025 – Present*<br />
-Data analytics work spanning Power BI and Zoho Analytics dashboards, KPI
-reporting, CRM/estimating auditing, and data governance.
+Four roles, all active — one in industry analytics, two I founded, and one in
+chapter leadership.
 
-**Founder & Web Developer** — Higgins Digital · *Jan 2026 – Present*<br />
-Founder of a web design and development studio building high-performance,
-brand-forward websites for real businesses.
-
-**Creative Director & Digital Commerce Lead** — Lakeside Sport Club · *July 2026 – Present*<br />
-Founded and manage a premium e-commerce apparel brand, leading brand strategy,
-product development, website experience, merchandising, and digital commerce
-operations.
-
-**VP of Philanthropy & Chaplain** — Phi Delta Theta · *Sep 2025 – Present*<br />
-Chapter leadership across philanthropy and the chaplain role, including a custom
-digital resource hub for Bible studies, leadership notes, and faith-centered
-materials.
+<img src="./assets/current-positions.svg" width="100%" alt="Current positions: Data Analyst at Kewaunee Scientific; Founder and Web Developer at Higgins Digital; Creative Director and Digital Commerce Lead at Lakeside Sport Club; VP of Philanthropy and Chaplain at Phi Delta Theta" />
 
 <br />
 
-## 07 — Stack
+## 06 — Stack
 
 Python and SQL for the analysis, Next.js and TypeScript for the interfaces,
 and Claude Code threaded through most of how I actually work day to day.

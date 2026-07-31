@@ -2,18 +2,27 @@
      aria-label="LinkedIn">
   
   <defs>
+    <linearGradient id="blueLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7BAFD4" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#C8E7FA" stop-opacity="1"/>
+      <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
+    </linearGradient>
     <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#7BAFD4" stop-opacity=".85"/>
       <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="panelFill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0D1B2A"/>
-      <stop offset="1" stop-color="#080F18"/>
+    <linearGradient id="panelFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#122235" stop-opacity=".94"/>
+      <stop offset=".55" stop-color="#08111B" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#050B12" stop-opacity=".96"/>
     </linearGradient>
     <radialGradient id="blueGlow">
-      <stop offset="0" stop-color="#7BAFD4" stop-opacity=".20"/>
+      <stop offset="0" stop-color="#7BAFD4" stop-opacity=".24"/>
       <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
     </radialGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#7BAFD4" stroke-opacity=".055"/>
+    </pattern>
     
   </defs>
 
@@ -25,26 +34,43 @@
     }
     .sans { font-family: "Helvetica Neue", Inter, Arial, sans-serif; }
     .mono { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; }
+    .trace {
+      stroke-dasharray: 42 260;
+      animation: trace 6.5s linear infinite;
+    }
+    .trace-slow {
+      stroke-dasharray: 74 440;
+      animation: trace 10s linear infinite reverse;
+    }
+    .wire {
+      stroke-dasharray: 8 12;
+      animation: wire 16s linear infinite;
+    }
     .rise {
       opacity: 0;
       animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards;
     }
+    .pulse { animation: pulse 3.6s ease-in-out infinite; }
+    @keyframes trace { to { stroke-dashoffset: -604; } }
+    @keyframes wire { to { stroke-dashoffset: -320; } }
     @keyframes rise {
       from { opacity: 0; transform: translateY(8px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-    .pulse { animation: pulse 3.6s ease-in-out infinite; }
     @keyframes pulse { 0%,100% { opacity: .5; } 50% { opacity: 1; } }
     @media (prefers-reduced-motion: reduce) {
-      .rise, .pulse { animation: none !important; opacity: 1 !important; }
+      .trace, .trace-slow, .wire, .rise, .pulse {
+        animation: none !important;
+        opacity: 1 !important;
+      }
     }
 
     .label, .arrow { transition: transform .28s ease, fill .28s ease; }
     svg:hover .label { transform: translateX(4px); fill: #C8E7FA; }
     svg:hover .arrow { transform: translateX(4px); }
   </style>
-  <rect x="1" y="1" width="218" height="54" rx="14" fill="#080F18"
-        stroke="#162836" stroke-width="1.5"/>
+  <rect x="1" y="1" width="218" height="54" rx="14" fill="#08111B"
+        stroke="#193142" stroke-width="1.5"/>
   <text x="30" y="34" class="sans label" fill="#F7FBFF" font-size="15"
         font-weight="750" letter-spacing=".4">LinkedIn</text>
   <text x="192" y="34" class="sans arrow" fill="#7BAFD4" font-size="15">&#8599;</text>
