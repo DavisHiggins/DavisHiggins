@@ -1,0 +1,136 @@
+<svg viewBox="0 0 1200 270" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Davis Higgins — analyze, create, improve, repeat">
+  
+  <defs>
+    <linearGradient id="blueLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7BAFD4" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#C8E7FA" stop-opacity="1"/>
+      <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="panelFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#122235" stop-opacity=".94"/>
+      <stop offset=".55" stop-color="#08111B" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#050B12" stop-opacity=".96"/>
+    </linearGradient>
+    <radialGradient id="blueGlow">
+      <stop offset="0" stop-color="#7BAFD4" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#7BAFD4" stroke-opacity=".055"/>
+    </pattern>
+    
+  </defs>
+
+  <style>
+    
+    :root {
+      --bg: #03070B;
+      --panel: #08111B;
+      --panel-2: #0B1622;
+      --blue: #7BAFD4;
+      --blue-light: #C8E7FA;
+      --white: #F7FBFF;
+      --muted: #8EA2B4;
+      --line: #193142;
+    }
+    .display {
+      font-family: "Arial Black", "Helvetica Neue", Inter, Arial, sans-serif;
+      font-weight: 900;
+    }
+    .sans {
+      font-family: "Helvetica Neue", Inter, Arial, sans-serif;
+    }
+    .mono {
+      font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    }
+    .trace {
+      stroke-dasharray: 42 260;
+      animation: trace 6.5s linear infinite;
+    }
+    .trace-slow {
+      stroke-dasharray: 74 440;
+      animation: trace 10s linear infinite reverse;
+    }
+    .wire {
+      stroke-dasharray: 8 12;
+      animation: wire 16s linear infinite;
+    }
+    .rise {
+      opacity: 1;
+      animation: rise .8s cubic-bezier(.2,.7,.2,1) forwards;
+    }
+    .fade {
+      animation: fade 4.8s ease-in-out infinite;
+    }
+    .float {
+      animation: float 5.5s ease-in-out infinite;
+    }
+    .pulse {
+      animation: pulse 3.4s ease-in-out infinite;
+    }
+    .sweep {
+      animation: sweep 7s linear infinite;
+    }
+    @keyframes trace { to { stroke-dashoffset: -604; } }
+    @keyframes wire { to { stroke-dashoffset: -320; } }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fade {
+      0%,100% { opacity: .28; }
+      50% { opacity: 1; }
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes pulse {
+      0%,100% { opacity: .45; }
+      50% { opacity: 1; }
+    }
+    @keyframes sweep {
+      from { transform: translateX(-240px); }
+      to { transform: translateX(1440px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .trace,.trace-slow,.wire,.rise,.fade,.float,.pulse,.sweep {
+        animation: none !important;
+      }
+      .rise { opacity: 1; }
+    }
+
+    .marquee { animation: marquee 18s linear infinite; }
+    @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-615px)} }
+    @media (prefers-reduced-motion: reduce) { .marquee{animation:none} }
+  </style>
+  <rect width="1200" height="270" rx="28" fill="#03070B"/>
+  <rect x="1" y="1" width="1198" height="268" rx="27" fill="url(#panelFill)"
+        stroke="#193142" stroke-width="2"/>
+  <rect class="trace-slow" x="1" y="1" width="1198" height="268" rx="27"
+        fill="none" stroke="#C8E7FA" stroke-width="2.5"/>
+  <g clip-path="url(#footerClip)">
+    <g class="marquee">
+      <text x="22" y="72" class="display" fill="#7BAFD4" fill-opacity=".16" font-size="52" letter-spacing="-1">
+        ANALYZE · CREATE · IMPROVE · REPEAT · ANALYZE · CREATE · IMPROVE · REPEAT ·
+      </text>
+      <text x="1248" y="72" class="display" fill="#7BAFD4" fill-opacity=".16" font-size="52" letter-spacing="-1">
+        ANALYZE · CREATE · IMPROVE · REPEAT · ANALYZE · CREATE · IMPROVE · REPEAT ·
+      </text>
+    </g>
+  </g>
+  <text x="600" y="145" class="display" fill="#F7FBFF" font-size="44" text-anchor="middle"
+        letter-spacing="-1.8">LET’S BUILD SOMETHING SHARP.</text>
+  <text x="600" y="184" class="sans" fill="#C8E7FA" font-size="18"
+        text-anchor="middle">davishiggins@icloud.com</text>
+  <circle cx="498" cy="224" r="4" fill="#7BAFD4" class="pulse"/>
+  <text x="516" y="229" class="mono" fill="#8EA2B4" font-size="12" letter-spacing="2">CHARLOTTE, NC · 2026</text>
+  <defs>
+    <clipPath id="footerClip"><rect x="1" y="1" width="1198" height="92" rx="27"/></clipPath>
+  </defs>
+</svg>

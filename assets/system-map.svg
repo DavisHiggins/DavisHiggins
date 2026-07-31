@@ -1,0 +1,282 @@
+<svg viewBox="0 0 1200 1080" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Davis Higgins digital ecosystem system map">
+  
+  <defs>
+    <linearGradient id="blueLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7BAFD4" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#C8E7FA" stop-opacity="1"/>
+      <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="panelFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#122235" stop-opacity=".94"/>
+      <stop offset=".55" stop-color="#08111B" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#050B12" stop-opacity=".96"/>
+    </linearGradient>
+    <radialGradient id="blueGlow">
+      <stop offset="0" stop-color="#7BAFD4" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#7BAFD4" stroke-opacity=".055"/>
+    </pattern>
+    
+  </defs>
+
+  <style>
+    :root {
+      --bg: #03070B;
+      --panel: #08111B;
+      --panel-2: #0B1622;
+      --blue: #7BAFD4;
+      --blue-light: #C8E7FA;
+      --white: #F7FBFF;
+      --muted: #8EA2B4;
+      --line: #193142;
+    }
+    .display {
+      font-family: "Arial Black", "Helvetica Neue", Inter, Arial, sans-serif;
+      font-weight: 900;
+    }
+    .sans {
+      font-family: "Helvetica Neue", Inter, Arial, sans-serif;
+    }
+    .mono {
+      font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    }
+    .trace {
+      stroke-dasharray: 42 260;
+      animation: trace 6.5s linear infinite;
+    }
+    .trace-slow {
+      stroke-dasharray: 74 440;
+      animation: trace 10s linear infinite reverse;
+    }
+    .wire {
+      stroke-dasharray: 8 12;
+      animation: wire 16s linear infinite;
+    }
+    .rise {
+      opacity: 1;
+      animation: rise .8s cubic-bezier(.2,.7,.2,1) forwards;
+    }
+    .fade {
+      animation: fade 4.8s ease-in-out infinite;
+    }
+    .float {
+      animation: float 5.5s ease-in-out infinite;
+    }
+    .pulse {
+      animation: pulse 3.4s ease-in-out infinite;
+    }
+    .sweep {
+      animation: sweep 7s linear infinite;
+    }
+    @keyframes trace { to { stroke-dashoffset: -604; } }
+    @keyframes wire { to { stroke-dashoffset: -320; } }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fade {
+      0%,100% { opacity: .28; }
+      50% { opacity: 1; }
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes pulse {
+      0%,100% { opacity: .45; }
+      50% { opacity: 1; }
+    }
+    @keyframes sweep {
+      from { transform: translateX(-240px); }
+      to { transform: translateX(1440px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .trace,.trace-slow,.wire,.rise,.fade,.float,.pulse,.sweep {
+        animation: none !important;
+      }
+      .rise { opacity: 1; }
+    }
+</style>
+  <rect width="1200" height="1080" rx="28" fill="#03070B"/>
+  <rect width="1200" height="1080" rx="28" fill="url(#grid)"/>
+  <ellipse cx="600" cy="410" rx="420" ry="340" fill="url(#blueGlow)" opacity=".75"/>
+    <path d="M600 358 L188 168" class="wire" stroke="#7BAFD4" stroke-opacity=".55" stroke-width="2" fill="none"/>
+  <path d="M600 358 L600 168" class="wire" stroke="#7BAFD4" stroke-opacity=".55" stroke-width="2" fill="none"/>
+  <path d="M600 358 L1012 168" class="wire" stroke="#7BAFD4" stroke-opacity=".55" stroke-width="2" fill="none"/>
+  <path d="M600 358 L188 338" class="wire" stroke="#7BAFD4" stroke-opacity=".55" stroke-width="2" fill="none"/>
+  <path d="M600 358 L1012 338" class="wire" stroke="#7BAFD4" stroke-opacity=".55" stroke-width="2" fill="none"/>
+  <path d="M600 358 L188 560" class="wire" stroke="#7BAFD4" stroke-opacity=".55" stroke-width="2" fill="none"/>
+  <path d="M600 358 L1012 560" class="wire" stroke="#7BAFD4" stroke-opacity=".55" stroke-width="2" fill="none"/>
+  <path d="M600 416 L188 690" class="wire" stroke="#7BAFD4" stroke-opacity=".55" stroke-width="2" fill="none"/>
+  <path d="M600 416 L600 690" class="wire" stroke="#7BAFD4" stroke-opacity=".55" stroke-width="2" fill="none"/>
+  <path d="M600 806 L198 910" class="wire" stroke="#7BAFD4" stroke-opacity=".55" stroke-width="2" fill="none"/>
+  <path d="M600 806 L1002 910" class="wire" stroke="#7BAFD4" stroke-opacity=".55" stroke-width="2" fill="none"/>
+  
+  <g class="rise" style="animation-delay:0.04s">
+    <rect x="420" y="300" width="360" height="116" rx="20" fill="#102033"
+          stroke="#193142" stroke-width="2"/>
+    <rect class="trace-slow" x="420" y="300" width="360" height="116" rx="20"
+          fill="none" stroke="#C8E7FA" stroke-width="3"/>
+    <circle cx="446" cy="329" r="5" fill="#7BAFD4" class="pulse"/>
+    <text x="464" y="336" class="display" fill="#F7FBFF" font-size="21"
+          letter-spacing="-.5">davishiggins.com</text>
+    <text x="446" y="372" class="sans" fill="#8EA2B4" font-size="14">Complete Digital Hub</text>
+    <rect x="446" y="398" width="308" height="2" rx="1"
+          fill="url(#blueLine)" opacity=".7"/>
+  </g>
+
+  
+  <g class="rise" style="animation-delay:0.12s">
+    <rect x="48" y="64" width="280" height="104" rx="20" fill="#08111B"
+          stroke="#193142" stroke-width="2"/>
+    <rect class="trace" x="48" y="64" width="280" height="104" rx="20"
+          fill="none" stroke="#7BAFD4" stroke-width="2"/>
+    <circle cx="74" cy="93" r="5" fill="#7BAFD4" class="pulse"/>
+    <text x="92" y="100" class="display" fill="#F7FBFF" font-size="18"
+          letter-spacing="-.5">Cade</text>
+    <text x="74" y="136" class="sans" fill="#8EA2B4" font-size="14">Personal agentic operating system</text>
+    <rect x="74" y="150" width="228" height="2" rx="1"
+          fill="url(#blueLine)" opacity=".7"/>
+  </g>
+
+  <g class="rise" style="animation-delay:0.18s">
+    <rect x="460" y="64" width="280" height="104" rx="20" fill="#08111B"
+          stroke="#193142" stroke-width="2"/>
+    <rect class="trace" x="460" y="64" width="280" height="104" rx="20"
+          fill="none" stroke="#7BAFD4" stroke-width="2"/>
+    <circle cx="486" cy="93" r="5" fill="#7BAFD4" class="pulse"/>
+    <text x="504" y="100" class="display" fill="#F7FBFF" font-size="18"
+          letter-spacing="-.5">Portfolio</text>
+    <text x="486" y="136" class="sans" fill="#8EA2B4" font-size="14">Interactive project showcase</text>
+    <rect x="486" y="150" width="228" height="2" rx="1"
+          fill="url(#blueLine)" opacity=".7"/>
+  </g>
+
+  <g class="rise" style="animation-delay:0.24s">
+    <rect x="872" y="64" width="280" height="104" rx="20" fill="#08111B"
+          stroke="#193142" stroke-width="2"/>
+    <rect class="trace" x="872" y="64" width="280" height="104" rx="20"
+          fill="none" stroke="#7BAFD4" stroke-width="2"/>
+    <circle cx="898" cy="93" r="5" fill="#7BAFD4" class="pulse"/>
+    <text x="916" y="100" class="display" fill="#F7FBFF" font-size="18"
+          letter-spacing="-.5">Propify</text>
+    <text x="898" y="136" class="sans" fill="#8EA2B4" font-size="14">Sports analytics platform</text>
+    <rect x="898" y="150" width="228" height="2" rx="1"
+          fill="url(#blueLine)" opacity=".7"/>
+  </g>
+
+  <g class="rise" style="animation-delay:0.30s">
+    <rect x="48" y="286" width="280" height="104" rx="20" fill="#08111B"
+          stroke="#193142" stroke-width="2"/>
+    <rect class="trace" x="48" y="286" width="280" height="104" rx="20"
+          fill="none" stroke="#7BAFD4" stroke-width="2"/>
+    <circle cx="74" cy="315" r="5" fill="#7BAFD4" class="pulse"/>
+    <text x="92" y="322" class="display" fill="#F7FBFF" font-size="18"
+          letter-spacing="-.5">Curated Notes</text>
+    <text x="74" y="358" class="sans" fill="#8EA2B4" font-size="14">Writing and editorial archive</text>
+    <rect x="74" y="372" width="228" height="2" rx="1"
+          fill="url(#blueLine)" opacity=".7"/>
+  </g>
+
+  <g class="rise" style="animation-delay:0.36s">
+    <rect x="872" y="286" width="280" height="104" rx="20" fill="#08111B"
+          stroke="#193142" stroke-width="2"/>
+    <rect class="trace" x="872" y="286" width="280" height="104" rx="20"
+          fill="none" stroke="#7BAFD4" stroke-width="2"/>
+    <circle cx="898" cy="315" r="5" fill="#7BAFD4" class="pulse"/>
+    <text x="916" y="322" class="display" fill="#F7FBFF" font-size="18"
+          letter-spacing="-.5">Photos &amp; Frames</text>
+    <text x="898" y="358" class="sans" fill="#8EA2B4" font-size="14">Photography and gallery archive</text>
+    <rect x="898" y="372" width="228" height="2" rx="1"
+          fill="url(#blueLine)" opacity=".7"/>
+  </g>
+
+  <g class="rise" style="animation-delay:0.42s">
+    <rect x="48" y="508" width="280" height="104" rx="20" fill="#08111B"
+          stroke="#193142" stroke-width="2"/>
+    <rect class="trace" x="48" y="508" width="280" height="104" rx="20"
+          fill="none" stroke="#7BAFD4" stroke-width="2"/>
+    <circle cx="74" cy="537" r="5" fill="#7BAFD4" class="pulse"/>
+    <text x="92" y="544" class="display" fill="#F7FBFF" font-size="18"
+          letter-spacing="-.5">Chaplain Platform</text>
+    <text x="74" y="580" class="sans" fill="#8EA2B4" font-size="14">Leadership resource system</text>
+    <rect x="74" y="594" width="228" height="2" rx="1"
+          fill="url(#blueLine)" opacity=".7"/>
+  </g>
+
+  <g class="rise" style="animation-delay:0.48s">
+    <rect x="872" y="508" width="280" height="104" rx="20" fill="#08111B"
+          stroke="#193142" stroke-width="2"/>
+    <rect class="trace" x="872" y="508" width="280" height="104" rx="20"
+          fill="none" stroke="#7BAFD4" stroke-width="2"/>
+    <circle cx="898" cy="537" r="5" fill="#7BAFD4" class="pulse"/>
+    <text x="916" y="544" class="display" fill="#F7FBFF" font-size="18"
+          letter-spacing="-.5">davishiggins.com V2</text>
+    <text x="898" y="580" class="sans" fill="#8EA2B4" font-size="14">Personal platform rebuild</text>
+    <rect x="898" y="594" width="228" height="2" rx="1"
+          fill="url(#blueLine)" opacity=".7"/>
+  </g>
+
+  <g class="rise" style="animation-delay:0.54s">
+    <rect x="48" y="690" width="280" height="104" rx="20" fill="#08111B"
+          stroke="#193142" stroke-width="2"/>
+    <rect class="trace" x="48" y="690" width="280" height="104" rx="20"
+          fill="none" stroke="#7BAFD4" stroke-width="2"/>
+    <circle cx="74" cy="719" r="5" fill="#7BAFD4" class="pulse"/>
+    <text x="92" y="726" class="display" fill="#F7FBFF" font-size="18"
+          letter-spacing="-.5">AI Workflow OS</text>
+    <text x="74" y="762" class="sans" fill="#8EA2B4" font-size="14">Practical AI learning guides</text>
+    <rect x="74" y="776" width="228" height="2" rx="1"
+          fill="url(#blueLine)" opacity=".7"/>
+  </g>
+
+  <g class="rise" style="animation-delay:0.70s">
+    <rect x="420" y="690" width="360" height="116" rx="20" fill="#102033"
+          stroke="#193142" stroke-width="2"/>
+    <rect class="trace-slow" x="420" y="690" width="360" height="116" rx="20"
+          fill="none" stroke="#C8E7FA" stroke-width="3"/>
+    <circle cx="446" cy="719" r="5" fill="#7BAFD4" class="pulse"/>
+    <text x="464" y="726" class="display" fill="#F7FBFF" font-size="21"
+          letter-spacing="-.5">higginsd.com</text>
+    <text x="446" y="762" class="sans" fill="#8EA2B4" font-size="14">Higgins Digital Web Agency</text>
+    <rect x="446" y="788" width="308" height="2" rx="1"
+          fill="url(#blueLine)" opacity=".7"/>
+  </g>
+
+  <g class="rise" style="animation-delay:0.82s">
+    <rect x="48" y="910" width="300" height="104" rx="20" fill="#08111B"
+          stroke="#193142" stroke-width="2"/>
+    <rect class="trace" x="48" y="910" width="300" height="104" rx="20"
+          fill="none" stroke="#7BAFD4" stroke-width="2"/>
+    <circle cx="74" cy="939" r="5" fill="#7BAFD4" class="pulse"/>
+    <text x="92" y="946" class="display" fill="#F7FBFF" font-size="18"
+          letter-spacing="-.5">CrownCodeAI</text>
+    <text x="74" y="982" class="sans" fill="#8EA2B4" font-size="14">AI website generation tool</text>
+    <rect x="74" y="996" width="248" height="2" rx="1"
+          fill="url(#blueLine)" opacity=".7"/>
+  </g>
+
+  <g class="rise" style="animation-delay:0.90s">
+    <rect x="852" y="910" width="300" height="104" rx="20" fill="#08111B"
+          stroke="#193142" stroke-width="2"/>
+    <rect class="trace" x="852" y="910" width="300" height="104" rx="20"
+          fill="none" stroke="#7BAFD4" stroke-width="2"/>
+    <circle cx="878" cy="939" r="5" fill="#7BAFD4" class="pulse"/>
+    <text x="896" y="946" class="display" fill="#F7FBFF" font-size="18"
+          letter-spacing="-.5">Higgins Digital Labs</text>
+    <text x="878" y="982" class="sans" fill="#8EA2B4" font-size="14">Experimental product studio</text>
+    <rect x="878" y="996" width="248" height="2" rx="1"
+          fill="url(#blueLine)" opacity=".7"/>
+  </g>
+
+  <text x="56" y="1054" class="mono" fill="#8EA2B4" font-size="12" letter-spacing="2.2">
+    ONE IDENTITY / MULTIPLE PURPOSE-BUILT SURFACES
+  </text>
+</svg>

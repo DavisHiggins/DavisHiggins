@@ -35,7 +35,8 @@
 <br />
 <br />
 
-<a id="about"></a><img src="./assets/section-01-about.svg" width="100%" alt="01 — About" />
+<a id="about"></a>
+<img src="./assets/section-01-about.svg" width="100%" alt="01 — About" />
 
 <br />
 
@@ -44,7 +45,8 @@
 <br />
 <br />
 
-<a id="system-map"></a><img src="./assets/section-02-system-map.svg" width="100%" alt="02 — System Map" />
+<a id="system-map"></a>
+<img src="./assets/section-02-system-map.svg" width="100%" alt="02 — System Map" />
 
 <br />
 
@@ -53,7 +55,8 @@
 <br />
 <br />
 
-<a id="projects"></a><img src="./assets/section-03-projects.svg" width="100%" alt="03 — Projects" />
+<a id="projects"></a>
+<img src="./assets/section-03-projects.svg" width="100%" alt="03 — Projects" />
 
 <br />
 
@@ -82,78 +85,25 @@
   <summary><strong>Accessible project directory</strong></summary>
   <br />
 
-Project
-
-Surface
-
-Purpose
-
-Cade
-
-Agentic system
-
-Personal agentic operating system with persistent, structured memory
-
-Higgins Digital
-
-Web studio
-
-High-performance websites and digital branding for real businesses
-
-Propify
-
-Sports analytics
-
-Sports analytics and projection platform
-
-CrownCodeAI
-
-AI tool
-
-AI-powered website generation concept and tool
-
-Davis Higgins Portfolio
-
-Personal platform
-
-Interactive portfolio and project hub
-
-Phi Delta Theta Chaplain Platform
-
-Community tool
-
-Chapter leadership and spiritual growth platform
-
-Photos & Frames
-
-Photography
-
-Photography, gallery, and digital archive
-
-Curated Notes
-
-Writing
-
-Editorial platform for original articles and notes
-
-davishiggins.com V2
-
-Personal platform
-
-Full personal site and portfolio rebuild
-
-AI Workflow OS
-
-AI education
-
-Practical courses and guides for people new to AI
-
+  | Project | Surface | Purpose |
+  |---|---|---|
+  | [Cade](https://cade.davishiggins.com) | Agentic system | Personal agentic operating system with persistent, structured memory |
+  | [Higgins Digital](https://higginsd.com) | Web studio | High-performance websites and digital branding for real businesses |
+  | [Propify](https://propifyai.davishiggins.com) | Sports analytics | Sports analytics and projection platform |
+  | [CrownCodeAI](https://crowncode.higginsd.com) | AI tool | AI-powered website generation concept and tool |
+  | [Davis Higgins Portfolio](https://portfolio.davishiggins.com) | Personal platform | Interactive portfolio and project hub |
+  | [Phi Delta Theta Chaplain Platform](https://chaplain.davishiggins.com) | Community tool | Chapter leadership and spiritual growth platform |
+  | [Photos & Frames](https://photos.davishiggins.com) | Photography | Photography, gallery, and digital archive |
+  | [Curated Notes](https://notes.davishiggins.com) | Writing | Editorial platform for original articles and notes |
+  | [davishiggins.com V2](https://v2.davishiggins.com) | Personal platform | Full personal site and portfolio rebuild |
+  | [AI Workflow OS](https://ai.davishiggins.com) | AI education | Practical courses and guides for people new to AI |
 </details>
 
 <br />
 <br />
 
-<a id="statistics-overview"></a><img src="./assets/section-04-statistics.svg" width="100%" alt="04 — Statistics Overview" />
+<a id="statistics-overview"></a>
+<img src="./assets/section-04-statistics.svg" width="100%" alt="04 — Statistics Overview" />
 
 <br />
 
@@ -170,7 +120,8 @@ Practical courses and guides for people new to AI
 <br />
 <br />
 
-<a id="route"></a><img src="./assets/section-05-route.svg" width="100%" alt="05 — Route" />
+<a id="route"></a>
+<img src="./assets/section-05-route.svg" width="100%" alt="05 — Route" />
 
 <br />
 
@@ -179,7 +130,8 @@ Practical courses and guides for people new to AI
 <br />
 <br />
 
-<a id="stack"></a><img src="./assets/section-06-stack.svg" width="100%" alt="06 — Stack" />
+<a id="stack"></a>
+<img src="./assets/section-06-stack.svg" width="100%" alt="06 — Stack" />
 
 <br />
 
