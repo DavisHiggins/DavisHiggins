@@ -14,7 +14,7 @@
 
 ## 01 — About
 
-I'm a junior at UNC Charlotte studying Data Science with a minor in Artificial
+I'm a senior at UNC Charlotte studying Data Science with a minor in Artificial
 Intelligence, and I spend most of my time turning messy problems into systems
 people can actually use.
 
