@@ -1,81 +1,46 @@
-<svg viewBox="0 0 1200 200" xmlns="http://www.w3.org/2000/svg" role="img"
-     aria-label="Let's build something sharp — contact Davis Higgins">
-  
-  <defs>
-    <linearGradient id="blueLine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7BAFD4" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#C8E7FA" stop-opacity="1"/>
-      <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7BAFD4" stop-opacity=".85"/>
-      <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="panelFill" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#122235" stop-opacity=".94"/>
-      <stop offset=".55" stop-color="#08111B" stop-opacity=".9"/>
-      <stop offset="1" stop-color="#050B12" stop-opacity=".96"/>
-    </linearGradient>
-    <radialGradient id="blueGlow">
-      <stop offset="0" stop-color="#7BAFD4" stop-opacity=".24"/>
-      <stop offset="1" stop-color="#7BAFD4" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M42 0H0V42" fill="none" stroke="#7BAFD4" stroke-opacity=".055"/>
-    </pattern>
-    
-  </defs>
-
-  <style>
-    .display {
-      font-family: "Arial Black", "Helvetica Neue", Inter, Arial, sans-serif;
-      font-weight: 900;
-    }
-    .sans { font-family: "Helvetica Neue", Inter, Arial, sans-serif; }
-    .mono { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; }
-    .trace {
-      stroke-dasharray: 42 260;
-      animation: trace 6.5s linear infinite;
-    }
-    .trace-slow {
-      stroke-dasharray: 74 440;
-      animation: trace 10s linear infinite reverse;
-    }
-    .wire {
-      stroke-dasharray: 8 12;
-      animation: wire 16s linear infinite;
-    }
-    .rise {
-      opacity: 0;
-      animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards;
-    }
-    .pulse { animation: pulse 3.6s ease-in-out infinite; }
-    @keyframes trace { to { stroke-dashoffset: -604; } }
-    @keyframes wire { to { stroke-dashoffset: -320; } }
-    @keyframes rise {
-      from { opacity: 0; transform: translateY(8px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes pulse { 0%,100% { opacity: .5; } 50% { opacity: 1; } }
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200" role="img" aria-label="Think. Build. Test. Ship.">
+<title>Think. Build. Test. Ship.</title>
+<style>
+    text { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; }
+    .mono { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; }
+    .eyebrow { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size: 10px; letter-spacing: 2.4px;
+                fill: #6B7A93; text-transform: uppercase; }
+    .rule { stroke: #E3E7EE; stroke-width: 1; }
     @media (prefers-reduced-motion: reduce) {
-      .trace, .trace-slow, .wire, .rise, .pulse {
-        animation: none !important;
-        opacity: 1 !important;
-      }
+      * { animation: none !important; opacity: 1 !important; }
     }
-</style>
-  <rect width="1200" height="200" rx="26" fill="#03070B"/>
-  <rect x="1" y="1" width="1198" height="198" rx="25" fill="url(#panelFill)"
-        stroke="#193142" stroke-width="1.5"/>
-  <rect class="trace-slow" x="1" y="1" width="1198" height="198" rx="25"
-        fill="none" stroke="#C8E7FA" stroke-width="2"/>
 
-  <g class="rise" style="animation-delay:.08s">
-    <text x="600" y="86" class="display" fill="#F7FBFF" font-size="40"
-          text-anchor="middle" letter-spacing="-1.6">LET&#8217;S BUILD SOMETHING SHARP.</text>
-    <text x="600" y="126" class="sans" fill="#C8E7FA" font-size="18"
-          text-anchor="middle">davishiggins@icloud.com</text>
-    <text x="600" y="162" class="mono" fill="#8EA2B4" font-size="12"
-          text-anchor="middle" letter-spacing="2.4">CHARLOTTE, NC</text>
+    .word { font-size:44px; font-weight:800; letter-spacing:-1.4px; fill:#0A162C;
+             opacity:0; transform:translateY(18px);
+             animation: up .8s cubic-bezier(.16,1,.3,1) forwards; }
+    @keyframes up { to { opacity:1; transform:translateY(0); } }
+    .word.n { fill:#13294B; }
+    .mail { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:13px; fill:#13294B; letter-spacing:.4px; }
+    .cap { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:9px; letter-spacing:2.2px; fill:#6B7A93; }
+    .caret { fill:#13294B; animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 0%,50% { opacity:1 } 51%,100% { opacity:0 } }
+    .track { animation: march 18s linear infinite; }
+    @keyframes march { from { transform:translateX(0) } to { transform:translateX(-450px) } }
+    </style>
+<rect width="900" height="200" fill="#FFFFFF"/>
+
+<line x1="56" y1="34" x2="844" y2="34" class="rule"/>
+<text class="word"   x="56"  y="96" style="animation-delay:.05s">Think.</text>
+<text class="word"   x="210" y="96" style="animation-delay:.17s">Build.</text>
+<text class="word"   x="364" y="96" style="animation-delay:.29s">Test.</text>
+<text class="word n" x="500" y="96" style="animation-delay:.41s">Ship.</text>
+<rect class="caret" x="632" y="66" width="14" height="34"/>
+
+<clipPath id="mq"><rect x="56" y="112" width="788" height="22"/></clipPath>
+<g clip-path="url(#mq)">
+  <g class="track">
+    <text class="cap" x="56" y="128">LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; </text>
+    <text class="cap" x="506" y="128">LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; </text>
   </g>
+</g>
+
+<line x1="56" y1="152" x2="844" y2="152" class="rule"/>
+<text class="mail" x="56" y="176">davishiggins@icloud.com</text>
+<text class="cap" x="844" y="176" text-anchor="end">davishiggins.com &#169; 2026</text>
+
 </svg>
