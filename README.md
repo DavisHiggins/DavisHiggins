@@ -1,24 +1,14 @@
 <div align="center">
-  <a href="https://davishiggins.com">
-    <img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/dh-logo.png" width="88" alt="Davis Higgins">
-  </a>
-</div>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/hero.svg?v=1" width="100%" alt="Davis Higgins — building sharper systems for smarter decisions">
+  <img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/hero.svg?v=2" width="100%" alt="Davis Higgins — building sharper systems for smarter decisions">
 </div>
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/davishiggins.com-13294B?style=for-the-badge&logoColor=white)](https://davishiggins.com)
-[![Higgins Digital](https://img.shields.io/badge/Higgins%20Digital-FFFFFF?style=for-the-badge&labelColor=FFFFFF&color=FFFFFF&logoColor=13294B)](https://higginsd.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-13294B?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/davishiggins/)
-[![Email](https://img.shields.io/badge/Email-13294B?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:davishiggins@icloud.com)
-[![Resume](https://img.shields.io/badge/Resume-13294B?style=for-the-badge&logo=readdotcv&logoColor=white)](https://davishiggins.com/Davis.Resume.pdf)
+**[davishiggins.com](https://davishiggins.com)**&nbsp; · &nbsp;**[Higgins Digital](https://higginsd.com)**&nbsp; · &nbsp;**[LinkedIn](https://www.linkedin.com/in/davishiggins/)**&nbsp; · &nbsp;**[Email](mailto:davishiggins@icloud.com)**&nbsp; · &nbsp;**[Resume](https://davishiggins.com/Davis.Resume.pdf)**
 
 </div>
 
-<img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/divider.svg?v=1" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/divider.svg?v=2" width="100%" alt="">
 
 ## Info
 
@@ -28,16 +18,13 @@ I work across data, technology, and design to uncover insights, build intelligen
 
 Data Science and Artificial Intelligence student at UNC Charlotte. Data Analyst at Kewaunee Scientific. Founder of Higgins Digital. Actively seeking internship and project opportunities in data science, analytics, AI, and business intelligence.
 
-<img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/divider.svg?v=1" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/divider.svg?v=2" width="100%" alt="">
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/statistics.svg?v=1" width="100%" alt="Statistics: 3.89 GPA, 5x Chancellor's List, 10 active projects, 20+ dashboards, 15+ websites, class of 2027">
+  <img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/statistics.svg?v=2" width="100%" alt="Statistics: 3.89 GPA, 5x Chancellor's List, 10 active projects, 20+ dashboards, 15+ websites, class of 2027">
 </div>
 
 <div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=DavisHiggins&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&bg_color=FFFFFF&title_color=13294B&text_color=0A162C&icon_color=13294B&border_color=E3E7EE&border_radius=4" alt="GitHub stats">
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DavisHiggins&layout=compact&langs_count=8&bg_color=FFFFFF&title_color=13294B&text_color=0A162C&border_color=E3E7EE&border_radius=4" alt="Most used languages">
 
 <img height="165" src="https://streak-stats.demolab.com?user=DavisHiggins&background=FFFFFF&border=E3E7EE&stroke=E3E7EE&ring=13294B&fire=13294B&currStreakLabel=13294B&sideLabels=0A162C&currStreakNum=0A162C&sideNums=0A162C&dates=6B7A93&border_radius=4" alt="Contribution streak">
 
@@ -45,13 +32,13 @@ Data Science and Artificial Intelligence student at UNC Charlotte. Data Analyst 
 
 </div>
 
-<img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/divider.svg?v=1" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/divider.svg?v=2" width="100%" alt="">
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/positions.svg?v=1" width="100%" alt="Current positions: Data Analyst at Kewaunee Scientific, Founder at Higgins Digital, Creative Director at Lakeside Sport Club, VP of Philanthropy and Chaplain at Phi Delta Theta">
+  <img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/positions.svg?v=2" width="100%" alt="Current positions: Data Analyst at Kewaunee Scientific, Founder at Higgins Digital, Creative Director at Lakeside Sport Club, VP of Philanthropy and Chaplain at Phi Delta Theta">
 </div>
 
-<img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/divider.svg?v=1" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/divider.svg?v=2" width="100%" alt="">
 
 ## Work
 
@@ -84,13 +71,13 @@ Data Science and Artificial Intelligence student at UNC Charlotte. Data Analyst 
 | [ben-levy-portfolio](https://github.com/DavisHiggins/ben-levy-portfolio) | Client portfolio build with custom branding and responsive UI. |
 | [nypd-crime-data-analysis](https://github.com/DavisHiggins/nypd-crime-data-analysis) | Exploratory analysis and visualization of NYPD crime data. |
 
-<img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/divider.svg?v=1" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/divider.svg?v=2" width="100%" alt="">
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/stack.svg?v=1" width="100%" alt="Stack: data and analytics, AI and automation, frontend, backend and platforms, design and strategy">
+  <img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/stack.svg?v=2" width="100%" alt="Stack: data and analytics, AI and automation, frontend, backend and platforms, design and strategy">
 </div>
 
-<img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/divider.svg?v=1" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/divider.svg?v=2" width="100%" alt="">
 
 ## Connect
 
@@ -105,5 +92,5 @@ Data Science and Artificial Intelligence student at UNC Charlotte. Data Analyst 
 | Resume | [Davis.Resume.pdf](https://davishiggins.com/Davis.Resume.pdf) |
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/footer.svg?v=1" width="100%" alt="Think. Build. Test. Ship.">
+  <img src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/footer.svg?v=2" width="100%" alt="Think. Build. Test. Ship.">
 </div>

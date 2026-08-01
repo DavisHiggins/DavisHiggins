@@ -12,11 +12,15 @@
 
     .h { font-size:13px; font-weight:700; letter-spacing:3px; fill:#0A162C; }
     .grp { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:9px; letter-spacing:1.8px; fill:#6B7A93; }
-    .pill rect { fill:#F5F7FA; stroke:#E3E7EE; stroke-width:1; }
+    .pill rect { fill:#FFFFFF; stroke:#E3E7EE; stroke-width:1; }
     .pill text { font-size:11.5px; font-weight:600; fill:#13294B; }
     .pill { opacity:0; transform:translateY(10px);
-             animation: up .55s cubic-bezier(.16,1,.3,1) forwards; }
-    @keyframes up { to { opacity:1; transform:translateY(0); } }
+             animation: up 15s infinite; }
+    @keyframes up {
+      0%       { opacity:0; transform:translateY(10px); animation-timing-function:cubic-bezier(.16,1,.3,1); }
+      5%       { opacity:1; transform:translateY(0); }
+      88%      { opacity:1; transform:translateY(0); }
+      96%,100% { opacity:0; transform:translateY(10px); } }
     </style>
 <rect width="900" height="470" fill="#FFFFFF"/>
 
