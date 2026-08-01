@@ -13,20 +13,11 @@
     .num { font-size:38px; font-weight:800; letter-spacing:-1.4px; fill:#13294B; }
     .lab { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:9px; letter-spacing:1.8px; fill:#6B7A93; }
     .sub { font-size:11px; fill:#2C4C7C; }
-    .cell { opacity:0; transform:translateY(16px);
-             animation: up 15s infinite; }
-    @keyframes up {
-      0%       { opacity:0; transform:translateY(16px); animation-timing-function:cubic-bezier(.16,1,.3,1); }
-      6%       { opacity:1; transform:translateY(0); }
-      88%      { opacity:1; transform:translateY(0); }
-      96%,100% { opacity:0; transform:translateY(16px); } }
-    .bar { fill:#13294B; transform-origin:left center;
-            animation: grow 15s infinite; transform:scaleX(0); }
-    @keyframes grow {
-      0%       { transform:scaleX(0); animation-timing-function:cubic-bezier(.16,1,.3,1); }
-      8%       { transform:scaleX(1); }
-      88%      { transform:scaleX(1); }
-      96%,100% { transform:scaleX(0); } }
+    /* Nothing starts hidden: GitHub renders this through an HTML img element and
+       Chrome freezes the animation timeline at 0%, so an element that begins at
+       opacity:0 or scaleX(0) would never become visible. Motion is ambient only. */
+    .bar { fill:#13294B; animation: pulse 3.2s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity:1 } 50% { opacity:.45 } }
     .h { font-size:13px; font-weight:700; letter-spacing:3px; fill:#0A162C; }
     </style>
 <rect width="900" height="250" fill="#FFFFFF"/>
