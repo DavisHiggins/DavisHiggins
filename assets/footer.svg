@@ -19,8 +19,6 @@
     .cap { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:9px; letter-spacing:2.2px; fill:#6B7A93; }
     .caret { fill:#13294B; animation: blink 1s steps(1) infinite; }
     @keyframes blink { 0%,50% { opacity:1 } 51%,100% { opacity:0 } }
-    .track { animation: march 18s linear infinite; }
-    @keyframes march { from { transform:translateX(0) } to { transform:translateX(-450px) } }
     </style>
 <rect width="900" height="200" fill="#FFFFFF"/>
 
@@ -31,13 +29,7 @@
 <text class="word n" x="500" y="96" style="animation-delay:.41s">Ship.</text>
 <rect class="caret" x="632" y="66" width="14" height="34"/>
 
-<clipPath id="mq"><rect x="56" y="112" width="788" height="22"/></clipPath>
-<g clip-path="url(#mq)">
-  <g class="track">
-    <text class="cap" x="56" y="128">LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; </text>
-    <text class="cap" x="506" y="128">LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; </text>
-  </g>
-</g>
+<text class="cap" x="56" y="128">LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; LET'S BUILD &#8212; DATA &#183; AI &#183; WEB &#183; LET'S BUILD &#8212; DATA &#183; AI &#183; WEB</text>
 
 <line x1="56" y1="152" x2="844" y2="152" class="rule"/>
 <text class="mail" x="56" y="176">davishiggins@icloud.com</text>
