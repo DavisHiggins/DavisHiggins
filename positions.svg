@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="900" height="330" role="img" aria-label="Current positions">
+<title>Current positions</title>
+<style>
+    text { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; }
+    .mono { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; }
+    .eyebrow { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size: 10px; letter-spacing: 2.4px;
+                fill: #6B7A93; text-transform: uppercase; }
+    .rule { stroke: #E3E7EE; stroke-width: 1; }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; opacity: 1 !important; }
+    }
+
+    .h { font-size:13px; font-weight:700; letter-spacing:3px; fill:#0A162C; }
+    .spine { stroke:#E3E7EE; stroke-width:2; stroke-dasharray:220; stroke-dashoffset:220;
+              animation: draw 1.6s .2s ease-out forwards; }
+    @keyframes draw { to { stroke-dashoffset:0; } }
+    .row { opacity:0; transform:translateX(-14px);
+            animation: slide .8s cubic-bezier(.16,1,.3,1) forwards; }
+    @keyframes slide { to { opacity:1; transform:translateX(0); } }
+    .role { font-size:16px; font-weight:700; fill:#0A162C; }
+    .org { font-size:13px; fill:#13294B; font-weight:600; }
+    .desc { font-size:12px; fill:#6B7A93; }
+    .when { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:9px; letter-spacing:1.6px; fill:#6B7A93; }
+    .node { fill:#FFFFFF; stroke:#13294B; stroke-width:2; }
+    .live { fill:#13294B; animation: blink 2.6s ease-in-out infinite; }
+    @keyframes blink { 0%,100% { opacity:1 } 50% { opacity:.2 } }
+    </style>
+<rect width="900" height="330" fill="#FFFFFF"/>
+
+<text class="eyebrow" x="56" y="46">Section 02</text>
+<text class="h" x="56" y="72">CURRENT POSITIONS</text>
+<line x1="56" y1="86" x2="844" y2="86" class="rule"/>
+<line class="spine" x1="60" y1="102" x2="60" y2="290"/>
+<g class="row" style="animation-delay:0.35s"><circle class="node" cx="60" cy="111" r="5"/><circle class="live" cx="60" cy="111" r="2" style="animation-delay:0.0s"/><text class="when" x="84" y="107">JUN 2025 &#8212; PRESENT</text><text class="role" x="84" y="127">Data Analyst</text><text class="org" x="84" y="145">Kewaunee Scientific</text><text class="desc" x="380" y="127">Power BI + Zoho dashboards, KPI reporting, and data governance.</text></g>
+<g class="row" style="animation-delay:0.49s"><circle class="node" cx="60" cy="169" r="5"/><circle class="live" cx="60" cy="169" r="2" style="animation-delay:0.3s"/><text class="when" x="84" y="165">JAN 2026 &#8212; PRESENT</text><text class="role" x="84" y="185">Founder &amp; Web Developer</text><text class="org" x="84" y="203">Higgins Digital</text><text class="desc" x="380" y="185">Web studio shipping high-performance, brand-forward client sites.</text></g>
+<g class="row" style="animation-delay:0.63s"><circle class="node" cx="60" cy="227" r="5"/><circle class="live" cx="60" cy="227" r="2" style="animation-delay:0.6s"/><text class="when" x="84" y="223">JUL 2026 &#8212; PRESENT</text><text class="role" x="84" y="243">Creative Director</text><text class="org" x="84" y="261">Lakeside Sport Club</text><text class="desc" x="380" y="243">Brand strategy, product development, and commerce operations.</text></g>
+<g class="row" style="animation-delay:0.77s"><circle class="node" cx="60" cy="285" r="5"/><circle class="live" cx="60" cy="285" r="2" style="animation-delay:0.9s"/><text class="when" x="84" y="281">SEP 2025 &#8212; PRESENT</text><text class="role" x="84" y="301">VP of Philanthropy &amp; Chaplain</text><text class="org" x="84" y="319">Phi Delta Theta</text><text class="desc" x="380" y="301">Chapter leadership plus a custom digital study and resource hub.</text></g>
+
+</svg>

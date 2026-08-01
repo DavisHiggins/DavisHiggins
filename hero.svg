@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="900" height="340" role="img" aria-label="Davis Higgins - Data Science and AI">
+<title>Davis Higgins - Data Science and AI</title>
+<style>
+    text { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; }
+    .mono { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; }
+    .eyebrow { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size: 10px; letter-spacing: 2.4px;
+                fill: #6B7A93; text-transform: uppercase; }
+    .rule { stroke: #E3E7EE; stroke-width: 1; }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; opacity: 1 !important; }
+    }
+
+    .frame { fill:none; stroke:#E3E7EE; stroke-width:1;
+              stroke-dasharray:2480; stroke-dashoffset:2480;
+              animation: draw 2.2s cubic-bezier(.2,.7,.2,1) forwards; }
+    @keyframes draw { to { stroke-dashoffset:0; } }
+
+    .bin { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:8px; letter-spacing:1.2px; fill:#6B7A93; }
+    .dec { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:12px; font-weight:700; fill:#13294B; opacity:0; }
+    .b   { animation: bfade 9s infinite; }
+    .d   { animation: dfade 9s infinite; }
+    @keyframes bfade {
+      0%,4% { opacity:.28 } 10% { opacity:1 } 22% { opacity:0 }
+      88% { opacity:0 } 96%,100% { opacity:.28 } }
+    @keyframes dfade {
+      0%,20% { opacity:0 } 30%,86% { opacity:1 } 94%,100% { opacity:0 } }
+
+    .name { font-size:76px; font-weight:800; letter-spacing:-2.6px; fill:#0A162C;
+             opacity:0; transform:translateY(22px);
+             animation: rise .95s cubic-bezier(.16,1,.3,1) forwards; }
+    @keyframes rise { to { opacity:1; transform:translateY(0); } }
+
+    .tag { font-size:16px; fill:#2C4C7C; opacity:0;
+            animation: rise .9s .9s cubic-bezier(.16,1,.3,1) forwards; }
+    .metaK { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:9px; letter-spacing:2.2px; fill:#6B7A93; }
+    .metaV { font-size:14px; font-weight:700; fill:#13294B; }
+    .metaS { font-size:12px; fill:#6B7A93; }
+    .meta { opacity:0; transform:translateY(14px);
+             animation: rise .8s cubic-bezier(.16,1,.3,1) forwards; }
+
+    .sweep { stroke:#13294B; stroke-width:2; stroke-dasharray:820;
+              stroke-dashoffset:820; animation: draw 1.6s .7s cubic-bezier(.2,.7,.2,1) forwards; }
+    .scan { animation: scan 9s cubic-bezier(.4,0,.2,1) infinite; }
+    @keyframes scan { 0% { transform:translateX(-40px); opacity:0 }
+                       8% { opacity:.5 } 60% { opacity:.5 }
+                       75%,100% { transform:translateX(900px); opacity:0 } }
+
+    .mark path, .mark line { stroke:#13294B; fill:none; stroke-width:2.4;
+        stroke-dasharray:200; stroke-dashoffset:200;
+        animation: draw 1.8s .3s cubic-bezier(.2,.7,.2,1) forwards; }
+    .dot { fill:#13294B; animation: pulse 2.4s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity:1 } 50% { opacity:.25 } }
+    </style>
+<rect width="900" height="340" fill="#FFFFFF"/>
+
+<rect class="frame" x="20.5" y="20.5" width="859" height="299" rx="2"/>
+<g class="scan"><rect x="0" y="21" width="1.5" height="298" fill="#13294B" opacity=".35"/></g>
+
+<text class="eyebrow" x="56" y="52">Charlotte, NC &#183; Open to opportunities</text>
+<text class="bin b" x="56" y="70" style="animation-delay:0.00s">1000100</text><text class="dec d" x="77" y="71" text-anchor="middle" style="animation-delay:0.00s">D</text>
+<text class="bin b" x="102" y="70" style="animation-delay:0.05s">1000001</text><text class="dec d" x="123" y="71" text-anchor="middle" style="animation-delay:0.05s">A</text>
+<text class="bin b" x="148" y="70" style="animation-delay:0.10s">1010100</text><text class="dec d" x="169" y="71" text-anchor="middle" style="animation-delay:0.10s">T</text>
+<text class="bin b" x="194" y="70" style="animation-delay:0.15s">1000001</text><text class="dec d" x="215" y="71" text-anchor="middle" style="animation-delay:0.15s">A</text>
+<text class="bin b" x="250" y="70" style="animation-delay:0.25s">1000001</text><text class="dec d" x="271" y="71" text-anchor="middle" style="animation-delay:0.25s">A</text>
+<text class="bin b" x="296" y="70" style="animation-delay:0.30s">1001001</text><text class="dec d" x="317" y="71" text-anchor="middle" style="animation-delay:0.30s">I</text>
+<text class="bin b" x="352" y="70" style="animation-delay:0.40s">1010111</text><text class="dec d" x="373" y="71" text-anchor="middle" style="animation-delay:0.40s">W</text>
+<text class="bin b" x="398" y="70" style="animation-delay:0.45s">1000101</text><text class="dec d" x="419" y="71" text-anchor="middle" style="animation-delay:0.45s">E</text>
+<text class="bin b" x="444" y="70" style="animation-delay:0.50s">1000010</text><text class="dec d" x="465" y="71" text-anchor="middle" style="animation-delay:0.50s">B</text>
+<text class="bin b" x="500" y="70" style="animation-delay:0.60s">1010011</text><text class="dec d" x="521" y="71" text-anchor="middle" style="animation-delay:0.60s">S</text>
+<text class="bin b" x="546" y="70" style="animation-delay:0.65s">1011001</text><text class="dec d" x="567" y="71" text-anchor="middle" style="animation-delay:0.65s">Y</text>
+<text class="bin b" x="592" y="70" style="animation-delay:0.70s">1010011</text><text class="dec d" x="613" y="71" text-anchor="middle" style="animation-delay:0.70s">S</text>
+<text class="bin b" x="638" y="70" style="animation-delay:0.75s">1010100</text><text class="dec d" x="659" y="71" text-anchor="middle" style="animation-delay:0.75s">T</text>
+<text class="bin b" x="684" y="70" style="animation-delay:0.80s">1000101</text><text class="dec d" x="705" y="71" text-anchor="middle" style="animation-delay:0.80s">E</text>
+<text class="bin b" x="730" y="70" style="animation-delay:0.85s">1001101</text><text class="dec d" x="751" y="71" text-anchor="middle" style="animation-delay:0.85s">M</text>
+<text class="bin b" x="776" y="70" style="animation-delay:0.90s">1010011</text><text class="dec d" x="797" y="71" text-anchor="middle" style="animation-delay:0.90s">S</text>
+
+<g class="mark">
+  <path d="M782 44 h20 a26 26 0 0 1 0 52 h-20 z"/>
+  <path d="M828 44 v52 M828 70 h30 M858 44 v52"/>
+</g>
+<circle class="dot" cx="681" cy="300" r="3.5"/>
+<text class="eyebrow" x="844" y="304" text-anchor="end" style="fill:#13294B">Available for work</text>
+
+<text class="name" x="54" y="176">DAVIS HIGGINS</text>
+<line class="sweep" x1="56" y1="196" x2="876" y2="196"/>
+<text class="tag" x="56" y="226">Building sharper systems for smarter decisions.</text>
+<g class="meta" style="animation-delay:1.10s"><line x1="56" y1="256" x2="286" y2="256" class="rule"/><text class="metaK" x="56" y="276">CURRENT</text><text class="metaV" x="56" y="298">Data Analyst</text><text class="metaS" x="56" y="316">Kewaunee Scientific</text></g>
+<g class="meta" style="animation-delay:1.22s"><line x1="320" y1="256" x2="550" y2="256" class="rule"/><text class="metaK" x="320" y="276">STUDIO</text><text class="metaV" x="320" y="298">Higgins Digital</text><text class="metaS" x="320" y="316">Web + brand systems</text></g>
+<g class="meta" style="animation-delay:1.34s"><line x1="584" y1="256" x2="814" y2="256" class="rule"/><text class="metaK" x="584" y="276">FOCUS</text><text class="metaV" x="584" y="298">Data / AI</text><text class="metaS" x="584" y="316">Dashboards, tools, agents</text></g>
+
+</svg>
