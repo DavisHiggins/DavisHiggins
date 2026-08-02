@@ -1,4 +1,7 @@
-name: Generate contribution snake
+name: Contribution snake
+
+# Platane/snk always renders a full year in GitHub's green, so the animation is
+# generated here instead: four months of squares, carolina blue into navy.
 
 on:
   schedule:
@@ -9,13 +12,14 @@ on:
       - main
     paths:
       - ".github/workflows/snake.yml"
+      - "scripts/generate_contribution_snake.py"
 
 permissions:
   contents: write
 
 concurrency:
   group: contribution-snake
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -23,17 +27,30 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Generate light and dark contribution animations
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: DavisHiggins
-          outputs: |
-            dist/github-contribution-grid-snake.svg?palette=github-light&color_snake=%237BAFD4
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%23C8E7FA
+      - uses: actions/checkout@v4
 
-      - name: Publish generated assets to the output branch
-        uses: peaceiris/actions-gh-pages@v4
+      - uses: actions/setup-python@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: output
-          publish_dir: ./dist
+          python-version: "3.12"
+
+      - name: Render the four-month contribution snake
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >-
+          python scripts/generate_contribution_snake.py
+          --user DavisHiggins
+          --months 4
+          --out assets/contribution-snake.svg
+
+      - name: Commit the refreshed animation
+        run: |
+          if git diff --quiet -- assets/contribution-snake.svg; then
+            echo "No contribution changes today."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/contribution-snake.svg
+          git commit -m "chore: refresh four-month contribution snake [skip ci]"
+          git pull --rebase --autostash origin main
+          git push

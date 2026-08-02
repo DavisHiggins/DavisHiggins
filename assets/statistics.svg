@@ -1,36 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" width="900" height="250" role="img" aria-label="Statistics">
-<title>Statistics</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 298" width="900" height="298" role="img" aria-label="Statistics: 3.89 GPA, five-time Chancellor&#x27;s List, 10 active projects, 20+ dashboards, 15+ websites, class of 2027">
+<title>Statistics: 3.89 GPA, five-time Chancellor&#x27;s List, 10 active projects, 20+ dashboards, 15+ websites, class of 2027</title>
+<defs>
+  <linearGradient id="gFace" x1="0" y1="0" x2=".25" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset=".52" stop-color="#F8FBFE"/>
+    <stop offset="1" stop-color="#EDF3FA"/>
+  </linearGradient>
+  <linearGradient id="gEdge" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#4B9CD3" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#4B9CD3" stop-opacity=".85"/>
+    <stop offset="1" stop-color="#4B9CD3" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="gAccent" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#9ACEE7"/>
+    <stop offset="1" stop-color="#13294B"/>
+  </linearGradient>
+  <linearGradient id="gGloss" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".95"/>
+    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="gShadow" x="-12%" y="-24%" width="124%" height="156%">
+    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#13294B" flood-opacity=".10"/>
+  </filter>
+</defs>
 <style>
     text { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; }
     .mono { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; }
-    .eyebrow { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size: 10px; letter-spacing: 2.4px;
-                fill: #6B7A93; text-transform: uppercase; }
+    .eyebrow { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size: 10px; letter-spacing: 2.4px; fill: #6B7A93; }
     .rule { stroke: #E3E7EE; stroke-width: 1; }
+    .pulse { animation: pulse 3.2s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity:1 } 50% { opacity:.35 } }
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; opacity: 1 !important; }
     }
 
     .num { font-size:38px; font-weight:800; letter-spacing:-1.4px; fill:#13294B; }
-    .lab { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:9px; letter-spacing:1.8px; fill:#6B7A93; }
-    .sub { font-size:11px; fill:#2C4C7C; }
-    /* Nothing starts hidden: GitHub renders this through an HTML img element and
-       Chrome freezes the animation timeline at 0%, so an element that begins at
-       opacity:0 or scaleX(0) would never become visible. Motion is ambient only. */
-    .bar { fill:#13294B; animation: pulse 3.2s ease-in-out infinite; }
-    @keyframes pulse { 0%,100% { opacity:1 } 50% { opacity:.45 } }
-    .h { font-size:13px; font-weight:700; letter-spacing:3px; fill:#0A162C; }
-    </style>
-<rect width="900" height="250" fill="#FFFFFF"/>
-
-<text class="eyebrow" x="56" y="46">Section 01</text>
-<text class="h" x="56" y="72">STATISTICS</text>
-<line x1="56" y1="86" x2="844" y2="86" class="rule"/>
-<g class="cell" style="animation-delay:0.10s"><rect class="bar" x="56" y="96" width="34" height="3" style="animation-delay:0.30s"/><text class="num" x="56" y="146">3.89</text><text class="lab" x="56" y="168">GPA</text><text class="sub" x="56" y="188">Data Science &#183; AI minor</text></g>
-<g class="cell" style="animation-delay:0.19s"><rect class="bar" x="187" y="96" width="34" height="3" style="animation-delay:0.39s"/><text class="num" x="187" y="146">5&#215;</text><text class="lab" x="187" y="168">CHANCELLOR'S LIST</text><text class="sub" x="187" y="188">Consecutive semesters</text></g>
-<g class="cell" style="animation-delay:0.28s"><rect class="bar" x="318" y="96" width="34" height="3" style="animation-delay:0.48s"/><text class="num" x="318" y="146">10</text><text class="lab" x="318" y="168">ACTIVE PROJECTS</text><text class="sub" x="318" y="188">Web &#183; AI &#183; analytics</text></g>
-<g class="cell" style="animation-delay:0.37s"><rect class="bar" x="449" y="96" width="34" height="3" style="animation-delay:0.57s"/><text class="num" x="449" y="146">20+</text><text class="lab" x="449" y="168">DASHBOARDS BUILT</text><text class="sub" x="449" y="188">Power BI &#183; Zoho</text></g>
-<g class="cell" style="animation-delay:0.46s"><rect class="bar" x="580" y="96" width="34" height="3" style="animation-delay:0.66s"/><text class="num" x="580" y="146">15+</text><text class="lab" x="580" y="168">WEBSITES LAUNCHED</text><text class="sub" x="580" y="188">Personal + client</text></g>
-<g class="cell" style="animation-delay:0.55s"><rect class="bar" x="711" y="96" width="34" height="3" style="animation-delay:0.75s"/><text class="num" x="711" y="146">2027</text><text class="lab" x="711" y="168">GRADUATION</text><text class="sub" x="711" y="188">UNC Charlotte</text></g>
-<line x1="56" y1="214" x2="844" y2="214" class="rule"/>
-
+    .lab { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:9.5px; letter-spacing:1.6px; fill:#3D7FB5; }
+    .sub { font-size:11.5px; fill:#6B7A93; }
+</style>
+<rect width="900" height="298" fill="#FFFFFF"/>
+<rect x="56" y="24" width="250" height="116" rx="16" fill="url(#gFace)" filter="url(#gShadow)"/><rect x="56.5" y="24.5" width="249" height="115" rx="15.5" fill="none" stroke="#DCE6F2" stroke-width="1"/><rect x="72" y="25" width="218" height="1" fill="url(#gGloss)"/><rect x="56" y="38" width="3" height="88" rx="1.5" fill="url(#gAccent)"/><text class="num" x="82" y="82">3.89</text><line x1="82" y1="96" x2="280" y2="96" class="rule"/><text class="lab" x="82" y="114">GPA</text><text class="sub" x="82" y="130">Data Science · AI</text><rect x="325" y="24" width="250" height="116" rx="16" fill="url(#gFace)" filter="url(#gShadow)"/><rect x="325.5" y="24.5" width="249" height="115" rx="15.5" fill="none" stroke="#DCE6F2" stroke-width="1"/><rect x="341" y="25" width="218" height="1" fill="url(#gGloss)"/><rect x="325" y="38" width="3" height="88" rx="1.5" fill="url(#gAccent)"/><text class="num" x="351" y="82">5×</text><line x1="351" y1="96" x2="549" y2="96" class="rule"/><text class="lab" x="351" y="114">CHANCELLOR&#x27;S LIST</text><text class="sub" x="351" y="130">Consecutive semesters</text><rect x="594" y="24" width="250" height="116" rx="16" fill="url(#gFace)" filter="url(#gShadow)"/><rect x="594.5" y="24.5" width="249" height="115" rx="15.5" fill="none" stroke="#DCE6F2" stroke-width="1"/><rect x="610" y="25" width="218" height="1" fill="url(#gGloss)"/><rect x="594" y="38" width="3" height="88" rx="1.5" fill="url(#gAccent)"/><text class="num" x="620" y="82">10</text><line x1="620" y1="96" x2="818" y2="96" class="rule"/><text class="lab" x="620" y="114">ACTIVE PROJECTS</text><text class="sub" x="620" y="130">Web · AI · analytics</text><rect x="56" y="158" width="250" height="116" rx="16" fill="url(#gFace)" filter="url(#gShadow)"/><rect x="56.5" y="158.5" width="249" height="115" rx="15.5" fill="none" stroke="#DCE6F2" stroke-width="1"/><rect x="72" y="159" width="218" height="1" fill="url(#gGloss)"/><rect x="56" y="172" width="3" height="88" rx="1.5" fill="url(#gAccent)"/><text class="num" x="82" y="216">20+</text><line x1="82" y1="230" x2="280" y2="230" class="rule"/><text class="lab" x="82" y="248">DASHBOARDS BUILT</text><text class="sub" x="82" y="264">Power BI · Zoho</text><rect x="325" y="158" width="250" height="116" rx="16" fill="url(#gFace)" filter="url(#gShadow)"/><rect x="325.5" y="158.5" width="249" height="115" rx="15.5" fill="none" stroke="#DCE6F2" stroke-width="1"/><rect x="341" y="159" width="218" height="1" fill="url(#gGloss)"/><rect x="325" y="172" width="3" height="88" rx="1.5" fill="url(#gAccent)"/><text class="num" x="351" y="216">15+</text><line x1="351" y1="230" x2="549" y2="230" class="rule"/><text class="lab" x="351" y="248">WEBSITES LAUNCHED</text><text class="sub" x="351" y="264">Personal + client</text><rect x="594" y="158" width="250" height="116" rx="16" fill="url(#gFace)" filter="url(#gShadow)"/><rect x="594.5" y="158.5" width="249" height="115" rx="15.5" fill="none" stroke="#DCE6F2" stroke-width="1"/><rect x="610" y="159" width="218" height="1" fill="url(#gGloss)"/><rect x="594" y="172" width="3" height="88" rx="1.5" fill="url(#gAccent)"/><text class="num" x="620" y="216">2027</text><line x1="620" y1="230" x2="818" y2="230" class="rule"/><text class="lab" x="620" y="248">GRADUATION</text><text class="sub" x="620" y="264">UNC Charlotte</text>
 </svg>

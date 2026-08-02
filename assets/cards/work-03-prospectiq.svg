@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 176" width="450" height="176" role="img" aria-label="ProspectIQ - Collects, enriches, scores, and exports public lead data across eight sources. Stack: Python · HTTPX · GitHub Actions. Status: OPEN SOURCE.">
+<title>ProspectIQ - Collects, enriches, scores, and exports public lead data across eight sources. Stack: Python · HTTPX · GitHub Actions. Status: OPEN SOURCE.</title>
+<defs>
+  <linearGradient id="gFace" x1="0" y1="0" x2=".25" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset=".52" stop-color="#F8FBFE"/>
+    <stop offset="1" stop-color="#EDF3FA"/>
+  </linearGradient>
+  <linearGradient id="gEdge" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#4B9CD3" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#4B9CD3" stop-opacity=".85"/>
+    <stop offset="1" stop-color="#4B9CD3" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="gAccent" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#9ACEE7"/>
+    <stop offset="1" stop-color="#13294B"/>
+  </linearGradient>
+  <linearGradient id="gGloss" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".95"/>
+    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="gShadow" x="-12%" y="-24%" width="124%" height="156%">
+    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#13294B" flood-opacity=".10"/>
+  </filter>
+</defs>
+<style>
+    text { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; }
+    .mono { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; }
+    .eyebrow { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size: 10px; letter-spacing: 2.4px; fill: #6B7A93; }
+    .rule { stroke: #E3E7EE; stroke-width: 1; }
+    .pulse { animation: pulse 3.2s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity:1 } 50% { opacity:.35 } }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; opacity: 1 !important; }
+    }
+
+    .kind { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:9.5px; letter-spacing:1.8px; fill:#3D7FB5; }
+    .name { font-size:20px; font-weight:800; letter-spacing:-.4px; fill:#0A162C; }
+    .desc { font-size:12px; fill:#6B7A93; }
+    .stack { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:9.5px; letter-spacing:1.2px; fill:#2C4C7C; }
+</style>
+<rect width="450" height="176" fill="#FFFFFF"/>
+
+<rect x="32" y="20" width="386" height="136" rx="16" fill="url(#gFace)" filter="url(#gShadow)"/><rect x="32.5" y="20.5" width="385" height="135" rx="15.5" fill="none" stroke="#DCE6F2" stroke-width="1"/><rect x="48" y="21" width="354" height="1" fill="url(#gGloss)"/><rect x="32" y="34" width="3" height="108" rx="1.5" fill="url(#gAccent)"/>
+<text class="kind" x="58" y="46">03 &#183; OPEN SOURCE CLI</text>
+<g transform="translate(303.49,32)"><g><rect x="0" y="0" width="88.51" height="21" rx="10.5" fill="#EDF3F9" stroke="#C9E4F3" stroke-width="1"/><text x="44.25" y="13.74" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="9" font-weight="500" fill="#3D7FB5">OPEN SOURCE</text></g></g>
+<text class="name" x="58" y="78">ProspectIQ</text>
+<text class="desc" x="58" y="98">Collects, enriches, scores, and exports public lead data</text><text class="desc" x="58" y="113">across eight sources.</text>
+<line x1="58" y1="126" x2="392" y2="126" class="rule"/>
+<text class="stack" x="58" y="146">Python · HTTPX · GitHub Actions</text>
+<text x="392" y="146" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12" font-weight="700" fill="#4B9CD3">&#8599;</text>
+
+</svg>
