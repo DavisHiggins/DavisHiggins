@@ -16,7 +16,7 @@
 -->
 
 <div align="center">
-  <img align="top" width="100%" src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/hero.svg?v=8" alt="Davis Higgins - building sharper systems for smarter decisions. Charlotte, North Carolina. Data Analyst at Kewaunee Scientific, founder of Higgins Digital, focused on data and AI.">
+  <img align="top" width="100%" src="https://raw.githubusercontent.com/DavisHiggins/DavisHiggins/main/assets/hero.svg?v=8" alt="Davis Higgins - Data Analyst; Data Science and AI; Python, SQL, Power BI, Machine Learning; Web Development and Digital Solutions. Charlotte, North Carolina. Data Analyst at Kewaunee Scientific, founder of Higgins Digital, focused on data and AI.">
 </div>
 
 <div align="center">

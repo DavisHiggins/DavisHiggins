@@ -26,9 +26,9 @@ from html import escape
 
 import profile_content as C
 from profile_kit import (
-    ASSETS, BLUE, BLUE_DEEP, BLUE_PALE, INK, LINE, LOGO_MARK_H, MIST, MONO,
-    MUTED, NAVY, NAVY_SOFT, WHITE, arrow, glass, logo_paths, n, pill,
-    status_dot, svg, sweep, text_width, wrap, write,
+    ASSETS, BLUE, BLUE_DEEP, BLUE_PALE, INK, LINE, LOGO_MARK_H, LOGO_VIEW_H,
+    LOGO_VIEW_W, MIST, MONO, MUTED, NAVY, NAVY_SOFT, arrow, glass, logo_paths,
+    n, pill, status_dot, svg, sweep, text_width, wrap, write,
 )
 
 PAGE = 900.0
@@ -41,21 +41,21 @@ CONTENT = PAGE - MARGIN * 2  # 788
 # ---------------------------------------------------------------------------
 
 def build_hero() -> None:
-    """The monogram sits on the name's baseline, immediately to its right, and
-    the card is 90px shorter than the version that floated it in the corner."""
+    """The monogram holds the card's top-right corner, where the availability
+    chip used to sit."""
     height = 340.0
     name = "DAVIS HIGGINS"
     name_size = 62.0
     tracking = -2.2
-    name_w = text_width(name, name_size, bold=True, tracking=tracking)
-
-    # Scale the monogram so the "DH" letterforms stand 1.3x the name's cap
-    # height, then park it on the same baseline.
-    cap = name_size * 0.716
-    scale = (cap * 1.3) / LOGO_MARK_H
-    logo_x = MARGIN + 12 + name_w + 34
     baseline = 176.0
-    logo_y = baseline - LOGO_MARK_H * scale
+
+    # Sized against the name's cap height, a little smaller than the lockup that
+    # previously sat beside the wordmark, and right-aligned to the card's inner
+    # edge on the chip's old centre line.
+    cap = name_size * 0.716
+    scale = (cap * 1.1) / LOGO_MARK_H
+    logo_x = PAGE - MARGIN - 12 - LOGO_VIEW_W * scale
+    logo_y = 86 - LOGO_VIEW_H * scale / 2
 
     beam, beam_css = sweep("heroBeam", MARGIN + 12, 203, CONTENT - 24, width=160, seconds=7)
 
@@ -74,31 +74,31 @@ def build_hero() -> None:
             f'<text class="metaS" x="{n(x)}" y="303">{escape(note)}</text></g>'
         )
 
-    chip, chip_w = pill(0, 0, "OPEN TO OPPORTUNITIES", size=10, pad=16, height=28,
-                        fill=WHITE, color=NAVY, mono=True, lead=16)
-    chip_x = PAGE - MARGIN - 12 - chip_w
+    tagline = ("Data Analyst | Data Science &amp; AI | Python, SQL, Power BI, "
+               "Machine Learning | Web Development &amp; Digital Solutions")
     body = f"""
 {glass(MARGIN * .5, 20, PAGE - MARGIN, height - 44, rx=22)}
 <text class="eyebrow" x="{n(MARGIN + 12)}" y="86">CHARLOTTE, NORTH CAROLINA</text>
-<g transform="translate({n(chip_x)},72)">{chip}</g>
-{status_dot(chip_x + 17, 86, BLUE, 3)}
 <text class="name" x="{n(MARGIN + 12)}" y="{n(baseline)}">{escape(name)}</text>
-<g transform="translate({n(logo_x)},{n(logo_y)}) scale({n(scale)})">{logo_paths()}</g>
+<g class="logo" transform="translate({n(logo_x)},{n(logo_y)}) scale({n(scale)})">{logo_paths()}</g>
 <line class="sweepline" x1="{n(MARGIN + 12)}" y1="204" x2="{n(PAGE - MARGIN - 12)}" y2="204"/>
 {beam}
-<text class="tag" x="{n(MARGIN + 12)}" y="228">Building sharper systems for smarter decisions.</text>
+<text class="tag" x="{n(MARGIN + 12)}" y="228">{tagline}</text>
 {meta}
 """
     css = f"""
     .name {{ font-size:{n(name_size)}px; font-weight:800; letter-spacing:{n(tracking)}px; fill:{INK}; }}
-    .tag {{ font-size:15px; fill:{NAVY_SOFT}; }}
+    .tag {{ font-size:14px; fill:{NAVY_SOFT}; }}
+    .logo {{ animation: logo 3.2s ease-in-out infinite; }}
+    @keyframes logo {{ 0%,100% {{ opacity:1 }} 50% {{ opacity:.45 }} }}
     .sweepline {{ stroke:{NAVY}; stroke-width:2; }}
     .metaK {{ font-family:{MONO}; font-size:9px; letter-spacing:2.2px; fill:{MUTED}; }}
     .metaV {{ font-size:14px; font-weight:700; fill:{NAVY}; }}
     .metaS {{ font-size:12px; fill:{MUTED}; }}{beam_css}
 """
     write(ASSETS / "hero.svg",
-          svg(PAGE, height, "Davis Higgins - building sharper systems for smarter decisions",
+          svg(PAGE, height, "Davis Higgins - Data Analyst; Data Science and AI; Python, SQL, "
+                            "Power BI, Machine Learning; Web Development and Digital Solutions",
               body, css))
 
 
@@ -111,7 +111,7 @@ def build_headers() -> None:
     the small caps headers they replace."""
     for number, title, caption in C.SECTIONS:
         height = 138.0
-        num_size = 68.0
+        num_size = 58.0
         title_size = 40.0
         num_w = text_width(number, num_size, bold=True, tracking=-2)
         divider_x = MARGIN + num_w + 26
