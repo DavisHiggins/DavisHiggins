@@ -13,10 +13,7 @@ SECTIONS = [
     ("02", "STATISTICS", "Academics and output at a glance"),
     ("03", "ACTIVITY", "Contributions across the past four months"),
     ("04", "WORK", "Products, platforms, and client builds"),
-    ("05", "REPOSITORIES", "Open source and public client code"),
-    ("06", "POSITIONS", "Where I work right now"),
-    ("07", "STACK", "Tools I reach for"),
-    ("08", "CONNECT", "Every way to reach me"),
+    ("05", "STACK", "Tools I reach for"),
 ]
 
 NAV = [
@@ -24,7 +21,7 @@ NAV = [
     ("studio", "Studio", "higginsd.com", "https://higginsd.com"),
     ("linkedin", "LinkedIn", "in/davishiggins", "https://www.linkedin.com/in/davishiggins/"),
     ("email", "Email", "davishiggins@icloud.com", "mailto:davishiggins@icloud.com"),
-    ("resume", "Resume", "Davis.Resume.pdf", "https://davishiggins.com/Davis.Resume.pdf"),
+    ("portfolio", "Portfolio", "portfolio.davishiggins.com", "https://portfolio.davishiggins.com"),
 ]
 
 PROFILE_PARAGRAPHS = [
@@ -101,45 +98,6 @@ PROJECTS = [
      "Photography · Gallery · Archive", "LIVE", "https://photos.davishiggins.com"),
 ]
 
-# (slug, name, description, url)
-REPOS = [
-    ("prospectiq", "ProspectIQ",
-     "Python CLI for collecting, normalizing, enriching, scoring, and exporting public lead data.",
-     "https://github.com/DavisHiggins/ProspectIQ"),
-    ("propify-demo", "propify-demo",
-     "Public demo of the Propify prop analytics platform, without proprietary modeling.",
-     "https://github.com/DavisHiggins/propify-demo"),
-    ("cade", "cade",
-     "Agentic OS with structured memory across projects, priorities, and recurring work.",
-     "https://github.com/DavisHiggins/cade"),
-    ("curated-notes", "curated-notes",
-     "MDX-based publishing platform for long-form writing.",
-     "https://github.com/DavisHiggins/curated-notes"),
-    ("chaplain-platform", "chaplain-platform",
-     "Bible study calendar, 16-week scripture plan, and chapter engagement tools.",
-     "https://github.com/DavisHiggins/chaplain-platform"),
-    ("touchupsolutions", "touchupsolutions",
-     "E-commerce rebuild with product pages, repair categories, and checkout flow.",
-     "https://github.com/DavisHiggins/touchupsolutions"),
-    ("ben-levy-portfolio", "ben-levy-portfolio",
-     "Client portfolio build with custom branding and responsive UI.",
-     "https://github.com/DavisHiggins/ben-levy-portfolio"),
-    ("nypd-crime-data-analysis", "nypd-crime-data-analysis",
-     "Exploratory analysis and visualization of NYPD crime data.",
-     "https://github.com/DavisHiggins/nypd-crime-data-analysis"),
-]
-
-POSITIONS = [
-    ("JUN 2025 — PRESENT", "Data Analyst", "Kewaunee Scientific",
-     "Power BI and Zoho Analytics dashboards, KPI reporting, CRM and estimating audits, and data governance."),
-    ("JAN 2026 — PRESENT", "Founder & Web Developer", "Higgins Digital",
-     "Web studio shipping high-performance, brand-forward sites for real businesses."),
-    ("JUL 2026 — PRESENT", "Creative Director", "Lakeside Sport Club",
-     "Brand strategy, product development, merchandising, and digital commerce operations."),
-    ("SEP 2025 — PRESENT", "VP of Philanthropy & Chaplain", "Phi Delta Theta",
-     "Chapter leadership plus a custom digital study and resource hub for the chapter."),
-]
-
 STACK = [
     ("DATA & ANALYTICS",
      ["Python", "SQL", "R", "Power BI", "Tableau", "Excel", "Pandas", "scikit-learn"]),
@@ -151,17 +109,4 @@ STACK = [
      ["FastAPI", "Supabase", "Vercel", "PostgreSQL", "GitHub Actions", "Stripe"]),
     ("DESIGN & STRATEGY",
      ["Branding", "Editorial design", "SEO", "Web analytics", "Systems thinking"]),
-]
-
-# (slug, label, value, url)
-CONNECT = [
-    ("portfolio", "PORTFOLIO", "davishiggins.com", "https://davishiggins.com"),
-    ("studio", "STUDIO", "higginsd.com", "https://higginsd.com"),
-    ("writing", "WRITING", "notes.davishiggins.com", "https://notes.davishiggins.com"),
-    ("ai-guides", "AI GUIDES", "ai.davishiggins.com", "https://ai.davishiggins.com"),
-    ("linkedin", "LINKEDIN", "linkedin.com/in/davishiggins",
-     "https://www.linkedin.com/in/davishiggins/"),
-    ("github", "GITHUB", "github.com/DavisHiggins", "https://github.com/DavisHiggins"),
-    ("email", "EMAIL", "davishiggins@icloud.com", "mailto:davishiggins@icloud.com"),
-    ("resume", "RESUME", "Davis.Resume.pdf", "https://davishiggins.com/Davis.Resume.pdf"),
 ]

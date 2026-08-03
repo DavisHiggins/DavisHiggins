@@ -181,8 +181,8 @@ def path_waypoints(cols: int) -> tuple[list[tuple[int, int]], list[tuple[int, in
     return way, eaten
 
 
-def render(columns: list[list[int]], starts: list[date], user: str,
-           months: int) -> str:
+def render(columns: list[list[int]], starts: list[date], counts: dict[str, int],
+           user: str, months: int) -> str:
     cols = len(columns)
     width = PAD_L + cols * PITCH - GAP + PAD_R
     height = PAD_T + 8 * PITCH - GAP + PAD_B
@@ -204,15 +204,21 @@ def render(columns: list[list[int]], starts: list[date], user: str,
 
     squares, eat_css = "", ""
     for index, (col, row) in enumerate(eaten):
+        day = starts[col] + timedelta(days=row)
+        count = counts.get(day.isoformat(), 0)
+        contribution_word = "contribution" if count == 1 else "contributions"
+        tooltip = f"{count} {contribution_word} on {day.strftime('%B')} {day.day}, {day.year}"
         level = columns[col][row]
         if level == 0:
             squares += (f'<rect x="{px(col):.1f}" y="{py(row):.1f}" width="{CELL:.0f}" '
-                        f'height="{CELL:.0f}" rx="7" fill="{LEVELS[0]}"/>')
+                        f'height="{CELL:.0f}" rx="7" fill="{LEVELS[0]}">'
+                        f'<title>{tooltip}</title></rect>')
             continue
         mark = index / steps * 100
         name = f"e{index}"
         squares += (f'<rect class="{name}" x="{px(col):.1f}" y="{py(row):.1f}" '
-                    f'width="{CELL:.0f}" height="{CELL:.0f}" rx="7" fill="{LEVELS[level]}"/>')
+                    f'width="{CELL:.0f}" height="{CELL:.0f}" rx="7" fill="{LEVELS[level]}">'
+                    f'<title>{tooltip}</title></rect>')
         eat_css += (f"\n    .{name}{{animation:{name} {total:.2f}s linear infinite}}"
                     f"\n    @keyframes {name}{{0%,{mark:.4f}%{{fill:{LEVELS[level]}}}"
                     f"{min(mark + 0.45, 100):.4f}%,100%{{fill:{LEVELS[0]}}}}}")
@@ -235,7 +241,13 @@ def render(columns: list[list[int]], starts: list[date], user: str,
             previous = label_month
 
     legend_y = PAD_T + 8 * PITCH - GAP + 40
+    total_count = sum(
+        counts.get((starts[col] + timedelta(days=row)).isoformat(), 0)
+        for col, row in eaten
+    )
     legend_x = width - PAD_R - 5 * 20 - 78
+    total_markup = (f'<text class="cap" x="{PAD_L:.1f}" y="{legend_y + 12:.1f}">'
+                    f'{total_count} CONTRIBUTIONS</text>')
     legend = f'<text class="cap" x="{legend_x - 10:.1f}" y="{legend_y + 12:.1f}" text-anchor="end">LESS</text>'
     for i, color in enumerate(LEVELS):
         legend += (f'<rect x="{legend_x + i * 20:.1f}" y="{legend_y:.1f}" width="14" '
@@ -251,7 +263,7 @@ def render(columns: list[list[int]], starts: list[date], user: str,
     .mo {{ font-size: 15px; letter-spacing: 1.4px; fill: {MUTED}; }}
     .cap {{ font-size: 12px; letter-spacing: 2px; fill: {MUTED}; }}
     .title {{ font-size: 13px; letter-spacing: 2.6px; fill: {NAVY}; }}
-    .seg {{ animation: travel {total:.2f}s linear infinite; }}
+    .seg {{ animation: travel {total:.2f}s linear infinite; pointer-events:none; }}
     @keyframes travel {{ {frames} }}{eat_css}
     @media (prefers-reduced-motion: reduce) {{
       * {{ animation: none !important; }}
@@ -265,7 +277,8 @@ def render(columns: list[list[int]], starts: list[date], user: str,
 <line x1="{PAD_L:.0f}" y1="{PAD_T - 40:.0f}" x2="{width - PAD_R:.0f}" y2="{PAD_T - 40:.0f}" stroke="{LINE}" stroke-width="1"/>
 {labels}
 <g>{squares}</g>
-<g>{body}</g>
+<g pointer-events="none">{body}</g>
+{total_markup}
 {legend}
 </svg>
 """
@@ -289,7 +302,7 @@ def main() -> None:
     if not out.is_absolute():
         out = Path(__file__).resolve().parents[1] / out
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(render(columns, starts, args.user, args.months), encoding="utf-8")
+    out.write_text(render(columns, starts, counts, args.user, args.months), encoding="utf-8")
     print(f"Wrote {out} ({len(columns)} weeks, {first} to {end})")
 
 

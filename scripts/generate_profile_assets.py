@@ -111,7 +111,7 @@ def build_headers() -> None:
     the small caps headers they replace."""
     for number, title, caption in C.SECTIONS:
         height = 138.0
-        num_size = 58.0
+        num_size = 54.0
         title_size = 40.0
         num_w = text_width(number, num_size, bold=True, tracking=-2)
         divider_x = MARGIN + num_w + 26
@@ -129,7 +129,7 @@ def build_headers() -> None:
     .num {{ font-size:{n(num_size)}px; font-weight:800; letter-spacing:-2px; fill:{BLUE}; }}
     .title {{ font-size:{n(title_size)}px; font-weight:800; letter-spacing:1.5px; fill:{INK}; }}
     .split {{ stroke:{LINE}; stroke-width:2; }}
-    .cap {{ font-family:{MONO}; font-size:10px; letter-spacing:1.6px; fill:{MUTED}; }}{beam_css}
+    .cap {{ font-family:{MONO}; font-size:12px; letter-spacing:1.6px; fill:{MUTED}; }}{beam_css}
 """
         write(ASSETS / "headers" / f"{number}-{title.lower()}.svg",
               svg(PAGE, height, f"Section {number} - {title}: {caption}", body, css))
@@ -233,7 +233,7 @@ def build_statistics() -> None:
 
 
 # ---------------------------------------------------------------------------
-# 04 Work / 05 Repositories
+# 04 Work
 # ---------------------------------------------------------------------------
 
 # Two cards fill one line at width="50%", so each file is exactly half the page
@@ -280,74 +280,7 @@ def build_project_cards() -> None:
                   body, css))
 
 
-def build_repo_cards() -> None:
-    for slug, name, description, url in C.REPOS:
-        del url
-        card_h = 104.0
-        height = card_h + VPAD * 2
-        left, right = CARD_X + 26, CARD_X + CARD_INNER - 26
-        desc = wrap(description, 11.5, right - left)[:2]
-        desc_markup = "".join(
-            f'<text class="desc" x="{n(left)}" y="{n(VPAD + 72 + i * 15)}">{escape(line)}</text>'
-            for i, line in enumerate(desc)
-        )
-        body = f"""
-{glass(CARD_X, VPAD, CARD_INNER, card_h, rx=16)}
-<text class="kind" x="{n(left)}" y="{n(VPAD + 26)}">REPOSITORY</text>
-{arrow(right, VPAD + 27, 12)}
-<text class="name" x="{n(left)}" y="{n(VPAD + 52)}">{escape(name)}</text>
-{desc_markup}
-"""
-        css = f"""
-    .kind {{ font-family:{MONO}; font-size:9.5px; letter-spacing:1.8px; fill:{BLUE_DEEP}; }}
-    .name {{ font-family:{MONO}; font-size:15px; font-weight:700; fill:{INK}; }}
-    .desc {{ font-size:11.5px; fill:{MUTED}; }}
-"""
-        write(ASSETS / "cards" / f"repo-{slug}.svg",
-              svg(CARD_W, height, f"{name} on GitHub - {description}", body, css))
-
-
-# ---------------------------------------------------------------------------
-# 06 Positions
-# ---------------------------------------------------------------------------
-
-def build_positions() -> None:
-    row_h, gap = 92.0, 16.0
-    height = 24 + len(C.POSITIONS) * row_h + (len(C.POSITIONS) - 1) * gap + 24
-    split = MARGIN + 400.0
-
-    rows = ""
-    for i, (when, role, org, detail) in enumerate(C.POSITIONS):
-        y = 24 + i * (row_h + gap)
-        lines = wrap(detail, 12, PAGE - MARGIN - split - 30)[:2]
-        detail_markup = "".join(
-            f'<text class="desc" x="{n(split)}" y="{n(y + 48 + j * 16)}">{escape(line)}</text>'
-            for j, line in enumerate(lines)
-        )
-        rows += (
-            glass(MARGIN, y, CONTENT, row_h, rx=16)
-            + status_dot(MARGIN + 30, y + 30, BLUE, 3)
-            + f'<text class="when" x="{n(MARGIN + 46)}" y="{n(y + 34)}">{escape(when)}</text>'
-            + f'<text class="role" x="{n(MARGIN + 30)}" y="{n(y + 62)}">{escape(role)}</text>'
-            + f'<text class="org" x="{n(MARGIN + 30)}" y="{n(y + 80)}">{escape(org)}</text>'
-            + f'<line x1="{n(split - 26)}" y1="{n(y + 22)}" x2="{n(split - 26)}" '
-              f'y2="{n(y + row_h - 22)}" class="rule"/>'
-            + detail_markup
-        )
-
-    css = f"""
-    .when {{ font-family:{MONO}; font-size:9.5px; letter-spacing:1.8px; fill:{MUTED}; }}
-    .role {{ font-size:17px; font-weight:700; fill:{INK}; }}
-    .org {{ font-size:13px; font-weight:600; fill:{BLUE_DEEP}; }}
-    .desc {{ font-size:12px; fill:{MUTED}; }}
-"""
-    summary = "; ".join(f"{role} at {org}" for _, role, org, _ in C.POSITIONS)
-    write(ASSETS / "positions.svg",
-          svg(PAGE, height, f"Current positions: {summary}", rows, css))
-
-
-# ---------------------------------------------------------------------------
-# 07 Stack
+# 05 Stack
 # ---------------------------------------------------------------------------
 
 def build_stack() -> None:
@@ -382,7 +315,7 @@ def build_stack() -> None:
 
 
 # ---------------------------------------------------------------------------
-# Links: top navigation and the connect grid
+# Links: top navigation
 # ---------------------------------------------------------------------------
 
 def build_nav_buttons() -> None:
@@ -403,26 +336,6 @@ def build_nav_buttons() -> None:
 """
         write(ASSETS / "links" / f"nav-{slug}.svg",
               svg(w, h, f"{label} - {detail}", body, css))
-
-
-def build_connect_cards() -> None:
-    for slug, label, value, url in C.CONNECT:
-        del url
-        card_h = 88.0
-        height = card_h + VPAD * 2
-        left, right = CARD_X + 26, CARD_X + CARD_INNER - 26
-        body = f"""
-{glass(CARD_X, VPAD, CARD_INNER, card_h, rx=16)}
-<text class="lab" x="{n(left)}" y="{n(VPAD + 30)}">{escape(label)}</text>
-<text class="val" x="{n(left)}" y="{n(VPAD + 58)}">{escape(value)}</text>
-{arrow(right, VPAD + 50, 15)}
-"""
-        css = f"""
-    .lab {{ font-family:{MONO}; font-size:9.5px; letter-spacing:2.2px; fill:{MUTED}; }}
-    .val {{ font-size:16px; font-weight:700; fill:{NAVY}; }}
-"""
-        write(ASSETS / "links" / f"link-{slug}.svg",
-              svg(CARD_W, height, f"{label}: {value}", body, css))
 
 
 def build_spacer() -> None:
@@ -489,6 +402,14 @@ def prune_retired_assets() -> None:
         for stale in legacy.glob("*.svg"):
             stale.unlink()
         legacy.rmdir()
+    for stale in (ASSETS / "cards").glob("repo-*.svg"):
+        stale.unlink()
+    for stale in (ASSETS / "links").glob("link-*.svg"):
+        stale.unlink()
+    (ASSETS / "links" / "nav-resume.svg").unlink(missing_ok=True)
+    (ASSETS / "positions.svg").unlink(missing_ok=True)
+    for name in ["05-repositories.svg", "06-positions.svg", "07-stack.svg", "08-connect.svg"]:
+        (ASSETS / "headers" / name).unlink(missing_ok=True)
 
 
 def main() -> None:
@@ -497,11 +418,8 @@ def main() -> None:
     build_profile()
     build_statistics()
     build_project_cards()
-    build_repo_cards()
-    build_positions()
     build_stack()
     build_nav_buttons()
-    build_connect_cards()
     build_spacer()
     build_divider()
     build_footer()

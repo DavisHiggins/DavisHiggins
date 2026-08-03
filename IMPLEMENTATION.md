@@ -31,10 +31,9 @@ separate regions inside one embedded SVG clickable.
 | Hero | `assets/hero.svg` | 100% |
 | Top navigation | `assets/links/nav-*.svg` | 20% ×5 |
 | Section headers | `assets/headers/NN-*.svg` | 100% |
-| Profile, statistics, positions, stack | `assets/*.svg` | 100% |
+| Profile, statistics, stack | `assets/*.svg` | 100% |
 | Activity | `assets/contribution-snake.svg` | 100% |
-| Project and repo cards | `assets/cards/*.svg` | 50% ×2 |
-| Connect cards | `assets/links/link-*.svg` | 50% ×2 |
+| Project cards | `assets/cards/*.svg` | 50% ×2 |
 | Divider, footer | `assets/divider.svg`, `assets/footer.svg` | 100% |
 
 `assets/cards/spacer.svg` pairs with the thirteenth project card so that row
@@ -68,6 +67,13 @@ Contribution data comes from the GitHub GraphQL API when `GITHUB_TOKEN` is set
 and from the public contributions fragment otherwise. `--demo` renders synthetic
 data for layout checks. `.github/workflows/snake.yml` reruns it daily and commits
 the result to `main`.
+
+Every calendar square carries a native SVG title with its exact date and
+contribution count. The total for the displayed period sits at the bottom-left,
+aligned with the `LESS ... MORE` legend. GitHub embeds the graph as an image, so
+the README links to the raw SVG where those native day labels can be inspected.
+Snake segments ignore pointer events so they never cover a day's interaction
+area in that direct view.
 
 The snake walks a closed serpentine tour: every square row by row, then an
 off-grid return leg one column left of and one row below the grid, so the loop

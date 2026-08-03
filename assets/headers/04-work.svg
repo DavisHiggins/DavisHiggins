@@ -35,18 +35,18 @@
       * { animation: none !important; opacity: 1 !important; }
     }
 
-    .num { font-size:58px; font-weight:800; letter-spacing:-2px; fill:#4B9CD3; }
+    .num { font-size:54px; font-weight:800; letter-spacing:-2px; fill:#4B9CD3; }
     .title { font-size:40px; font-weight:800; letter-spacing:1.5px; fill:#0A162C; }
     .split { stroke:#E3E7EE; stroke-width:2; }
-    .cap { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:10px; letter-spacing:1.6px; fill:#6B7A93; }
+    .cap { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:12px; letter-spacing:1.6px; fill:#6B7A93; }
     .hdrBeam { animation: hdrBeam 6.5s linear infinite; }
     @keyframes hdrBeam { from { transform: translateX(0) } to { transform: translateX(928px) } }
 </style>
 <rect width="900" height="138" fill="#FFFFFF"/>
 
 <text class="num" x="56" y="98">04</text>
-<line class="split" x1="146.37" y1="44" x2="146.37" y2="106"/>
-<text class="title" x="172.37" y="98">WORK</text>
+<line class="split" x1="141.65" y1="44" x2="141.65" y2="106"/>
+<text class="title" x="167.65" y="98">WORK</text>
 <text class="cap" x="844" y="98" text-anchor="end">Products, platforms, and client builds</text>
 <line x1="56" y1="118" x2="844" y2="118" class="rule"/>
 <clipPath id="hdrBeamClip"><rect x="56" y="116" width="788" height="6"/></clipPath><g clip-path="url(#hdrBeamClip)"><g class="hdrBeam"><rect x="-84" y="118" width="140" height="2" fill="url(#gEdge)"/></g></g>
