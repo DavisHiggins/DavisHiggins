@@ -1,222 +1,212 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 838 454" width="838" height="454" role="img" aria-label="GitHub contribution snake for DavisHiggins, covering Apr 5 to today">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 454" width="800" height="454" role="img" aria-label="GitHub contribution snake for DavisHiggins, covering Apr 12 to today">
 <title>Contribution activity for DavisHiggins - the last 4 months</title>
 <style>
     text { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; }
     .mo { font-size: 15px; letter-spacing: 1.4px; fill: #6B7A93; }
     .cap { font-size: 12px; letter-spacing: 2px; fill: #6B7A93; }
     .title { font-size: 13px; letter-spacing: 2.6px; fill: #13294B; }
-    .seg { animation: travel 17.60s linear infinite; pointer-events:none; }
-    @keyframes travel { 0.0000%{transform:translate(62.0px,84.0px)}0.6250%{transform:translate(100.0px,84.0px)}1.2500%{transform:translate(138.0px,84.0px)}1.8750%{transform:translate(176.0px,84.0px)}2.5000%{transform:translate(214.0px,84.0px)}3.1250%{transform:translate(252.0px,84.0px)}3.7500%{transform:translate(290.0px,84.0px)}4.3750%{transform:translate(328.0px,84.0px)}5.0000%{transform:translate(366.0px,84.0px)}5.6250%{transform:translate(404.0px,84.0px)}6.2500%{transform:translate(442.0px,84.0px)}6.8750%{transform:translate(480.0px,84.0px)}7.5000%{transform:translate(518.0px,84.0px)}8.1250%{transform:translate(556.0px,84.0px)}8.7500%{transform:translate(594.0px,84.0px)}9.3750%{transform:translate(632.0px,84.0px)}10.0000%{transform:translate(670.0px,84.0px)}10.6250%{transform:translate(708.0px,84.0px)}11.2500%{transform:translate(746.0px,84.0px)}11.8750%{transform:translate(746.0px,122.0px)}12.5000%{transform:translate(708.0px,122.0px)}13.1250%{transform:translate(670.0px,122.0px)}13.7500%{transform:translate(632.0px,122.0px)}14.3750%{transform:translate(594.0px,122.0px)}15.0000%{transform:translate(556.0px,122.0px)}15.6250%{transform:translate(518.0px,122.0px)}16.2500%{transform:translate(480.0px,122.0px)}16.8750%{transform:translate(442.0px,122.0px)}17.5000%{transform:translate(404.0px,122.0px)}18.1250%{transform:translate(366.0px,122.0px)}18.7500%{transform:translate(328.0px,122.0px)}19.3750%{transform:translate(290.0px,122.0px)}20.0000%{transform:translate(252.0px,122.0px)}20.6250%{transform:translate(214.0px,122.0px)}21.2500%{transform:translate(176.0px,122.0px)}21.8750%{transform:translate(138.0px,122.0px)}22.5000%{transform:translate(100.0px,122.0px)}23.1250%{transform:translate(62.0px,122.0px)}23.7500%{transform:translate(62.0px,160.0px)}24.3750%{transform:translate(100.0px,160.0px)}25.0000%{transform:translate(138.0px,160.0px)}25.6250%{transform:translate(176.0px,160.0px)}26.2500%{transform:translate(214.0px,160.0px)}26.8750%{transform:translate(252.0px,160.0px)}27.5000%{transform:translate(290.0px,160.0px)}28.1250%{transform:translate(328.0px,160.0px)}28.7500%{transform:translate(366.0px,160.0px)}29.3750%{transform:translate(404.0px,160.0px)}30.0000%{transform:translate(442.0px,160.0px)}30.6250%{transform:translate(480.0px,160.0px)}31.2500%{transform:translate(518.0px,160.0px)}31.8750%{transform:translate(556.0px,160.0px)}32.5000%{transform:translate(594.0px,160.0px)}33.1250%{transform:translate(632.0px,160.0px)}33.7500%{transform:translate(670.0px,160.0px)}34.3750%{transform:translate(708.0px,160.0px)}35.0000%{transform:translate(746.0px,160.0px)}35.6250%{transform:translate(746.0px,198.0px)}36.2500%{transform:translate(708.0px,198.0px)}36.8750%{transform:translate(670.0px,198.0px)}37.5000%{transform:translate(632.0px,198.0px)}38.1250%{transform:translate(594.0px,198.0px)}38.7500%{transform:translate(556.0px,198.0px)}39.3750%{transform:translate(518.0px,198.0px)}40.0000%{transform:translate(480.0px,198.0px)}40.6250%{transform:translate(442.0px,198.0px)}41.2500%{transform:translate(404.0px,198.0px)}41.8750%{transform:translate(366.0px,198.0px)}42.5000%{transform:translate(328.0px,198.0px)}43.1250%{transform:translate(290.0px,198.0px)}43.7500%{transform:translate(252.0px,198.0px)}44.3750%{transform:translate(214.0px,198.0px)}45.0000%{transform:translate(176.0px,198.0px)}45.6250%{transform:translate(138.0px,198.0px)}46.2500%{transform:translate(100.0px,198.0px)}46.8750%{transform:translate(62.0px,198.0px)}47.5000%{transform:translate(62.0px,236.0px)}48.1250%{transform:translate(100.0px,236.0px)}48.7500%{transform:translate(138.0px,236.0px)}49.3750%{transform:translate(176.0px,236.0px)}50.0000%{transform:translate(214.0px,236.0px)}50.6250%{transform:translate(252.0px,236.0px)}51.2500%{transform:translate(290.0px,236.0px)}51.8750%{transform:translate(328.0px,236.0px)}52.5000%{transform:translate(366.0px,236.0px)}53.1250%{transform:translate(404.0px,236.0px)}53.7500%{transform:translate(442.0px,236.0px)}54.3750%{transform:translate(480.0px,236.0px)}55.0000%{transform:translate(518.0px,236.0px)}55.6250%{transform:translate(556.0px,236.0px)}56.2500%{transform:translate(594.0px,236.0px)}56.8750%{transform:translate(632.0px,236.0px)}57.5000%{transform:translate(670.0px,236.0px)}58.1250%{transform:translate(708.0px,236.0px)}58.7500%{transform:translate(746.0px,236.0px)}59.3750%{transform:translate(746.0px,274.0px)}60.0000%{transform:translate(708.0px,274.0px)}60.6250%{transform:translate(670.0px,274.0px)}61.2500%{transform:translate(632.0px,274.0px)}61.8750%{transform:translate(594.0px,274.0px)}62.5000%{transform:translate(556.0px,274.0px)}63.1250%{transform:translate(518.0px,274.0px)}63.7500%{transform:translate(480.0px,274.0px)}64.3750%{transform:translate(442.0px,274.0px)}65.0000%{transform:translate(404.0px,274.0px)}65.6250%{transform:translate(366.0px,274.0px)}66.2500%{transform:translate(328.0px,274.0px)}66.8750%{transform:translate(290.0px,274.0px)}67.5000%{transform:translate(252.0px,274.0px)}68.1250%{transform:translate(214.0px,274.0px)}68.7500%{transform:translate(176.0px,274.0px)}69.3750%{transform:translate(138.0px,274.0px)}70.0000%{transform:translate(100.0px,274.0px)}70.6250%{transform:translate(62.0px,274.0px)}71.2500%{transform:translate(62.0px,312.0px)}71.8750%{transform:translate(100.0px,312.0px)}72.5000%{transform:translate(138.0px,312.0px)}73.1250%{transform:translate(176.0px,312.0px)}73.7500%{transform:translate(214.0px,312.0px)}74.3750%{transform:translate(252.0px,312.0px)}75.0000%{transform:translate(290.0px,312.0px)}75.6250%{transform:translate(328.0px,312.0px)}76.2500%{transform:translate(366.0px,312.0px)}76.8750%{transform:translate(404.0px,312.0px)}77.5000%{transform:translate(442.0px,312.0px)}78.1250%{transform:translate(480.0px,312.0px)}78.7500%{transform:translate(518.0px,312.0px)}79.3750%{transform:translate(556.0px,312.0px)}80.0000%{transform:translate(594.0px,312.0px)}80.6250%{transform:translate(632.0px,312.0px)}81.2500%{transform:translate(670.0px,312.0px)}81.8750%{transform:translate(708.0px,312.0px)}82.5000%{transform:translate(746.0px,312.0px)}83.1250%{transform:translate(746.0px,350.0px)}83.7500%{transform:translate(708.0px,350.0px)}84.3750%{transform:translate(670.0px,350.0px)}85.0000%{transform:translate(632.0px,350.0px)}85.6250%{transform:translate(594.0px,350.0px)}86.2500%{transform:translate(556.0px,350.0px)}86.8750%{transform:translate(518.0px,350.0px)}87.5000%{transform:translate(480.0px,350.0px)}88.1250%{transform:translate(442.0px,350.0px)}88.7500%{transform:translate(404.0px,350.0px)}89.3750%{transform:translate(366.0px,350.0px)}90.0000%{transform:translate(328.0px,350.0px)}90.6250%{transform:translate(290.0px,350.0px)}91.2500%{transform:translate(252.0px,350.0px)}91.8750%{transform:translate(214.0px,350.0px)}92.5000%{transform:translate(176.0px,350.0px)}93.1250%{transform:translate(138.0px,350.0px)}93.7500%{transform:translate(100.0px,350.0px)}94.3750%{transform:translate(62.0px,350.0px)}95.0000%{transform:translate(24.0px,350.0px)}95.6250%{transform:translate(24.0px,312.0px)}96.2500%{transform:translate(24.0px,274.0px)}96.8750%{transform:translate(24.0px,236.0px)}97.5000%{transform:translate(24.0px,198.0px)}98.1250%{transform:translate(24.0px,160.0px)}98.7500%{transform:translate(24.0px,122.0px)}99.3750%{transform:translate(24.0px,84.0px)}100.0000%{transform:translate(62.0px,84.0px)} }
-    .e0{animation:e0 17.60s linear infinite}
-    @keyframes e0{0%,0.0000%{fill:#7AB7D3}0.4500%,100%{fill:#EDF3F9}}
-    .e1{animation:e1 17.60s linear infinite}
-    @keyframes e1{0%,0.6250%{fill:#13294B}1.0750%,100%{fill:#EDF3F9}}
-    .e2{animation:e2 17.60s linear infinite}
-    @keyframes e2{0%,1.2500%{fill:#3D7FB5}1.7000%,100%{fill:#EDF3F9}}
-    .e3{animation:e3 17.60s linear infinite}
-    @keyframes e3{0%,1.8750%{fill:#13294B}2.3250%,100%{fill:#EDF3F9}}
-    .e4{animation:e4 17.60s linear infinite}
-    @keyframes e4{0%,2.5000%{fill:#13294B}2.9500%,100%{fill:#EDF3F9}}
-    .e5{animation:e5 17.60s linear infinite}
-    @keyframes e5{0%,3.1250%{fill:#3D7FB5}3.5750%,100%{fill:#EDF3F9}}
-    .e6{animation:e6 17.60s linear infinite}
-    @keyframes e6{0%,3.7500%{fill:#13294B}4.2000%,100%{fill:#EDF3F9}}
-    .e7{animation:e7 17.60s linear infinite}
-    @keyframes e7{0%,4.3750%{fill:#13294B}4.8250%,100%{fill:#EDF3F9}}
-    .e8{animation:e8 17.60s linear infinite}
-    @keyframes e8{0%,5.0000%{fill:#7AB7D3}5.4500%,100%{fill:#EDF3F9}}
-    .e10{animation:e10 17.60s linear infinite}
-    @keyframes e10{0%,6.2500%{fill:#7AB7D3}6.7000%,100%{fill:#EDF3F9}}
-    .e11{animation:e11 17.60s linear infinite}
-    @keyframes e11{0%,6.8750%{fill:#3D7FB5}7.3250%,100%{fill:#EDF3F9}}
-    .e14{animation:e14 17.60s linear infinite}
-    @keyframes e14{0%,8.7500%{fill:#BFE0F2}9.2000%,100%{fill:#EDF3F9}}
-    .e15{animation:e15 17.60s linear infinite}
-    @keyframes e15{0%,9.3750%{fill:#BFE0F2}9.8250%,100%{fill:#EDF3F9}}
-    .e16{animation:e16 17.60s linear infinite}
-    @keyframes e16{0%,10.0000%{fill:#7AB7D3}10.4500%,100%{fill:#EDF3F9}}
-    .e17{animation:e17 17.60s linear infinite}
-    @keyframes e17{0%,10.6250%{fill:#3D7FB5}11.0750%,100%{fill:#EDF3F9}}
-    .e19{animation:e19 17.60s linear infinite}
-    @keyframes e19{0%,11.8750%{fill:#7AB7D3}12.3250%,100%{fill:#EDF3F9}}
-    .e20{animation:e20 17.60s linear infinite}
-    @keyframes e20{0%,12.5000%{fill:#7AB7D3}12.9500%,100%{fill:#EDF3F9}}
-    .e21{animation:e21 17.60s linear infinite}
-    @keyframes e21{0%,13.1250%{fill:#BFE0F2}13.5750%,100%{fill:#EDF3F9}}
-    .e23{animation:e23 17.60s linear infinite}
-    @keyframes e23{0%,14.3750%{fill:#3D7FB5}14.8250%,100%{fill:#EDF3F9}}
-    .e24{animation:e24 17.60s linear infinite}
-    @keyframes e24{0%,15.0000%{fill:#13294B}15.4500%,100%{fill:#EDF3F9}}
-    .e26{animation:e26 17.60s linear infinite}
-    @keyframes e26{0%,16.2500%{fill:#13294B}16.7000%,100%{fill:#EDF3F9}}
-    .e27{animation:e27 17.60s linear infinite}
-    @keyframes e27{0%,16.8750%{fill:#BFE0F2}17.3250%,100%{fill:#EDF3F9}}
-    .e29{animation:e29 17.60s linear infinite}
-    @keyframes e29{0%,18.1250%{fill:#BFE0F2}18.5750%,100%{fill:#EDF3F9}}
-    .e30{animation:e30 17.60s linear infinite}
-    @keyframes e30{0%,18.7500%{fill:#13294B}19.2000%,100%{fill:#EDF3F9}}
-    .e31{animation:e31 17.60s linear infinite}
-    @keyframes e31{0%,19.3750%{fill:#3D7FB5}19.8250%,100%{fill:#EDF3F9}}
-    .e32{animation:e32 17.60s linear infinite}
-    @keyframes e32{0%,20.0000%{fill:#13294B}20.4500%,100%{fill:#EDF3F9}}
-    .e33{animation:e33 17.60s linear infinite}
-    @keyframes e33{0%,20.6250%{fill:#13294B}21.0750%,100%{fill:#EDF3F9}}
-    .e34{animation:e34 17.60s linear infinite}
-    @keyframes e34{0%,21.2500%{fill:#13294B}21.7000%,100%{fill:#EDF3F9}}
-    .e35{animation:e35 17.60s linear infinite}
-    @keyframes e35{0%,21.8750%{fill:#13294B}22.3250%,100%{fill:#EDF3F9}}
-    .e36{animation:e36 17.60s linear infinite}
-    @keyframes e36{0%,22.5000%{fill:#13294B}22.9500%,100%{fill:#EDF3F9}}
-    .e37{animation:e37 17.60s linear infinite}
-    @keyframes e37{0%,23.1250%{fill:#13294B}23.5750%,100%{fill:#EDF3F9}}
-    .e39{animation:e39 17.60s linear infinite}
-    @keyframes e39{0%,24.3750%{fill:#13294B}24.8250%,100%{fill:#EDF3F9}}
-    .e40{animation:e40 17.60s linear infinite}
-    @keyframes e40{0%,25.0000%{fill:#13294B}25.4500%,100%{fill:#EDF3F9}}
-    .e41{animation:e41 17.60s linear infinite}
-    @keyframes e41{0%,25.6250%{fill:#7AB7D3}26.0750%,100%{fill:#EDF3F9}}
-    .e42{animation:e42 17.60s linear infinite}
-    @keyframes e42{0%,26.2500%{fill:#13294B}26.7000%,100%{fill:#EDF3F9}}
-    .e43{animation:e43 17.60s linear infinite}
-    @keyframes e43{0%,26.8750%{fill:#3D7FB5}27.3250%,100%{fill:#EDF3F9}}
-    .e44{animation:e44 17.60s linear infinite}
-    @keyframes e44{0%,27.5000%{fill:#13294B}27.9500%,100%{fill:#EDF3F9}}
-    .e45{animation:e45 17.60s linear infinite}
-    @keyframes e45{0%,28.1250%{fill:#7AB7D3}28.5750%,100%{fill:#EDF3F9}}
-    .e46{animation:e46 17.60s linear infinite}
-    @keyframes e46{0%,28.7500%{fill:#3D7FB5}29.2000%,100%{fill:#EDF3F9}}
-    .e47{animation:e47 17.60s linear infinite}
-    @keyframes e47{0%,29.3750%{fill:#7AB7D3}29.8250%,100%{fill:#EDF3F9}}
-    .e49{animation:e49 17.60s linear infinite}
-    @keyframes e49{0%,30.6250%{fill:#13294B}31.0750%,100%{fill:#EDF3F9}}
-    .e51{animation:e51 17.60s linear infinite}
-    @keyframes e51{0%,31.8750%{fill:#13294B}32.3250%,100%{fill:#EDF3F9}}
-    .e54{animation:e54 17.60s linear infinite}
-    @keyframes e54{0%,33.7500%{fill:#13294B}34.2000%,100%{fill:#EDF3F9}}
-    .e55{animation:e55 17.60s linear infinite}
-    @keyframes e55{0%,34.3750%{fill:#13294B}34.8250%,100%{fill:#EDF3F9}}
-    .e59{animation:e59 17.60s linear infinite}
-    @keyframes e59{0%,36.8750%{fill:#3D7FB5}37.3250%,100%{fill:#EDF3F9}}
-    .e60{animation:e60 17.60s linear infinite}
-    @keyframes e60{0%,37.5000%{fill:#BFE0F2}37.9500%,100%{fill:#EDF3F9}}
-    .e61{animation:e61 17.60s linear infinite}
-    @keyframes e61{0%,38.1250%{fill:#BFE0F2}38.5750%,100%{fill:#EDF3F9}}
-    .e62{animation:e62 17.60s linear infinite}
-    @keyframes e62{0%,38.7500%{fill:#13294B}39.2000%,100%{fill:#EDF3F9}}
-    .e63{animation:e63 17.60s linear infinite}
-    @keyframes e63{0%,39.3750%{fill:#BFE0F2}39.8250%,100%{fill:#EDF3F9}}
-    .e64{animation:e64 17.60s linear infinite}
-    @keyframes e64{0%,40.0000%{fill:#BFE0F2}40.4500%,100%{fill:#EDF3F9}}
-    .e65{animation:e65 17.60s linear infinite}
-    @keyframes e65{0%,40.6250%{fill:#BFE0F2}41.0750%,100%{fill:#EDF3F9}}
-    .e66{animation:e66 17.60s linear infinite}
-    @keyframes e66{0%,41.2500%{fill:#BFE0F2}41.7000%,100%{fill:#EDF3F9}}
-    .e67{animation:e67 17.60s linear infinite}
-    @keyframes e67{0%,41.8750%{fill:#13294B}42.3250%,100%{fill:#EDF3F9}}
-    .e68{animation:e68 17.60s linear infinite}
-    @keyframes e68{0%,42.5000%{fill:#3D7FB5}42.9500%,100%{fill:#EDF3F9}}
-    .e69{animation:e69 17.60s linear infinite}
-    @keyframes e69{0%,43.1250%{fill:#7AB7D3}43.5750%,100%{fill:#EDF3F9}}
-    .e70{animation:e70 17.60s linear infinite}
-    @keyframes e70{0%,43.7500%{fill:#13294B}44.2000%,100%{fill:#EDF3F9}}
-    .e71{animation:e71 17.60s linear infinite}
-    @keyframes e71{0%,44.3750%{fill:#13294B}44.8250%,100%{fill:#EDF3F9}}
-    .e73{animation:e73 17.60s linear infinite}
-    @keyframes e73{0%,45.6250%{fill:#7AB7D3}46.0750%,100%{fill:#EDF3F9}}
-    .e74{animation:e74 17.60s linear infinite}
-    @keyframes e74{0%,46.2500%{fill:#13294B}46.7000%,100%{fill:#EDF3F9}}
-    .e76{animation:e76 17.60s linear infinite}
-    @keyframes e76{0%,47.5000%{fill:#BFE0F2}47.9500%,100%{fill:#EDF3F9}}
-    .e77{animation:e77 17.60s linear infinite}
-    @keyframes e77{0%,48.1250%{fill:#13294B}48.5750%,100%{fill:#EDF3F9}}
-    .e78{animation:e78 17.60s linear infinite}
-    @keyframes e78{0%,48.7500%{fill:#13294B}49.2000%,100%{fill:#EDF3F9}}
-    .e80{animation:e80 17.60s linear infinite}
-    @keyframes e80{0%,50.0000%{fill:#13294B}50.4500%,100%{fill:#EDF3F9}}
-    .e81{animation:e81 17.60s linear infinite}
-    @keyframes e81{0%,50.6250%{fill:#13294B}51.0750%,100%{fill:#EDF3F9}}
-    .e82{animation:e82 17.60s linear infinite}
-    @keyframes e82{0%,51.2500%{fill:#BFE0F2}51.7000%,100%{fill:#EDF3F9}}
-    .e83{animation:e83 17.60s linear infinite}
-    @keyframes e83{0%,51.8750%{fill:#13294B}52.3250%,100%{fill:#EDF3F9}}
-    .e84{animation:e84 17.60s linear infinite}
-    @keyframes e84{0%,52.5000%{fill:#13294B}52.9500%,100%{fill:#EDF3F9}}
-    .e85{animation:e85 17.60s linear infinite}
-    @keyframes e85{0%,53.1250%{fill:#13294B}53.5750%,100%{fill:#EDF3F9}}
-    .e86{animation:e86 17.60s linear infinite}
-    @keyframes e86{0%,53.7500%{fill:#7AB7D3}54.2000%,100%{fill:#EDF3F9}}
-    .e87{animation:e87 17.60s linear infinite}
-    @keyframes e87{0%,54.3750%{fill:#13294B}54.8250%,100%{fill:#EDF3F9}}
-    .e88{animation:e88 17.60s linear infinite}
-    @keyframes e88{0%,55.0000%{fill:#7AB7D3}55.4500%,100%{fill:#EDF3F9}}
-    .e89{animation:e89 17.60s linear infinite}
-    @keyframes e89{0%,55.6250%{fill:#BFE0F2}56.0750%,100%{fill:#EDF3F9}}
-    .e90{animation:e90 17.60s linear infinite}
-    @keyframes e90{0%,56.2500%{fill:#BFE0F2}56.7000%,100%{fill:#EDF3F9}}
-    .e91{animation:e91 17.60s linear infinite}
-    @keyframes e91{0%,56.8750%{fill:#7AB7D3}57.3250%,100%{fill:#EDF3F9}}
-    .e92{animation:e92 17.60s linear infinite}
-    @keyframes e92{0%,57.5000%{fill:#7AB7D3}57.9500%,100%{fill:#EDF3F9}}
-    .e93{animation:e93 17.60s linear infinite}
-    @keyframes e93{0%,58.1250%{fill:#7AB7D3}58.5750%,100%{fill:#EDF3F9}}
-    .e97{animation:e97 17.60s linear infinite}
-    @keyframes e97{0%,60.6250%{fill:#13294B}61.0750%,100%{fill:#EDF3F9}}
-    .e98{animation:e98 17.60s linear infinite}
-    @keyframes e98{0%,61.2500%{fill:#7AB7D3}61.7000%,100%{fill:#EDF3F9}}
-    .e99{animation:e99 17.60s linear infinite}
-    @keyframes e99{0%,61.8750%{fill:#BFE0F2}62.3250%,100%{fill:#EDF3F9}}
-    .e100{animation:e100 17.60s linear infinite}
-    @keyframes e100{0%,62.5000%{fill:#BFE0F2}62.9500%,100%{fill:#EDF3F9}}
-    .e101{animation:e101 17.60s linear infinite}
-    @keyframes e101{0%,63.1250%{fill:#13294B}63.5750%,100%{fill:#EDF3F9}}
-    .e102{animation:e102 17.60s linear infinite}
-    @keyframes e102{0%,63.7500%{fill:#BFE0F2}64.2000%,100%{fill:#EDF3F9}}
-    .e103{animation:e103 17.60s linear infinite}
-    @keyframes e103{0%,64.3750%{fill:#7AB7D3}64.8250%,100%{fill:#EDF3F9}}
-    .e104{animation:e104 17.60s linear infinite}
-    @keyframes e104{0%,65.0000%{fill:#13294B}65.4500%,100%{fill:#EDF3F9}}
-    .e105{animation:e105 17.60s linear infinite}
-    @keyframes e105{0%,65.6250%{fill:#13294B}66.0750%,100%{fill:#EDF3F9}}
-    .e106{animation:e106 17.60s linear infinite}
-    @keyframes e106{0%,66.2500%{fill:#BFE0F2}66.7000%,100%{fill:#EDF3F9}}
-    .e107{animation:e107 17.60s linear infinite}
-    @keyframes e107{0%,66.8750%{fill:#3D7FB5}67.3250%,100%{fill:#EDF3F9}}
-    .e108{animation:e108 17.60s linear infinite}
-    @keyframes e108{0%,67.5000%{fill:#13294B}67.9500%,100%{fill:#EDF3F9}}
-    .e109{animation:e109 17.60s linear infinite}
-    @keyframes e109{0%,68.1250%{fill:#13294B}68.5750%,100%{fill:#EDF3F9}}
-    .e113{animation:e113 17.60s linear infinite}
-    @keyframes e113{0%,70.6250%{fill:#3D7FB5}71.0750%,100%{fill:#EDF3F9}}
-    .e114{animation:e114 17.60s linear infinite}
-    @keyframes e114{0%,71.2500%{fill:#13294B}71.7000%,100%{fill:#EDF3F9}}
-    .e117{animation:e117 17.60s linear infinite}
-    @keyframes e117{0%,73.1250%{fill:#BFE0F2}73.5750%,100%{fill:#EDF3F9}}
-    .e118{animation:e118 17.60s linear infinite}
-    @keyframes e118{0%,73.7500%{fill:#13294B}74.2000%,100%{fill:#EDF3F9}}
-    .e119{animation:e119 17.60s linear infinite}
-    @keyframes e119{0%,74.3750%{fill:#3D7FB5}74.8250%,100%{fill:#EDF3F9}}
-    .e120{animation:e120 17.60s linear infinite}
-    @keyframes e120{0%,75.0000%{fill:#3D7FB5}75.4500%,100%{fill:#EDF3F9}}
-    .e122{animation:e122 17.60s linear infinite}
-    @keyframes e122{0%,76.2500%{fill:#BFE0F2}76.7000%,100%{fill:#EDF3F9}}
-    .e123{animation:e123 17.60s linear infinite}
-    @keyframes e123{0%,76.8750%{fill:#BFE0F2}77.3250%,100%{fill:#EDF3F9}}
-    .e124{animation:e124 17.60s linear infinite}
-    @keyframes e124{0%,77.5000%{fill:#13294B}77.9500%,100%{fill:#EDF3F9}}
-    .e126{animation:e126 17.60s linear infinite}
-    @keyframes e126{0%,78.7500%{fill:#7AB7D3}79.2000%,100%{fill:#EDF3F9}}
-    .e129{animation:e129 17.60s linear infinite}
-    @keyframes e129{0%,80.6250%{fill:#7AB7D3}81.0750%,100%{fill:#EDF3F9}}
+    .seg { animation: travel 16.72s linear infinite; pointer-events:none; }
+    @keyframes travel { 0.0000%{transform:translate(62.0px,84.0px)}0.6579%{transform:translate(100.0px,84.0px)}1.3158%{transform:translate(138.0px,84.0px)}1.9737%{transform:translate(176.0px,84.0px)}2.6316%{transform:translate(214.0px,84.0px)}3.2895%{transform:translate(252.0px,84.0px)}3.9474%{transform:translate(290.0px,84.0px)}4.6053%{transform:translate(328.0px,84.0px)}5.2632%{transform:translate(366.0px,84.0px)}5.9211%{transform:translate(404.0px,84.0px)}6.5789%{transform:translate(442.0px,84.0px)}7.2368%{transform:translate(480.0px,84.0px)}7.8947%{transform:translate(518.0px,84.0px)}8.5526%{transform:translate(556.0px,84.0px)}9.2105%{transform:translate(594.0px,84.0px)}9.8684%{transform:translate(632.0px,84.0px)}10.5263%{transform:translate(670.0px,84.0px)}11.1842%{transform:translate(708.0px,84.0px)}11.8421%{transform:translate(708.0px,122.0px)}12.5000%{transform:translate(670.0px,122.0px)}13.1579%{transform:translate(632.0px,122.0px)}13.8158%{transform:translate(594.0px,122.0px)}14.4737%{transform:translate(556.0px,122.0px)}15.1316%{transform:translate(518.0px,122.0px)}15.7895%{transform:translate(480.0px,122.0px)}16.4474%{transform:translate(442.0px,122.0px)}17.1053%{transform:translate(404.0px,122.0px)}17.7632%{transform:translate(366.0px,122.0px)}18.4211%{transform:translate(328.0px,122.0px)}19.0789%{transform:translate(290.0px,122.0px)}19.7368%{transform:translate(252.0px,122.0px)}20.3947%{transform:translate(214.0px,122.0px)}21.0526%{transform:translate(176.0px,122.0px)}21.7105%{transform:translate(138.0px,122.0px)}22.3684%{transform:translate(100.0px,122.0px)}23.0263%{transform:translate(62.0px,122.0px)}23.6842%{transform:translate(62.0px,160.0px)}24.3421%{transform:translate(100.0px,160.0px)}25.0000%{transform:translate(138.0px,160.0px)}25.6579%{transform:translate(176.0px,160.0px)}26.3158%{transform:translate(214.0px,160.0px)}26.9737%{transform:translate(252.0px,160.0px)}27.6316%{transform:translate(290.0px,160.0px)}28.2895%{transform:translate(328.0px,160.0px)}28.9474%{transform:translate(366.0px,160.0px)}29.6053%{transform:translate(404.0px,160.0px)}30.2632%{transform:translate(442.0px,160.0px)}30.9211%{transform:translate(480.0px,160.0px)}31.5789%{transform:translate(518.0px,160.0px)}32.2368%{transform:translate(556.0px,160.0px)}32.8947%{transform:translate(594.0px,160.0px)}33.5526%{transform:translate(632.0px,160.0px)}34.2105%{transform:translate(670.0px,160.0px)}34.8684%{transform:translate(708.0px,160.0px)}35.5263%{transform:translate(708.0px,198.0px)}36.1842%{transform:translate(670.0px,198.0px)}36.8421%{transform:translate(632.0px,198.0px)}37.5000%{transform:translate(594.0px,198.0px)}38.1579%{transform:translate(556.0px,198.0px)}38.8158%{transform:translate(518.0px,198.0px)}39.4737%{transform:translate(480.0px,198.0px)}40.1316%{transform:translate(442.0px,198.0px)}40.7895%{transform:translate(404.0px,198.0px)}41.4474%{transform:translate(366.0px,198.0px)}42.1053%{transform:translate(328.0px,198.0px)}42.7632%{transform:translate(290.0px,198.0px)}43.4211%{transform:translate(252.0px,198.0px)}44.0789%{transform:translate(214.0px,198.0px)}44.7368%{transform:translate(176.0px,198.0px)}45.3947%{transform:translate(138.0px,198.0px)}46.0526%{transform:translate(100.0px,198.0px)}46.7105%{transform:translate(62.0px,198.0px)}47.3684%{transform:translate(62.0px,236.0px)}48.0263%{transform:translate(100.0px,236.0px)}48.6842%{transform:translate(138.0px,236.0px)}49.3421%{transform:translate(176.0px,236.0px)}50.0000%{transform:translate(214.0px,236.0px)}50.6579%{transform:translate(252.0px,236.0px)}51.3158%{transform:translate(290.0px,236.0px)}51.9737%{transform:translate(328.0px,236.0px)}52.6316%{transform:translate(366.0px,236.0px)}53.2895%{transform:translate(404.0px,236.0px)}53.9474%{transform:translate(442.0px,236.0px)}54.6053%{transform:translate(480.0px,236.0px)}55.2632%{transform:translate(518.0px,236.0px)}55.9211%{transform:translate(556.0px,236.0px)}56.5789%{transform:translate(594.0px,236.0px)}57.2368%{transform:translate(632.0px,236.0px)}57.8947%{transform:translate(670.0px,236.0px)}58.5526%{transform:translate(708.0px,236.0px)}59.2105%{transform:translate(708.0px,274.0px)}59.8684%{transform:translate(670.0px,274.0px)}60.5263%{transform:translate(632.0px,274.0px)}61.1842%{transform:translate(594.0px,274.0px)}61.8421%{transform:translate(556.0px,274.0px)}62.5000%{transform:translate(518.0px,274.0px)}63.1579%{transform:translate(480.0px,274.0px)}63.8158%{transform:translate(442.0px,274.0px)}64.4737%{transform:translate(404.0px,274.0px)}65.1316%{transform:translate(366.0px,274.0px)}65.7895%{transform:translate(328.0px,274.0px)}66.4474%{transform:translate(290.0px,274.0px)}67.1053%{transform:translate(252.0px,274.0px)}67.7632%{transform:translate(214.0px,274.0px)}68.4211%{transform:translate(176.0px,274.0px)}69.0789%{transform:translate(138.0px,274.0px)}69.7368%{transform:translate(100.0px,274.0px)}70.3947%{transform:translate(62.0px,274.0px)}71.0526%{transform:translate(62.0px,312.0px)}71.7105%{transform:translate(100.0px,312.0px)}72.3684%{transform:translate(138.0px,312.0px)}73.0263%{transform:translate(176.0px,312.0px)}73.6842%{transform:translate(214.0px,312.0px)}74.3421%{transform:translate(252.0px,312.0px)}75.0000%{transform:translate(290.0px,312.0px)}75.6579%{transform:translate(328.0px,312.0px)}76.3158%{transform:translate(366.0px,312.0px)}76.9737%{transform:translate(404.0px,312.0px)}77.6316%{transform:translate(442.0px,312.0px)}78.2895%{transform:translate(480.0px,312.0px)}78.9474%{transform:translate(518.0px,312.0px)}79.6053%{transform:translate(556.0px,312.0px)}80.2632%{transform:translate(594.0px,312.0px)}80.9211%{transform:translate(632.0px,312.0px)}81.5789%{transform:translate(670.0px,312.0px)}82.2368%{transform:translate(708.0px,312.0px)}82.8947%{transform:translate(708.0px,350.0px)}83.5526%{transform:translate(670.0px,350.0px)}84.2105%{transform:translate(632.0px,350.0px)}84.8684%{transform:translate(594.0px,350.0px)}85.5263%{transform:translate(556.0px,350.0px)}86.1842%{transform:translate(518.0px,350.0px)}86.8421%{transform:translate(480.0px,350.0px)}87.5000%{transform:translate(442.0px,350.0px)}88.1579%{transform:translate(404.0px,350.0px)}88.8158%{transform:translate(366.0px,350.0px)}89.4737%{transform:translate(328.0px,350.0px)}90.1316%{transform:translate(290.0px,350.0px)}90.7895%{transform:translate(252.0px,350.0px)}91.4474%{transform:translate(214.0px,350.0px)}92.1053%{transform:translate(176.0px,350.0px)}92.7632%{transform:translate(138.0px,350.0px)}93.4211%{transform:translate(100.0px,350.0px)}94.0789%{transform:translate(62.0px,350.0px)}94.7368%{transform:translate(24.0px,350.0px)}95.3947%{transform:translate(24.0px,312.0px)}96.0526%{transform:translate(24.0px,274.0px)}96.7105%{transform:translate(24.0px,236.0px)}97.3684%{transform:translate(24.0px,198.0px)}98.0263%{transform:translate(24.0px,160.0px)}98.6842%{transform:translate(24.0px,122.0px)}99.3421%{transform:translate(24.0px,84.0px)}100.0000%{transform:translate(62.0px,84.0px)} }
+    .e0{animation:e0 16.72s linear infinite}
+    @keyframes e0{0%,0.0000%{fill:#13294B}0.4500%,100%{fill:#EDF3F9}}
+    .e1{animation:e1 16.72s linear infinite}
+    @keyframes e1{0%,0.6579%{fill:#3D7FB5}1.1079%,100%{fill:#EDF3F9}}
+    .e2{animation:e2 16.72s linear infinite}
+    @keyframes e2{0%,1.3158%{fill:#13294B}1.7658%,100%{fill:#EDF3F9}}
+    .e3{animation:e3 16.72s linear infinite}
+    @keyframes e3{0%,1.9737%{fill:#13294B}2.4237%,100%{fill:#EDF3F9}}
+    .e4{animation:e4 16.72s linear infinite}
+    @keyframes e4{0%,2.6316%{fill:#3D7FB5}3.0816%,100%{fill:#EDF3F9}}
+    .e5{animation:e5 16.72s linear infinite}
+    @keyframes e5{0%,3.2895%{fill:#13294B}3.7395%,100%{fill:#EDF3F9}}
+    .e6{animation:e6 16.72s linear infinite}
+    @keyframes e6{0%,3.9474%{fill:#13294B}4.3974%,100%{fill:#EDF3F9}}
+    .e7{animation:e7 16.72s linear infinite}
+    @keyframes e7{0%,4.6053%{fill:#7AB7D3}5.0553%,100%{fill:#EDF3F9}}
+    .e9{animation:e9 16.72s linear infinite}
+    @keyframes e9{0%,5.9211%{fill:#7AB7D3}6.3711%,100%{fill:#EDF3F9}}
+    .e10{animation:e10 16.72s linear infinite}
+    @keyframes e10{0%,6.5789%{fill:#3D7FB5}7.0289%,100%{fill:#EDF3F9}}
+    .e13{animation:e13 16.72s linear infinite}
+    @keyframes e13{0%,8.5526%{fill:#BFE0F2}9.0026%,100%{fill:#EDF3F9}}
+    .e14{animation:e14 16.72s linear infinite}
+    @keyframes e14{0%,9.2105%{fill:#BFE0F2}9.6605%,100%{fill:#EDF3F9}}
+    .e15{animation:e15 16.72s linear infinite}
+    @keyframes e15{0%,9.8684%{fill:#7AB7D3}10.3184%,100%{fill:#EDF3F9}}
+    .e16{animation:e16 16.72s linear infinite}
+    @keyframes e16{0%,10.5263%{fill:#3D7FB5}10.9763%,100%{fill:#EDF3F9}}
+    .e18{animation:e18 16.72s linear infinite}
+    @keyframes e18{0%,11.8421%{fill:#7AB7D3}12.2921%,100%{fill:#EDF3F9}}
+    .e19{animation:e19 16.72s linear infinite}
+    @keyframes e19{0%,12.5000%{fill:#7AB7D3}12.9500%,100%{fill:#EDF3F9}}
+    .e20{animation:e20 16.72s linear infinite}
+    @keyframes e20{0%,13.1579%{fill:#BFE0F2}13.6079%,100%{fill:#EDF3F9}}
+    .e22{animation:e22 16.72s linear infinite}
+    @keyframes e22{0%,14.4737%{fill:#3D7FB5}14.9237%,100%{fill:#EDF3F9}}
+    .e23{animation:e23 16.72s linear infinite}
+    @keyframes e23{0%,15.1316%{fill:#13294B}15.5816%,100%{fill:#EDF3F9}}
+    .e25{animation:e25 16.72s linear infinite}
+    @keyframes e25{0%,16.4474%{fill:#13294B}16.8974%,100%{fill:#EDF3F9}}
+    .e26{animation:e26 16.72s linear infinite}
+    @keyframes e26{0%,17.1053%{fill:#BFE0F2}17.5553%,100%{fill:#EDF3F9}}
+    .e28{animation:e28 16.72s linear infinite}
+    @keyframes e28{0%,18.4211%{fill:#BFE0F2}18.8711%,100%{fill:#EDF3F9}}
+    .e29{animation:e29 16.72s linear infinite}
+    @keyframes e29{0%,19.0789%{fill:#13294B}19.5289%,100%{fill:#EDF3F9}}
+    .e30{animation:e30 16.72s linear infinite}
+    @keyframes e30{0%,19.7368%{fill:#3D7FB5}20.1868%,100%{fill:#EDF3F9}}
+    .e31{animation:e31 16.72s linear infinite}
+    @keyframes e31{0%,20.3947%{fill:#13294B}20.8447%,100%{fill:#EDF3F9}}
+    .e32{animation:e32 16.72s linear infinite}
+    @keyframes e32{0%,21.0526%{fill:#13294B}21.5026%,100%{fill:#EDF3F9}}
+    .e33{animation:e33 16.72s linear infinite}
+    @keyframes e33{0%,21.7105%{fill:#13294B}22.1605%,100%{fill:#EDF3F9}}
+    .e34{animation:e34 16.72s linear infinite}
+    @keyframes e34{0%,22.3684%{fill:#13294B}22.8184%,100%{fill:#EDF3F9}}
+    .e35{animation:e35 16.72s linear infinite}
+    @keyframes e35{0%,23.0263%{fill:#13294B}23.4763%,100%{fill:#EDF3F9}}
+    .e36{animation:e36 16.72s linear infinite}
+    @keyframes e36{0%,23.6842%{fill:#13294B}24.1342%,100%{fill:#EDF3F9}}
+    .e37{animation:e37 16.72s linear infinite}
+    @keyframes e37{0%,24.3421%{fill:#13294B}24.7921%,100%{fill:#EDF3F9}}
+    .e38{animation:e38 16.72s linear infinite}
+    @keyframes e38{0%,25.0000%{fill:#7AB7D3}25.4500%,100%{fill:#EDF3F9}}
+    .e39{animation:e39 16.72s linear infinite}
+    @keyframes e39{0%,25.6579%{fill:#13294B}26.1079%,100%{fill:#EDF3F9}}
+    .e40{animation:e40 16.72s linear infinite}
+    @keyframes e40{0%,26.3158%{fill:#3D7FB5}26.7658%,100%{fill:#EDF3F9}}
+    .e41{animation:e41 16.72s linear infinite}
+    @keyframes e41{0%,26.9737%{fill:#13294B}27.4237%,100%{fill:#EDF3F9}}
+    .e42{animation:e42 16.72s linear infinite}
+    @keyframes e42{0%,27.6316%{fill:#7AB7D3}28.0816%,100%{fill:#EDF3F9}}
+    .e43{animation:e43 16.72s linear infinite}
+    @keyframes e43{0%,28.2895%{fill:#3D7FB5}28.7395%,100%{fill:#EDF3F9}}
+    .e44{animation:e44 16.72s linear infinite}
+    @keyframes e44{0%,28.9474%{fill:#7AB7D3}29.3974%,100%{fill:#EDF3F9}}
+    .e46{animation:e46 16.72s linear infinite}
+    @keyframes e46{0%,30.2632%{fill:#13294B}30.7132%,100%{fill:#EDF3F9}}
+    .e48{animation:e48 16.72s linear infinite}
+    @keyframes e48{0%,31.5789%{fill:#13294B}32.0289%,100%{fill:#EDF3F9}}
+    .e51{animation:e51 16.72s linear infinite}
+    @keyframes e51{0%,33.5526%{fill:#13294B}34.0026%,100%{fill:#EDF3F9}}
+    .e52{animation:e52 16.72s linear infinite}
+    @keyframes e52{0%,34.2105%{fill:#13294B}34.6605%,100%{fill:#EDF3F9}}
+    .e56{animation:e56 16.72s linear infinite}
+    @keyframes e56{0%,36.8421%{fill:#3D7FB5}37.2921%,100%{fill:#EDF3F9}}
+    .e57{animation:e57 16.72s linear infinite}
+    @keyframes e57{0%,37.5000%{fill:#BFE0F2}37.9500%,100%{fill:#EDF3F9}}
+    .e58{animation:e58 16.72s linear infinite}
+    @keyframes e58{0%,38.1579%{fill:#BFE0F2}38.6079%,100%{fill:#EDF3F9}}
+    .e59{animation:e59 16.72s linear infinite}
+    @keyframes e59{0%,38.8158%{fill:#13294B}39.2658%,100%{fill:#EDF3F9}}
+    .e60{animation:e60 16.72s linear infinite}
+    @keyframes e60{0%,39.4737%{fill:#BFE0F2}39.9237%,100%{fill:#EDF3F9}}
+    .e61{animation:e61 16.72s linear infinite}
+    @keyframes e61{0%,40.1316%{fill:#BFE0F2}40.5816%,100%{fill:#EDF3F9}}
+    .e62{animation:e62 16.72s linear infinite}
+    @keyframes e62{0%,40.7895%{fill:#BFE0F2}41.2395%,100%{fill:#EDF3F9}}
+    .e63{animation:e63 16.72s linear infinite}
+    @keyframes e63{0%,41.4474%{fill:#BFE0F2}41.8974%,100%{fill:#EDF3F9}}
+    .e64{animation:e64 16.72s linear infinite}
+    @keyframes e64{0%,42.1053%{fill:#13294B}42.5553%,100%{fill:#EDF3F9}}
+    .e65{animation:e65 16.72s linear infinite}
+    @keyframes e65{0%,42.7632%{fill:#3D7FB5}43.2132%,100%{fill:#EDF3F9}}
+    .e66{animation:e66 16.72s linear infinite}
+    @keyframes e66{0%,43.4211%{fill:#7AB7D3}43.8711%,100%{fill:#EDF3F9}}
+    .e67{animation:e67 16.72s linear infinite}
+    @keyframes e67{0%,44.0789%{fill:#13294B}44.5289%,100%{fill:#EDF3F9}}
+    .e68{animation:e68 16.72s linear infinite}
+    @keyframes e68{0%,44.7368%{fill:#13294B}45.1868%,100%{fill:#EDF3F9}}
+    .e70{animation:e70 16.72s linear infinite}
+    @keyframes e70{0%,46.0526%{fill:#7AB7D3}46.5026%,100%{fill:#EDF3F9}}
+    .e71{animation:e71 16.72s linear infinite}
+    @keyframes e71{0%,46.7105%{fill:#13294B}47.1605%,100%{fill:#EDF3F9}}
+    .e72{animation:e72 16.72s linear infinite}
+    @keyframes e72{0%,47.3684%{fill:#13294B}47.8184%,100%{fill:#EDF3F9}}
+    .e73{animation:e73 16.72s linear infinite}
+    @keyframes e73{0%,48.0263%{fill:#13294B}48.4763%,100%{fill:#EDF3F9}}
+    .e75{animation:e75 16.72s linear infinite}
+    @keyframes e75{0%,49.3421%{fill:#13294B}49.7921%,100%{fill:#EDF3F9}}
+    .e76{animation:e76 16.72s linear infinite}
+    @keyframes e76{0%,50.0000%{fill:#13294B}50.4500%,100%{fill:#EDF3F9}}
+    .e77{animation:e77 16.72s linear infinite}
+    @keyframes e77{0%,50.6579%{fill:#BFE0F2}51.1079%,100%{fill:#EDF3F9}}
+    .e78{animation:e78 16.72s linear infinite}
+    @keyframes e78{0%,51.3158%{fill:#13294B}51.7658%,100%{fill:#EDF3F9}}
+    .e79{animation:e79 16.72s linear infinite}
+    @keyframes e79{0%,51.9737%{fill:#13294B}52.4237%,100%{fill:#EDF3F9}}
+    .e80{animation:e80 16.72s linear infinite}
+    @keyframes e80{0%,52.6316%{fill:#13294B}53.0816%,100%{fill:#EDF3F9}}
+    .e81{animation:e81 16.72s linear infinite}
+    @keyframes e81{0%,53.2895%{fill:#7AB7D3}53.7395%,100%{fill:#EDF3F9}}
+    .e82{animation:e82 16.72s linear infinite}
+    @keyframes e82{0%,53.9474%{fill:#13294B}54.3974%,100%{fill:#EDF3F9}}
+    .e83{animation:e83 16.72s linear infinite}
+    @keyframes e83{0%,54.6053%{fill:#7AB7D3}55.0553%,100%{fill:#EDF3F9}}
+    .e84{animation:e84 16.72s linear infinite}
+    @keyframes e84{0%,55.2632%{fill:#BFE0F2}55.7132%,100%{fill:#EDF3F9}}
+    .e85{animation:e85 16.72s linear infinite}
+    @keyframes e85{0%,55.9211%{fill:#BFE0F2}56.3711%,100%{fill:#EDF3F9}}
+    .e86{animation:e86 16.72s linear infinite}
+    @keyframes e86{0%,56.5789%{fill:#7AB7D3}57.0289%,100%{fill:#EDF3F9}}
+    .e87{animation:e87 16.72s linear infinite}
+    @keyframes e87{0%,57.2368%{fill:#7AB7D3}57.6868%,100%{fill:#EDF3F9}}
+    .e88{animation:e88 16.72s linear infinite}
+    @keyframes e88{0%,57.8947%{fill:#7AB7D3}58.3447%,100%{fill:#EDF3F9}}
+    .e92{animation:e92 16.72s linear infinite}
+    @keyframes e92{0%,60.5263%{fill:#13294B}60.9763%,100%{fill:#EDF3F9}}
+    .e93{animation:e93 16.72s linear infinite}
+    @keyframes e93{0%,61.1842%{fill:#7AB7D3}61.6342%,100%{fill:#EDF3F9}}
+    .e94{animation:e94 16.72s linear infinite}
+    @keyframes e94{0%,61.8421%{fill:#BFE0F2}62.2921%,100%{fill:#EDF3F9}}
+    .e95{animation:e95 16.72s linear infinite}
+    @keyframes e95{0%,62.5000%{fill:#BFE0F2}62.9500%,100%{fill:#EDF3F9}}
+    .e96{animation:e96 16.72s linear infinite}
+    @keyframes e96{0%,63.1579%{fill:#13294B}63.6079%,100%{fill:#EDF3F9}}
+    .e97{animation:e97 16.72s linear infinite}
+    @keyframes e97{0%,63.8158%{fill:#BFE0F2}64.2658%,100%{fill:#EDF3F9}}
+    .e98{animation:e98 16.72s linear infinite}
+    @keyframes e98{0%,64.4737%{fill:#7AB7D3}64.9237%,100%{fill:#EDF3F9}}
+    .e99{animation:e99 16.72s linear infinite}
+    @keyframes e99{0%,65.1316%{fill:#13294B}65.5816%,100%{fill:#EDF3F9}}
+    .e100{animation:e100 16.72s linear infinite}
+    @keyframes e100{0%,65.7895%{fill:#13294B}66.2395%,100%{fill:#EDF3F9}}
+    .e101{animation:e101 16.72s linear infinite}
+    @keyframes e101{0%,66.4474%{fill:#BFE0F2}66.8974%,100%{fill:#EDF3F9}}
+    .e102{animation:e102 16.72s linear infinite}
+    @keyframes e102{0%,67.1053%{fill:#3D7FB5}67.5553%,100%{fill:#EDF3F9}}
+    .e103{animation:e103 16.72s linear infinite}
+    @keyframes e103{0%,67.7632%{fill:#13294B}68.2132%,100%{fill:#EDF3F9}}
+    .e104{animation:e104 16.72s linear infinite}
+    @keyframes e104{0%,68.4211%{fill:#13294B}68.8711%,100%{fill:#EDF3F9}}
+    .e110{animation:e110 16.72s linear infinite}
+    @keyframes e110{0%,72.3684%{fill:#BFE0F2}72.8184%,100%{fill:#EDF3F9}}
+    .e111{animation:e111 16.72s linear infinite}
+    @keyframes e111{0%,73.0263%{fill:#13294B}73.4763%,100%{fill:#EDF3F9}}
+    .e112{animation:e112 16.72s linear infinite}
+    @keyframes e112{0%,73.6842%{fill:#3D7FB5}74.1342%,100%{fill:#EDF3F9}}
+    .e113{animation:e113 16.72s linear infinite}
+    @keyframes e113{0%,74.3421%{fill:#3D7FB5}74.7921%,100%{fill:#EDF3F9}}
+    .e115{animation:e115 16.72s linear infinite}
+    @keyframes e115{0%,75.6579%{fill:#BFE0F2}76.1079%,100%{fill:#EDF3F9}}
+    .e116{animation:e116 16.72s linear infinite}
+    @keyframes e116{0%,76.3158%{fill:#BFE0F2}76.7658%,100%{fill:#EDF3F9}}
+    .e117{animation:e117 16.72s linear infinite}
+    @keyframes e117{0%,76.9737%{fill:#13294B}77.4237%,100%{fill:#EDF3F9}}
+    .e119{animation:e119 16.72s linear infinite}
+    @keyframes e119{0%,78.2895%{fill:#7AB7D3}78.7395%,100%{fill:#EDF3F9}}
+    .e122{animation:e122 16.72s linear infinite}
+    @keyframes e122{0%,80.2632%{fill:#7AB7D3}80.7132%,100%{fill:#EDF3F9}}
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; }
     }
 </style>
-<rect width="838" height="454" fill="#FFFFFF"/>
+<rect width="800" height="454" fill="#FFFFFF"/>
 <text class="title" x="62" y="34">PAST FOUR MONTHS</text>
-<line x1="62" y1="44" x2="776" y2="44" stroke="#E3E7EE" stroke-width="1"/>
-<text class="mo" x="62.0" y="66">Apr</text><text class="mo" x="176.0" y="66">May</text><text class="mo" x="366.0" y="66">Jun</text><text class="mo" x="518.0" y="66">Jul</text><text class="mo" x="670.0" y="66">Aug</text>
-<g><rect class="e0" x="62.0" y="84.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on April 5, 2026</title></rect><rect class="e1" x="100.0" y="84.0" width="30" height="30" rx="7" fill="#13294B"><title>39 contributions on April 12, 2026</title></rect><rect class="e2" x="138.0" y="84.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>7 contributions on April 19, 2026</title></rect><rect class="e3" x="176.0" y="84.0" width="30" height="30" rx="7" fill="#13294B"><title>46 contributions on April 26, 2026</title></rect><rect class="e4" x="214.0" y="84.0" width="30" height="30" rx="7" fill="#13294B"><title>45 contributions on May 3, 2026</title></rect><rect class="e5" x="252.0" y="84.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>9 contributions on May 10, 2026</title></rect><rect class="e6" x="290.0" y="84.0" width="30" height="30" rx="7" fill="#13294B"><title>37 contributions on May 17, 2026</title></rect><rect class="e7" x="328.0" y="84.0" width="30" height="30" rx="7" fill="#13294B"><title>17 contributions on May 24, 2026</title></rect><rect class="e8" x="366.0" y="84.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on May 31, 2026</title></rect><rect x="404.0" y="84.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on June 7, 2026</title></rect><rect class="e10" x="442.0" y="84.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on June 14, 2026</title></rect><rect class="e11" x="480.0" y="84.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>9 contributions on June 21, 2026</title></rect><rect x="518.0" y="84.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on June 28, 2026</title></rect><rect x="556.0" y="84.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on July 5, 2026</title></rect><rect class="e14" x="594.0" y="84.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on July 12, 2026</title></rect><rect class="e15" x="632.0" y="84.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on July 19, 2026</title></rect><rect class="e16" x="670.0" y="84.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on July 26, 2026</title></rect><rect class="e17" x="708.0" y="84.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>6 contributions on August 2, 2026</title></rect><rect x="746.0" y="84.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 9, 2026</title></rect><rect class="e19" x="746.0" y="122.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on August 10, 2026</title></rect><rect class="e20" x="708.0" y="122.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on August 3, 2026</title></rect><rect class="e21" x="670.0" y="122.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on July 27, 2026</title></rect><rect x="632.0" y="122.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on July 20, 2026</title></rect><rect class="e23" x="594.0" y="122.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>8 contributions on July 13, 2026</title></rect><rect class="e24" x="556.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>12 contributions on July 6, 2026</title></rect><rect x="518.0" y="122.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on June 29, 2026</title></rect><rect class="e26" x="480.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>10 contributions on June 22, 2026</title></rect><rect class="e27" x="442.0" y="122.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on June 15, 2026</title></rect><rect x="404.0" y="122.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on June 8, 2026</title></rect><rect class="e29" x="366.0" y="122.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on June 1, 2026</title></rect><rect class="e30" x="328.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>12 contributions on May 25, 2026</title></rect><rect class="e31" x="290.0" y="122.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>7 contributions on May 18, 2026</title></rect><rect class="e32" x="252.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>14 contributions on May 11, 2026</title></rect><rect class="e33" x="214.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>19 contributions on May 4, 2026</title></rect><rect class="e34" x="176.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>26 contributions on April 27, 2026</title></rect><rect class="e35" x="138.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>20 contributions on April 20, 2026</title></rect><rect class="e36" x="100.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>29 contributions on April 13, 2026</title></rect><rect class="e37" x="62.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>13 contributions on April 6, 2026</title></rect><rect x="62.0" y="160.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on April 7, 2026</title></rect><rect class="e39" x="100.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>27 contributions on April 14, 2026</title></rect><rect class="e40" x="138.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>25 contributions on April 21, 2026</title></rect><rect class="e41" x="176.0" y="160.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on April 28, 2026</title></rect><rect class="e42" x="214.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>49 contributions on May 5, 2026</title></rect><rect class="e43" x="252.0" y="160.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>6 contributions on May 12, 2026</title></rect><rect class="e44" x="290.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>12 contributions on May 19, 2026</title></rect><rect class="e45" x="328.0" y="160.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on May 26, 2026</title></rect><rect class="e46" x="366.0" y="160.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>8 contributions on June 2, 2026</title></rect><rect class="e47" x="404.0" y="160.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on June 9, 2026</title></rect><rect x="442.0" y="160.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on June 16, 2026</title></rect><rect class="e49" x="480.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>17 contributions on June 23, 2026</title></rect><rect x="518.0" y="160.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on June 30, 2026</title></rect><rect class="e51" x="556.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>15 contributions on July 7, 2026</title></rect><rect x="594.0" y="160.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on July 14, 2026</title></rect><rect x="632.0" y="160.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on July 21, 2026</title></rect><rect class="e54" x="670.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>11 contributions on July 28, 2026</title></rect><rect class="e55" x="708.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>11 contributions on August 4, 2026</title></rect><rect x="746.0" y="160.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 11, 2026</title></rect><rect x="746.0" y="198.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 12, 2026</title></rect><rect x="708.0" y="198.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 5, 2026</title></rect><rect class="e59" x="670.0" y="198.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>9 contributions on July 29, 2026</title></rect><rect class="e60" x="632.0" y="198.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on July 22, 2026</title></rect><rect class="e61" x="594.0" y="198.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on July 15, 2026</title></rect><rect class="e62" x="556.0" y="198.0" width="30" height="30" rx="7" fill="#13294B"><title>14 contributions on July 8, 2026</title></rect><rect class="e63" x="518.0" y="198.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on July 1, 2026</title></rect><rect class="e64" x="480.0" y="198.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on June 24, 2026</title></rect><rect class="e65" x="442.0" y="198.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on June 17, 2026</title></rect><rect class="e66" x="404.0" y="198.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on June 10, 2026</title></rect><rect class="e67" x="366.0" y="198.0" width="30" height="30" rx="7" fill="#13294B"><title>10 contributions on June 3, 2026</title></rect><rect class="e68" x="328.0" y="198.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>7 contributions on May 27, 2026</title></rect><rect class="e69" x="290.0" y="198.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on May 20, 2026</title></rect><rect class="e70" x="252.0" y="198.0" width="30" height="30" rx="7" fill="#13294B"><title>88 contributions on May 13, 2026</title></rect><rect class="e71" x="214.0" y="198.0" width="30" height="30" rx="7" fill="#13294B"><title>78 contributions on May 6, 2026</title></rect><rect x="176.0" y="198.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on April 29, 2026</title></rect><rect class="e73" x="138.0" y="198.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>5 contributions on April 22, 2026</title></rect><rect class="e74" x="100.0" y="198.0" width="30" height="30" rx="7" fill="#13294B"><title>12 contributions on April 15, 2026</title></rect><rect x="62.0" y="198.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on April 8, 2026</title></rect><rect class="e76" x="62.0" y="236.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on April 9, 2026</title></rect><rect class="e77" x="100.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>47 contributions on April 16, 2026</title></rect><rect class="e78" x="138.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>10 contributions on April 23, 2026</title></rect><rect x="176.0" y="236.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on April 30, 2026</title></rect><rect class="e80" x="214.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>41 contributions on May 7, 2026</title></rect><rect class="e81" x="252.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>51 contributions on May 14, 2026</title></rect><rect class="e82" x="290.0" y="236.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on May 21, 2026</title></rect><rect class="e83" x="328.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>17 contributions on May 28, 2026</title></rect><rect class="e84" x="366.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>28 contributions on June 4, 2026</title></rect><rect class="e85" x="404.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>16 contributions on June 11, 2026</title></rect><rect class="e86" x="442.0" y="236.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on June 18, 2026</title></rect><rect class="e87" x="480.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>48 contributions on June 25, 2026</title></rect><rect class="e88" x="518.0" y="236.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>5 contributions on July 2, 2026</title></rect><rect class="e89" x="556.0" y="236.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on July 9, 2026</title></rect><rect class="e90" x="594.0" y="236.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on July 16, 2026</title></rect><rect class="e91" x="632.0" y="236.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on July 23, 2026</title></rect><rect class="e92" x="670.0" y="236.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on July 30, 2026</title></rect><rect class="e93" x="708.0" y="236.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on August 6, 2026</title></rect><rect x="746.0" y="236.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 13, 2026</title></rect><rect x="746.0" y="274.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 14, 2026</title></rect><rect x="708.0" y="274.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 7, 2026</title></rect><rect class="e97" x="670.0" y="274.0" width="30" height="30" rx="7" fill="#13294B"><title>14 contributions on July 31, 2026</title></rect><rect class="e98" x="632.0" y="274.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on July 24, 2026</title></rect><rect class="e99" x="594.0" y="274.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on July 17, 2026</title></rect><rect class="e100" x="556.0" y="274.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on July 10, 2026</title></rect><rect class="e101" x="518.0" y="274.0" width="30" height="30" rx="7" fill="#13294B"><title>30 contributions on July 3, 2026</title></rect><rect class="e102" x="480.0" y="274.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on June 26, 2026</title></rect><rect class="e103" x="442.0" y="274.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on June 19, 2026</title></rect><rect class="e104" x="404.0" y="274.0" width="30" height="30" rx="7" fill="#13294B"><title>18 contributions on June 12, 2026</title></rect><rect class="e105" x="366.0" y="274.0" width="30" height="30" rx="7" fill="#13294B"><title>11 contributions on June 5, 2026</title></rect><rect class="e106" x="328.0" y="274.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on May 29, 2026</title></rect><rect class="e107" x="290.0" y="274.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>8 contributions on May 22, 2026</title></rect><rect class="e108" x="252.0" y="274.0" width="30" height="30" rx="7" fill="#13294B"><title>56 contributions on May 15, 2026</title></rect><rect class="e109" x="214.0" y="274.0" width="30" height="30" rx="7" fill="#13294B"><title>44 contributions on May 8, 2026</title></rect><rect x="176.0" y="274.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on May 1, 2026</title></rect><rect x="138.0" y="274.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on April 24, 2026</title></rect><rect x="100.0" y="274.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on April 17, 2026</title></rect><rect class="e113" x="62.0" y="274.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>6 contributions on April 10, 2026</title></rect><rect class="e114" x="62.0" y="312.0" width="30" height="30" rx="7" fill="#13294B"><title>20 contributions on April 11, 2026</title></rect><rect x="100.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on April 18, 2026</title></rect><rect x="138.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on April 25, 2026</title></rect><rect class="e117" x="176.0" y="312.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on May 2, 2026</title></rect><rect class="e118" x="214.0" y="312.0" width="30" height="30" rx="7" fill="#13294B"><title>41 contributions on May 9, 2026</title></rect><rect class="e119" x="252.0" y="312.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>6 contributions on May 16, 2026</title></rect><rect class="e120" x="290.0" y="312.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>7 contributions on May 23, 2026</title></rect><rect x="328.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on May 30, 2026</title></rect><rect class="e122" x="366.0" y="312.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on June 6, 2026</title></rect><rect class="e123" x="404.0" y="312.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on June 13, 2026</title></rect><rect class="e124" x="442.0" y="312.0" width="30" height="30" rx="7" fill="#13294B"><title>17 contributions on June 20, 2026</title></rect><rect x="480.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on June 27, 2026</title></rect><rect class="e126" x="518.0" y="312.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on July 4, 2026</title></rect><rect x="556.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on July 11, 2026</title></rect><rect x="594.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on July 18, 2026</title></rect><rect class="e129" x="632.0" y="312.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on July 25, 2026</title></rect><rect x="670.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 1, 2026</title></rect><rect x="708.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 8, 2026</title></rect><rect x="746.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 15, 2026</title></rect></g>
-<g pointer-events="none"><g class="seg" style="animation-delay:-17.60s"><rect x="0.0" y="0.0" width="30.0" height="30.0" rx="8" fill="#13294B"/></g><g class="seg" style="animation-delay:-17.49s"><rect x="2.5" y="2.5" width="25.0" height="25.0" rx="7" fill="#25507E"/></g><g class="seg" style="animation-delay:-17.38s"><rect x="2.5" y="2.5" width="25.0" height="25.0" rx="6" fill="#3D7FB5"/></g><g class="seg" style="animation-delay:-17.27s"><rect x="2.5" y="2.5" width="25.0" height="25.0" rx="5" fill="#6BA9CF"/></g><g class="seg" style="animation-delay:-17.16s"><rect x="2.5" y="2.5" width="25.0" height="25.0" rx="4" fill="#9ACEE7"/></g></g>
-<text class="cap" x="62.0" y="432.0">1424 CONTRIBUTIONS</text>
-<text class="cap" x="588.0" y="432.0" text-anchor="end">LESS</text><rect x="598.0" y="420.0" width="14" height="14" rx="4" fill="#EDF3F9"/><rect x="618.0" y="420.0" width="14" height="14" rx="4" fill="#BFE0F2"/><rect x="638.0" y="420.0" width="14" height="14" rx="4" fill="#7AB7D3"/><rect x="658.0" y="420.0" width="14" height="14" rx="4" fill="#3D7FB5"/><rect x="678.0" y="420.0" width="14" height="14" rx="4" fill="#13294B"/><text class="cap" x="702.0" y="432.0">MORE</text>
+<line x1="62" y1="44" x2="738" y2="44" stroke="#E3E7EE" stroke-width="1"/>
+<text class="mo" x="62.0" y="66">Apr</text><text class="mo" x="138.0" y="66">May</text><text class="mo" x="328.0" y="66">Jun</text><text class="mo" x="480.0" y="66">Jul</text><text class="mo" x="632.0" y="66">Aug</text>
+<g><rect class="e0" x="62.0" y="84.0" width="30" height="30" rx="7" fill="#13294B"><title>39 contributions on April 12, 2026</title></rect><rect class="e1" x="100.0" y="84.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>7 contributions on April 19, 2026</title></rect><rect class="e2" x="138.0" y="84.0" width="30" height="30" rx="7" fill="#13294B"><title>46 contributions on April 26, 2026</title></rect><rect class="e3" x="176.0" y="84.0" width="30" height="30" rx="7" fill="#13294B"><title>45 contributions on May 3, 2026</title></rect><rect class="e4" x="214.0" y="84.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>9 contributions on May 10, 2026</title></rect><rect class="e5" x="252.0" y="84.0" width="30" height="30" rx="7" fill="#13294B"><title>37 contributions on May 17, 2026</title></rect><rect class="e6" x="290.0" y="84.0" width="30" height="30" rx="7" fill="#13294B"><title>17 contributions on May 24, 2026</title></rect><rect class="e7" x="328.0" y="84.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on May 31, 2026</title></rect><rect x="366.0" y="84.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on June 7, 2026</title></rect><rect class="e9" x="404.0" y="84.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on June 14, 2026</title></rect><rect class="e10" x="442.0" y="84.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>9 contributions on June 21, 2026</title></rect><rect x="480.0" y="84.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on June 28, 2026</title></rect><rect x="518.0" y="84.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on July 5, 2026</title></rect><rect class="e13" x="556.0" y="84.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on July 12, 2026</title></rect><rect class="e14" x="594.0" y="84.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on July 19, 2026</title></rect><rect class="e15" x="632.0" y="84.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on July 26, 2026</title></rect><rect class="e16" x="670.0" y="84.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>6 contributions on August 2, 2026</title></rect><rect x="708.0" y="84.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 9, 2026</title></rect><rect class="e18" x="708.0" y="122.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on August 10, 2026</title></rect><rect class="e19" x="670.0" y="122.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on August 3, 2026</title></rect><rect class="e20" x="632.0" y="122.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on July 27, 2026</title></rect><rect x="594.0" y="122.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on July 20, 2026</title></rect><rect class="e22" x="556.0" y="122.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>8 contributions on July 13, 2026</title></rect><rect class="e23" x="518.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>12 contributions on July 6, 2026</title></rect><rect x="480.0" y="122.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on June 29, 2026</title></rect><rect class="e25" x="442.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>10 contributions on June 22, 2026</title></rect><rect class="e26" x="404.0" y="122.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on June 15, 2026</title></rect><rect x="366.0" y="122.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on June 8, 2026</title></rect><rect class="e28" x="328.0" y="122.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on June 1, 2026</title></rect><rect class="e29" x="290.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>12 contributions on May 25, 2026</title></rect><rect class="e30" x="252.0" y="122.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>7 contributions on May 18, 2026</title></rect><rect class="e31" x="214.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>14 contributions on May 11, 2026</title></rect><rect class="e32" x="176.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>19 contributions on May 4, 2026</title></rect><rect class="e33" x="138.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>26 contributions on April 27, 2026</title></rect><rect class="e34" x="100.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>20 contributions on April 20, 2026</title></rect><rect class="e35" x="62.0" y="122.0" width="30" height="30" rx="7" fill="#13294B"><title>29 contributions on April 13, 2026</title></rect><rect class="e36" x="62.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>27 contributions on April 14, 2026</title></rect><rect class="e37" x="100.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>25 contributions on April 21, 2026</title></rect><rect class="e38" x="138.0" y="160.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on April 28, 2026</title></rect><rect class="e39" x="176.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>49 contributions on May 5, 2026</title></rect><rect class="e40" x="214.0" y="160.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>6 contributions on May 12, 2026</title></rect><rect class="e41" x="252.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>12 contributions on May 19, 2026</title></rect><rect class="e42" x="290.0" y="160.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on May 26, 2026</title></rect><rect class="e43" x="328.0" y="160.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>8 contributions on June 2, 2026</title></rect><rect class="e44" x="366.0" y="160.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on June 9, 2026</title></rect><rect x="404.0" y="160.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on June 16, 2026</title></rect><rect class="e46" x="442.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>17 contributions on June 23, 2026</title></rect><rect x="480.0" y="160.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on June 30, 2026</title></rect><rect class="e48" x="518.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>15 contributions on July 7, 2026</title></rect><rect x="556.0" y="160.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on July 14, 2026</title></rect><rect x="594.0" y="160.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on July 21, 2026</title></rect><rect class="e51" x="632.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>11 contributions on July 28, 2026</title></rect><rect class="e52" x="670.0" y="160.0" width="30" height="30" rx="7" fill="#13294B"><title>11 contributions on August 4, 2026</title></rect><rect x="708.0" y="160.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 11, 2026</title></rect><rect x="708.0" y="198.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 12, 2026</title></rect><rect x="670.0" y="198.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 5, 2026</title></rect><rect class="e56" x="632.0" y="198.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>9 contributions on July 29, 2026</title></rect><rect class="e57" x="594.0" y="198.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on July 22, 2026</title></rect><rect class="e58" x="556.0" y="198.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on July 15, 2026</title></rect><rect class="e59" x="518.0" y="198.0" width="30" height="30" rx="7" fill="#13294B"><title>14 contributions on July 8, 2026</title></rect><rect class="e60" x="480.0" y="198.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on July 1, 2026</title></rect><rect class="e61" x="442.0" y="198.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on June 24, 2026</title></rect><rect class="e62" x="404.0" y="198.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on June 17, 2026</title></rect><rect class="e63" x="366.0" y="198.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on June 10, 2026</title></rect><rect class="e64" x="328.0" y="198.0" width="30" height="30" rx="7" fill="#13294B"><title>10 contributions on June 3, 2026</title></rect><rect class="e65" x="290.0" y="198.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>7 contributions on May 27, 2026</title></rect><rect class="e66" x="252.0" y="198.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on May 20, 2026</title></rect><rect class="e67" x="214.0" y="198.0" width="30" height="30" rx="7" fill="#13294B"><title>88 contributions on May 13, 2026</title></rect><rect class="e68" x="176.0" y="198.0" width="30" height="30" rx="7" fill="#13294B"><title>78 contributions on May 6, 2026</title></rect><rect x="138.0" y="198.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on April 29, 2026</title></rect><rect class="e70" x="100.0" y="198.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>5 contributions on April 22, 2026</title></rect><rect class="e71" x="62.0" y="198.0" width="30" height="30" rx="7" fill="#13294B"><title>12 contributions on April 15, 2026</title></rect><rect class="e72" x="62.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>47 contributions on April 16, 2026</title></rect><rect class="e73" x="100.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>10 contributions on April 23, 2026</title></rect><rect x="138.0" y="236.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on April 30, 2026</title></rect><rect class="e75" x="176.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>41 contributions on May 7, 2026</title></rect><rect class="e76" x="214.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>51 contributions on May 14, 2026</title></rect><rect class="e77" x="252.0" y="236.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on May 21, 2026</title></rect><rect class="e78" x="290.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>17 contributions on May 28, 2026</title></rect><rect class="e79" x="328.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>28 contributions on June 4, 2026</title></rect><rect class="e80" x="366.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>16 contributions on June 11, 2026</title></rect><rect class="e81" x="404.0" y="236.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on June 18, 2026</title></rect><rect class="e82" x="442.0" y="236.0" width="30" height="30" rx="7" fill="#13294B"><title>48 contributions on June 25, 2026</title></rect><rect class="e83" x="480.0" y="236.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>5 contributions on July 2, 2026</title></rect><rect class="e84" x="518.0" y="236.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on July 9, 2026</title></rect><rect class="e85" x="556.0" y="236.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on July 16, 2026</title></rect><rect class="e86" x="594.0" y="236.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on July 23, 2026</title></rect><rect class="e87" x="632.0" y="236.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on July 30, 2026</title></rect><rect class="e88" x="670.0" y="236.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on August 6, 2026</title></rect><rect x="708.0" y="236.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 13, 2026</title></rect><rect x="708.0" y="274.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 14, 2026</title></rect><rect x="670.0" y="274.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 7, 2026</title></rect><rect class="e92" x="632.0" y="274.0" width="30" height="30" rx="7" fill="#13294B"><title>14 contributions on July 31, 2026</title></rect><rect class="e93" x="594.0" y="274.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on July 24, 2026</title></rect><rect class="e94" x="556.0" y="274.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on July 17, 2026</title></rect><rect class="e95" x="518.0" y="274.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>2 contributions on July 10, 2026</title></rect><rect class="e96" x="480.0" y="274.0" width="30" height="30" rx="7" fill="#13294B"><title>30 contributions on July 3, 2026</title></rect><rect class="e97" x="442.0" y="274.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on June 26, 2026</title></rect><rect class="e98" x="404.0" y="274.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>3 contributions on June 19, 2026</title></rect><rect class="e99" x="366.0" y="274.0" width="30" height="30" rx="7" fill="#13294B"><title>18 contributions on June 12, 2026</title></rect><rect class="e100" x="328.0" y="274.0" width="30" height="30" rx="7" fill="#13294B"><title>11 contributions on June 5, 2026</title></rect><rect class="e101" x="290.0" y="274.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on May 29, 2026</title></rect><rect class="e102" x="252.0" y="274.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>8 contributions on May 22, 2026</title></rect><rect class="e103" x="214.0" y="274.0" width="30" height="30" rx="7" fill="#13294B"><title>56 contributions on May 15, 2026</title></rect><rect class="e104" x="176.0" y="274.0" width="30" height="30" rx="7" fill="#13294B"><title>44 contributions on May 8, 2026</title></rect><rect x="138.0" y="274.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on May 1, 2026</title></rect><rect x="100.0" y="274.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on April 24, 2026</title></rect><rect x="62.0" y="274.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on April 17, 2026</title></rect><rect x="62.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on April 18, 2026</title></rect><rect x="100.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on April 25, 2026</title></rect><rect class="e110" x="138.0" y="312.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on May 2, 2026</title></rect><rect class="e111" x="176.0" y="312.0" width="30" height="30" rx="7" fill="#13294B"><title>41 contributions on May 9, 2026</title></rect><rect class="e112" x="214.0" y="312.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>6 contributions on May 16, 2026</title></rect><rect class="e113" x="252.0" y="312.0" width="30" height="30" rx="7" fill="#3D7FB5"><title>7 contributions on May 23, 2026</title></rect><rect x="290.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on May 30, 2026</title></rect><rect class="e115" x="328.0" y="312.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on June 6, 2026</title></rect><rect class="e116" x="366.0" y="312.0" width="30" height="30" rx="7" fill="#BFE0F2"><title>1 contribution on June 13, 2026</title></rect><rect class="e117" x="404.0" y="312.0" width="30" height="30" rx="7" fill="#13294B"><title>17 contributions on June 20, 2026</title></rect><rect x="442.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on June 27, 2026</title></rect><rect class="e119" x="480.0" y="312.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on July 4, 2026</title></rect><rect x="518.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on July 11, 2026</title></rect><rect x="556.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on July 18, 2026</title></rect><rect class="e122" x="594.0" y="312.0" width="30" height="30" rx="7" fill="#7AB7D3"><title>4 contributions on July 25, 2026</title></rect><rect x="632.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 1, 2026</title></rect><rect x="670.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 8, 2026</title></rect><rect x="708.0" y="312.0" width="30" height="30" rx="7" fill="#EDF3F9"><title>0 contributions on August 15, 2026</title></rect></g>
+<g pointer-events="none"><g class="seg" style="animation-delay:-16.72s"><rect x="0.0" y="0.0" width="30.0" height="30.0" rx="8" fill="#13294B"/></g><g class="seg" style="animation-delay:-16.61s"><rect x="2.5" y="2.5" width="25.0" height="25.0" rx="7" fill="#25507E"/></g><g class="seg" style="animation-delay:-16.50s"><rect x="2.5" y="2.5" width="25.0" height="25.0" rx="6" fill="#3D7FB5"/></g><g class="seg" style="animation-delay:-16.39s"><rect x="2.5" y="2.5" width="25.0" height="25.0" rx="5" fill="#6BA9CF"/></g><g class="seg" style="animation-delay:-16.28s"><rect x="2.5" y="2.5" width="25.0" height="25.0" rx="4" fill="#9ACEE7"/></g></g>
+<text class="cap" x="62.0" y="432.0">1380 CONTRIBUTIONS</text>
+<text class="cap" x="550.0" y="432.0" text-anchor="end">LESS</text><rect x="560.0" y="420.0" width="14" height="14" rx="4" fill="#EDF3F9"/><rect x="580.0" y="420.0" width="14" height="14" rx="4" fill="#BFE0F2"/><rect x="600.0" y="420.0" width="14" height="14" rx="4" fill="#7AB7D3"/><rect x="620.0" y="420.0" width="14" height="14" rx="4" fill="#3D7FB5"/><rect x="640.0" y="420.0" width="14" height="14" rx="4" fill="#13294B"/><text class="cap" x="664.0" y="432.0">MORE</text>
 </svg>
