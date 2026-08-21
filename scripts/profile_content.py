@@ -10,10 +10,8 @@ from __future__ import annotations
 
 SECTIONS = [
     ("01", "PROFILE", "Who I am and what I build"),
-    ("02", "STATISTICS", "Academics and output at a glance"),
-    ("03", "ACTIVITY", "Contributions across the past four months"),
-    ("04", "WORK", "Products, platforms, and client builds"),
-    ("05", "STACK", "Tools I reach for"),
+    ("02", "ACTIVITY", "Contributions across the past four months"),
+    ("03", "STACK", "Tools I reach for"),
 ]
 
 NAV = [

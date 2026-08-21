@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 138" width="900" height="138" role="img" aria-label="Section 02 - ACTIVITY: Contributions across the past four months">
+<title>Section 02 - ACTIVITY: Contributions across the past four months</title>
+<defs>
+  <linearGradient id="gFace" x1="0" y1="0" x2=".25" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset=".52" stop-color="#F8FBFE"/>
+    <stop offset="1" stop-color="#EDF3FA"/>
+  </linearGradient>
+  <linearGradient id="gEdge" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#4B9CD3" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#4B9CD3" stop-opacity=".85"/>
+    <stop offset="1" stop-color="#4B9CD3" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="gAccent" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#9ACEE7"/>
+    <stop offset="1" stop-color="#13294B"/>
+  </linearGradient>
+  <linearGradient id="gGloss" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".95"/>
+    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="gShadow" x="-12%" y="-24%" width="124%" height="156%">
+    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#13294B" flood-opacity=".10"/>
+  </filter>
+</defs>
+<style>
+    text { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; }
+    .mono { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; }
+    .eyebrow { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size: 10px; letter-spacing: 2.4px; fill: #6B7A93; }
+    .rule { stroke: #E3E7EE; stroke-width: 1; }
+    .pulse { animation: pulse 3.2s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity:1 } 50% { opacity:.35 } }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; opacity: 1 !important; }
+    }
+
+    .num { font-size:54px; font-weight:800; letter-spacing:-2px; fill:#4B9CD3; }
+    .title { font-size:40px; font-weight:800; letter-spacing:1.5px; fill:#0A162C; }
+    .split { stroke:#E3E7EE; stroke-width:2; }
+    .cap { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:12px; letter-spacing:1.6px; fill:#6B7A93; }
+    .hdrBeam { animation: hdrBeam 6.5s linear infinite; }
+    @keyframes hdrBeam { from { transform: translateX(0) } to { transform: translateX(928px) } }
+</style>
+<rect width="900" height="138" fill="#FFFFFF"/>
+
+<text class="num" x="56" y="98">02</text>
+<line class="split" x1="141.65" y1="44" x2="141.65" y2="106"/>
+<text class="title" x="167.65" y="98">ACTIVITY</text>
+<text class="cap" x="844" y="98" text-anchor="end">Contributions across the past four months</text>
+<line x1="56" y1="118" x2="844" y2="118" class="rule"/>
+<clipPath id="hdrBeamClip"><rect x="56" y="116" width="788" height="6"/></clipPath><g clip-path="url(#hdrBeamClip)"><g class="hdrBeam"><rect x="-84" y="118" width="140" height="2" fill="url(#gEdge)"/></g></g>
+
+</svg>

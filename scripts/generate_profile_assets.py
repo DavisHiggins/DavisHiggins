@@ -58,6 +58,7 @@ def build_hero() -> None:
     logo_y = 86 - LOGO_VIEW_H * scale / 2
 
     beam, beam_css = sweep("heroBeam", MARGIN + 12, 203, CONTENT - 24, width=160, seconds=7)
+    scanner_x = PAGE - MARGIN * .5 - 2
 
     meta = ""
     cells = [
@@ -78,6 +79,8 @@ def build_hero() -> None:
                "Machine Learning | Web Development &amp; Digital Solutions")
     body = f"""
 {glass(MARGIN * .5, 20, PAGE - MARGIN, height - 44, rx=22)}
+<clipPath id="heroScannerClip"><rect x="{n(MARGIN * .5)}" y="20" width="{n(PAGE - MARGIN)}" height="{n(height - 44)}" rx="22"/></clipPath>
+<g clip-path="url(#heroScannerClip)"><g class="heroScanner"><rect x="{n(scanner_x - 24)}" y="20" width="26" height="{n(height - 44)}" fill="url(#gEdge)" opacity=".28"/><rect x="{n(scanner_x)}" y="20" width="2" height="{n(height - 44)}" fill="{BLUE}" opacity=".72"/></g></g>
 <text class="eyebrow" x="{n(MARGIN + 12)}" y="86">CHARLOTTE, NORTH CAROLINA</text>
 <text class="name" x="{n(MARGIN + 12)}" y="{n(baseline)}">{escape(name)}</text>
 <g class="logo" transform="translate({n(logo_x)},{n(logo_y)}) scale({n(scale)})">{logo_paths()}</g>
@@ -94,7 +97,9 @@ def build_hero() -> None:
     .sweepline {{ stroke:{NAVY}; stroke-width:2; }}
     .metaK {{ font-family:{MONO}; font-size:9px; letter-spacing:2.2px; fill:{MUTED}; }}
     .metaV {{ font-size:14px; font-weight:700; fill:{NAVY}; }}
-    .metaS {{ font-size:12px; fill:{MUTED}; }}{beam_css}
+    .metaS {{ font-size:12px; fill:{MUTED}; }}
+    .heroScanner {{ animation: heroScanner 6.8s linear infinite; }}
+    @keyframes heroScanner {{ from {{ transform: translateX(0) }} to {{ transform: translateX(-{n(PAGE - MARGIN)}px) }} }}{beam_css}
 """
     write(ASSETS / "hero.svg",
           svg(PAGE, height, "Davis Higgins - Data Analyst; Data Science and AI; Python, SQL, "
