@@ -93,7 +93,7 @@ def build_hero() -> None:
 <text class="eyebrow" x="{n(MARGIN + 12)}" y="86">CHARLOTTE, NORTH CAROLINA</text>
 <text class="name" x="{n(MARGIN + 12)}" y="{n(baseline)}">{escape(name)}</text>
 <g clip-path="url(#nameClip)"><rect class="nameShimmer" x="-150" y="118" width="120" height="70" fill="url(#gEdge)"/></g>
-<g class="orbitField" transform="translate(773,88)"><circle class="orbitalArc arc1" r="50"/><circle class="orbitalArc arc2" r="42"/><circle class="orbitNode node1" cx="50" cy="0" r="2.6"/><circle class="orbitNode node2" cx="-42" cy="0" r="2"/></g>
+<g class="orbitField" transform="translate(773,88)"><ellipse class="orbitalArc arc1" rx="78" ry="58"/><ellipse class="orbitalArc arc2" rx="88" ry="66"/><circle class="orbitNode node1" cx="78" cy="0" r="2.6"/><circle class="orbitNode node2" cx="-88" cy="0" r="2"/></g>
 <g class="logo" transform="translate({n(logo_x)},{n(logo_y)}) scale({n(scale)})">{logo_paths()}</g>
 <line class="sweepline" x1="{n(MARGIN + 12)}" y1="204" x2="{n(PAGE - MARGIN - 12)}" y2="204"/>
 {beam}
