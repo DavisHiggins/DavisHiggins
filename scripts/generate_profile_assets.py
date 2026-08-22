@@ -44,7 +44,8 @@ def build_hero() -> None:
     """The monogram holds the card's top-right corner, where the availability
     chip used to sit."""
     height = 258.0
-    card_height = 218.0
+    card_y = 16.0
+    card_height = 226.0
     name = "DAVIS HIGGINS"
     name_size = 62.0
     tracking = -2.2
@@ -78,19 +79,19 @@ def build_hero() -> None:
     tagline = ("Data Analyst | Data Science &amp; AI | Python, SQL, Power BI, "
                "Machine Learning | Web Development &amp; Digital Solutions")
     body = f"""
-{glass(MARGIN * .5, 20, PAGE - MARGIN, card_height, rx=22)}
+{glass(MARGIN * .5, card_y, PAGE - MARGIN, card_height, rx=22)}
 <defs>
   <linearGradient id="scanWash" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{BLUE}" stop-opacity=".28"/><stop offset=".18" stop-color="{BLUE}" stop-opacity=".10"/><stop offset="1" stop-color="{BLUE}" stop-opacity="0"/></linearGradient>
   <linearGradient id="scanCore" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{BLUE}" stop-opacity="0"/><stop offset=".08" stop-color="{BLUE}" stop-opacity=".5"/><stop offset=".5" stop-color="{BLUE_DEEP}" stop-opacity=".92"/><stop offset=".92" stop-color="{BLUE}" stop-opacity=".5"/><stop offset="1" stop-color="{BLUE}" stop-opacity="0"/></linearGradient>
   <pattern id="heroGrid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="{BLUE}" stroke-opacity=".075" stroke-width=".7"/><circle cx="1" cy="1" r="1" fill="{BLUE}" fill-opacity=".12"/></pattern>
-  <clipPath id="heroEffectsClip"><rect x="{n(MARGIN * .5)}" y="20" width="{n(PAGE - MARGIN)}" height="{n(card_height)}" rx="22"/></clipPath>
+  <clipPath id="heroEffectsClip"><rect x="{n(MARGIN * .5)}" y="{n(card_y)}" width="{n(PAGE - MARGIN)}" height="{n(card_height)}" rx="22"/></clipPath>
   <clipPath id="nameClip"><text class="name" x="{n(MARGIN + 12)}" y="{n(baseline)}">{escape(name)}</text></clipPath>
 </defs>
 <g clip-path="url(#heroEffectsClip)">
-  <rect class="gridDrift" x="28" y="20" width="872" height="256" fill="url(#heroGrid)"/>
+  <rect class="gridDrift" x="28" y="{n(card_y)}" width="872" height="256" fill="url(#heroGrid)"/>
   <g class="particleField" fill="{BLUE}" transform="translate(0,-68)"><circle class="dataParticle p1" cx="112" cy="116" r="1.5" fill-opacity=".22"/><circle class="dataParticle p2" cx="245" cy="56" r="1" fill-opacity=".16"/><circle class="dataParticle p3" cx="386" cy="188" r="1.4" fill-opacity=".18"/><circle class="dataParticle p4" cx="532" cy="96" r="1" fill-opacity=".2"/><circle class="dataParticle p5" cx="647" cy="266" r="1.5" fill-opacity=".16"/><circle class="dataParticle p6" cx="808" cy="184" r="1.2" fill-opacity=".22"/><circle class="dataParticle p7" cx="174" cy="292" r="1" fill-opacity=".18"/><circle class="dataParticle p8" cx="472" cy="302" r="1.3" fill-opacity=".16"/></g>
-  <g class="scanBeam"><rect x="28" y="20" width="844" height="42" fill="url(#scanWash)"/><rect x="28" y="20" width="844" height="2" fill="url(#scanCore)"/><rect x="68" y="22" width="764" height="1" fill="#FFFFFF" fill-opacity=".38"/></g>
-  <rect class="holoBorder" x="29" y="21" width="842" height="226" rx="21" fill="none" stroke="{BLUE}" stroke-width="1.2"/>
+  <g class="scanBeam"><rect x="28" y="{n(card_y)}" width="844" height="42" fill="url(#scanWash)"/><rect x="28" y="{n(card_y)}" width="844" height="2" fill="url(#scanCore)"/><rect x="68" y="{n(card_y + 2)}" width="764" height="1" fill="#FFFFFF" fill-opacity=".38"/></g>
+  <rect class="holoBorder" x="29" y="{n(card_y + 1)}" width="842" height="{n(card_height + 8)}" rx="21" fill="none" stroke="{BLUE}" stroke-width="1.2"/>
 </g>
 <text class="eyebrow" x="{n(MARGIN + 12)}" y="48">CHARLOTTE, NORTH CAROLINA</text>
 <text class="name" x="{n(MARGIN + 12)}" y="{n(baseline)}">{escape(name)}</text>
@@ -187,7 +188,7 @@ def build_profile() -> None:
     height = panel_h + 48
 
     prose = ""
-    y = 34 + 24.0
+    y = 65.5
     for line, lead in lines:
         if line:
             prose += (f'<text class="{"lead" if lead else "body"}" x="{n(MARGIN + pad)}" '
