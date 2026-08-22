@@ -43,7 +43,8 @@ CONTENT = PAGE - MARGIN * 2  # 788
 def build_hero() -> None:
     """The monogram holds the card's top-right corner, where the availability
     chip used to sit."""
-    height = 340.0
+    height = 326.0
+    card_height = 286.0
     name = "DAVIS HIGGINS"
     name_size = 62.0
     tracking = -2.2
@@ -55,7 +56,9 @@ def build_hero() -> None:
     cap = name_size * 0.716
     scale = (cap * 1.1) / LOGO_MARK_H
     logo_x = PAGE - MARGIN - 12 - LOGO_VIEW_W * scale
-    logo_y = 86 - LOGO_VIEW_H * scale / 2
+    logo_center_x = logo_x + LOGO_VIEW_W * scale / 2
+    logo_center_y = baseline - cap / 2
+    logo_y = logo_center_y - LOGO_VIEW_H * scale / 2
 
     beam, beam_css = sweep("heroBeam", MARGIN + 12, 203, CONTENT - 24, width=160, seconds=7)
     meta = ""
@@ -67,21 +70,21 @@ def build_hero() -> None:
     for i, (key, value, note) in enumerate(cells):
         x = MARGIN + 12 + i * 258
         meta += (
-            f'<g><line x1="{n(x)}" y1="242" x2="{n(x + 230)}" y2="242" class="rule"/>'
-            f'<text class="metaK" x="{n(x)}" y="262">{escape(key)}</text>'
-            f'<text class="metaV" x="{n(x)}" y="284">{escape(value)}</text>'
-            f'<text class="metaS" x="{n(x)}" y="303">{escape(note)}</text></g>'
+            f'<g><line x1="{n(x)}" y1="234" x2="{n(x + 230)}" y2="234" class="rule"/>'
+            f'<text class="metaK" x="{n(x)}" y="254">{escape(key)}</text>'
+            f'<text class="metaV" x="{n(x)}" y="276">{escape(value)}</text>'
+            f'<text class="metaS" x="{n(x)}" y="295">{escape(note)}</text></g>'
         )
 
     tagline = ("Data Analyst | Data Science &amp; AI | Python, SQL, Power BI, "
                "Machine Learning | Web Development &amp; Digital Solutions")
     body = f"""
-{glass(MARGIN * .5, 20, PAGE - MARGIN, height - 44, rx=22)}
+{glass(MARGIN * .5, 20, PAGE - MARGIN, card_height, rx=22)}
 <defs>
   <linearGradient id="scanWash" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{BLUE}" stop-opacity=".28"/><stop offset=".18" stop-color="{BLUE}" stop-opacity=".10"/><stop offset="1" stop-color="{BLUE}" stop-opacity="0"/></linearGradient>
   <linearGradient id="scanCore" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{BLUE}" stop-opacity="0"/><stop offset=".08" stop-color="{BLUE}" stop-opacity=".5"/><stop offset=".5" stop-color="{BLUE_DEEP}" stop-opacity=".92"/><stop offset=".92" stop-color="{BLUE}" stop-opacity=".5"/><stop offset="1" stop-color="{BLUE}" stop-opacity="0"/></linearGradient>
   <pattern id="heroGrid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="{BLUE}" stroke-opacity=".075" stroke-width=".7"/><circle cx="1" cy="1" r="1" fill="{BLUE}" fill-opacity=".12"/></pattern>
-  <clipPath id="heroEffectsClip"><rect x="{n(MARGIN * .5)}" y="20" width="{n(PAGE - MARGIN)}" height="{n(height - 44)}" rx="22"/></clipPath>
+  <clipPath id="heroEffectsClip"><rect x="{n(MARGIN * .5)}" y="20" width="{n(PAGE - MARGIN)}" height="{n(card_height)}" rx="22"/></clipPath>
   <clipPath id="nameClip"><text class="name" x="{n(MARGIN + 12)}" y="{n(baseline)}">{escape(name)}</text></clipPath>
 </defs>
 <g clip-path="url(#heroEffectsClip)">
@@ -90,10 +93,10 @@ def build_hero() -> None:
   <g class="scanBeam"><rect x="28" y="20" width="844" height="42" fill="url(#scanWash)"/><rect x="28" y="20" width="844" height="2" fill="url(#scanCore)"/><rect x="68" y="22" width="764" height="1" fill="#FFFFFF" fill-opacity=".38"/></g>
   <rect class="holoBorder" x="29" y="21" width="842" height="294" rx="21" fill="none" stroke="{BLUE}" stroke-width="1.2"/>
 </g>
-<text class="eyebrow" x="{n(MARGIN + 12)}" y="86">CHARLOTTE, NORTH CAROLINA</text>
+<text class="eyebrow" x="{n(MARGIN + 12)}" y="116">CHARLOTTE, NORTH CAROLINA</text>
 <text class="name" x="{n(MARGIN + 12)}" y="{n(baseline)}">{escape(name)}</text>
 <g clip-path="url(#nameClip)"><rect class="nameShimmer" x="-150" y="118" width="120" height="70" fill="url(#gEdge)"/></g>
-<g class="orbitField" transform="translate(773,88)"><ellipse class="orbitalArc arc1" rx="78" ry="58"/><ellipse class="orbitalArc arc2" rx="88" ry="66"/><circle class="orbitNode node1" cx="78" cy="0" r="2.6"/><circle class="orbitNode node2" cx="-88" cy="0" r="2"/></g>
+<g class="orbitField" transform="translate({n(logo_center_x)},{n(logo_center_y)})"><ellipse class="orbitalArc arc1" rx="78" ry="58"/><ellipse class="orbitalArc arc2" rx="88" ry="66"/><circle class="orbitNode node1" cx="78" cy="0" r="2.6"/><circle class="orbitNode node2" cx="-88" cy="0" r="2"/></g>
 <g class="logo" transform="translate({n(logo_x)},{n(logo_y)}) scale({n(scale)})">{logo_paths()}</g>
 <line class="sweepline" x1="{n(MARGIN + 12)}" y1="204" x2="{n(PAGE - MARGIN - 12)}" y2="204"/>
 {beam}
@@ -110,7 +113,7 @@ def build_hero() -> None:
     .metaV {{ font-size:14px; font-weight:700; fill:{NAVY}; }}
     .metaS {{ font-size:12px; fill:{MUTED}; }}
     .scanBeam {{ animation: scanBeam 7.4s cubic-bezier(.45,0,.55,1) infinite; }}
-    @keyframes scanBeam {{ from {{ transform: translateY(0) }} to {{ transform: translateY(296px) }} }}
+    @keyframes scanBeam {{ from {{ transform: translateY(0) }} to {{ transform: translateY({n(card_height)}px) }} }}
     .gridDrift {{ animation: gridDrift 18s linear infinite; }}
     @keyframes gridDrift {{ from {{ transform: translate(0,0) }} to {{ transform: translate(-28px,-28px) }} }}
     .dataParticle {{ animation: dataParticle 5.8s ease-in-out infinite; transform-box:fill-box; transform-origin:center; }}
@@ -127,7 +130,7 @@ def build_hero() -> None:
     .orbitNode {{ fill:{BLUE_PALE}; stroke:#FFFFFF; stroke-width:1; animation:nodePulse 2.8s ease-in-out infinite; }}
     .node2 {{ animation-delay:-1.4s; }}
     @keyframes orbitalArc {{ to {{ transform:rotate(360deg) }} }}
-    @keyframes orbitFloat {{ 0%,100% {{ transform:translate(773px,88px) scale(1) }} 50% {{ transform:translate(773px,86px) scale(1.025) }} }}
+    @keyframes orbitFloat {{ 0%,100% {{ transform:translate({n(logo_center_x)}px,{n(logo_center_y)}px) scale(1) }} 50% {{ transform:translate({n(logo_center_x)}px,{n(logo_center_y - 2)}px) scale(1.025) }} }}
     @keyframes nodePulse {{ 0%,100% {{ opacity:.38 }} 50% {{ opacity:1 }} }}{beam_css}
 """
     write(ASSETS / "hero.svg",
