@@ -58,8 +58,6 @@ def build_hero() -> None:
     logo_y = 86 - LOGO_VIEW_H * scale / 2
 
     beam, beam_css = sweep("heroBeam", MARGIN + 12, 203, CONTENT - 24, width=160, seconds=7)
-    scanner_x = PAGE - MARGIN * .5 - 2
-
     meta = ""
     cells = [
         ("CURRENT", "Data Analyst", "Kewaunee Scientific"),
@@ -79,10 +77,23 @@ def build_hero() -> None:
                "Machine Learning | Web Development &amp; Digital Solutions")
     body = f"""
 {glass(MARGIN * .5, 20, PAGE - MARGIN, height - 44, rx=22)}
-<clipPath id="heroScannerClip"><rect x="{n(MARGIN * .5)}" y="20" width="{n(PAGE - MARGIN)}" height="{n(height - 44)}" rx="22"/></clipPath>
-<g clip-path="url(#heroScannerClip)"><g class="heroScanner"><rect x="{n(scanner_x - 24)}" y="20" width="26" height="{n(height - 44)}" fill="url(#gEdge)" opacity=".28"/><rect x="{n(scanner_x)}" y="20" width="2" height="{n(height - 44)}" fill="{BLUE}" opacity=".72"/></g></g>
+<defs>
+  <linearGradient id="scanWash" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{BLUE}" stop-opacity=".28"/><stop offset=".18" stop-color="{BLUE}" stop-opacity=".10"/><stop offset="1" stop-color="{BLUE}" stop-opacity="0"/></linearGradient>
+  <linearGradient id="scanCore" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{BLUE}" stop-opacity="0"/><stop offset=".08" stop-color="{BLUE}" stop-opacity=".5"/><stop offset=".5" stop-color="{BLUE_DEEP}" stop-opacity=".92"/><stop offset=".92" stop-color="{BLUE}" stop-opacity=".5"/><stop offset="1" stop-color="{BLUE}" stop-opacity="0"/></linearGradient>
+  <pattern id="heroGrid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="{BLUE}" stroke-opacity=".075" stroke-width=".7"/><circle cx="1" cy="1" r="1" fill="{BLUE}" fill-opacity=".12"/></pattern>
+  <clipPath id="heroEffectsClip"><rect x="{n(MARGIN * .5)}" y="20" width="{n(PAGE - MARGIN)}" height="{n(height - 44)}" rx="22"/></clipPath>
+  <clipPath id="nameClip"><text class="name" x="{n(MARGIN + 12)}" y="{n(baseline)}">{escape(name)}</text></clipPath>
+</defs>
+<g clip-path="url(#heroEffectsClip)">
+  <rect class="gridDrift" x="28" y="20" width="872" height="324" fill="url(#heroGrid)"/>
+  <g class="particleField" fill="{BLUE}"><circle class="dataParticle p1" cx="112" cy="116" r="1.5" fill-opacity=".22"/><circle class="dataParticle p2" cx="245" cy="56" r="1" fill-opacity=".16"/><circle class="dataParticle p3" cx="386" cy="188" r="1.4" fill-opacity=".18"/><circle class="dataParticle p4" cx="532" cy="96" r="1" fill-opacity=".2"/><circle class="dataParticle p5" cx="647" cy="266" r="1.5" fill-opacity=".16"/><circle class="dataParticle p6" cx="808" cy="184" r="1.2" fill-opacity=".22"/><circle class="dataParticle p7" cx="174" cy="292" r="1" fill-opacity=".18"/><circle class="dataParticle p8" cx="472" cy="302" r="1.3" fill-opacity=".16"/></g>
+  <g class="scanBeam"><rect x="28" y="20" width="844" height="42" fill="url(#scanWash)"/><rect x="28" y="20" width="844" height="2" fill="url(#scanCore)"/><rect x="68" y="22" width="764" height="1" fill="#FFFFFF" fill-opacity=".38"/></g>
+  <rect class="holoBorder" x="29" y="21" width="842" height="294" rx="21" fill="none" stroke="{BLUE}" stroke-width="1.2"/>
+</g>
 <text class="eyebrow" x="{n(MARGIN + 12)}" y="86">CHARLOTTE, NORTH CAROLINA</text>
 <text class="name" x="{n(MARGIN + 12)}" y="{n(baseline)}">{escape(name)}</text>
+<g clip-path="url(#nameClip)"><rect class="nameShimmer" x="-150" y="118" width="120" height="70" fill="url(#gEdge)"/></g>
+<g class="orbitField" transform="translate(773,88)"><circle class="orbitalArc arc1" r="50"/><circle class="orbitalArc arc2" r="42"/><circle class="orbitNode node1" cx="50" cy="0" r="2.6"/><circle class="orbitNode node2" cx="-42" cy="0" r="2"/></g>
 <g class="logo" transform="translate({n(logo_x)},{n(logo_y)}) scale({n(scale)})">{logo_paths()}</g>
 <line class="sweepline" x1="{n(MARGIN + 12)}" y1="204" x2="{n(PAGE - MARGIN - 12)}" y2="204"/>
 {beam}
@@ -98,8 +109,26 @@ def build_hero() -> None:
     .metaK {{ font-family:{MONO}; font-size:9px; letter-spacing:2.2px; fill:{MUTED}; }}
     .metaV {{ font-size:14px; font-weight:700; fill:{NAVY}; }}
     .metaS {{ font-size:12px; fill:{MUTED}; }}
-    .heroScanner {{ animation: heroScanner 6.8s linear infinite; }}
-    @keyframes heroScanner {{ from {{ transform: translateX(0) }} to {{ transform: translateX(-{n(PAGE - MARGIN)}px) }} }}{beam_css}
+    .scanBeam {{ animation: scanBeam 7.4s cubic-bezier(.45,0,.55,1) infinite; }}
+    @keyframes scanBeam {{ from {{ transform: translateY(0) }} to {{ transform: translateY(296px) }} }}
+    .gridDrift {{ animation: gridDrift 18s linear infinite; }}
+    @keyframes gridDrift {{ from {{ transform: translate(0,0) }} to {{ transform: translate(-28px,-28px) }} }}
+    .dataParticle {{ animation: dataParticle 5.8s ease-in-out infinite; transform-box:fill-box; transform-origin:center; }}
+    .p2,.p6 {{ animation-delay:-1.4s; }} .p3,.p7 {{ animation-delay:-2.8s; }} .p4,.p8 {{ animation-delay:-4.2s; }}
+    @keyframes dataParticle {{ 0%,100% {{ transform:translateY(0) scale(.8); fill-opacity:.10 }} 50% {{ transform:translateY(-12px) scale(1.45); fill-opacity:.34 }} }}
+    .holoBorder {{ stroke-dasharray:96 2180; animation:holoBorder 9s linear infinite; }}
+    @keyframes holoBorder {{ to {{ stroke-dashoffset:-2276 }} }}
+    .nameShimmer {{ animation:nameShimmer 6.2s cubic-bezier(.4,0,.2,1) infinite; opacity:.48; }}
+    @keyframes nameShimmer {{ 0%,18% {{ transform:translateX(0); opacity:0 }} 42% {{ opacity:.48 }} 68%,100% {{ transform:translateX(720px); opacity:0 }} }}
+    .orbitField {{ transform-box:fill-box; transform-origin:center; animation:orbitFloat 5.2s ease-in-out infinite; }}
+    .orbitalArc {{ fill:none; stroke:{BLUE}; stroke-linecap:round; transform-box:fill-box; transform-origin:center; }}
+    .arc1 {{ stroke-width:1; stroke-opacity:.24; stroke-dasharray:42 18 8 24; animation:orbitalArc 14s linear infinite; }}
+    .arc2 {{ stroke-width:.8; stroke-opacity:.16; stroke-dasharray:12 28 38 16; animation:orbitalArc 10s linear infinite reverse; }}
+    .orbitNode {{ fill:{BLUE_PALE}; stroke:#FFFFFF; stroke-width:1; animation:nodePulse 2.8s ease-in-out infinite; }}
+    .node2 {{ animation-delay:-1.4s; }}
+    @keyframes orbitalArc {{ to {{ transform:rotate(360deg) }} }}
+    @keyframes orbitFloat {{ 0%,100% {{ transform:translate(773px,88px) scale(1) }} 50% {{ transform:translate(773px,86px) scale(1.025) }} }}
+    @keyframes nodePulse {{ 0%,100% {{ opacity:.38 }} 50% {{ opacity:1 }} }}{beam_css}
 """
     write(ASSETS / "hero.svg",
           svg(PAGE, height, "Davis Higgins - Data Analyst; Data Science and AI; Python, SQL, "
