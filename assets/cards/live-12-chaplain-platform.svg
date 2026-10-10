@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 50" width="450" height="50" role="img" aria-label="Open the live Chaplain Platform site: chaplain.davishiggins.com">
+<title>Open the live Chaplain Platform site: chaplain.davishiggins.com</title>
+<defs>
+  <linearGradient id="lFace" x1="0" y1="0" x2=".25" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset=".52" stop-color="#F8FBFE"/>
+    <stop offset="1" stop-color="#EDF3FA"/>
+  </linearGradient>
+  <linearGradient id="lEdge" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#4B9CD3" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#4B9CD3" stop-opacity=".85"/>
+    <stop offset="1" stop-color="#4B9CD3" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="lAccent" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#9ACEE7"/>
+    <stop offset="1" stop-color="#13294B"/>
+  </linearGradient>
+  <linearGradient id="lGloss" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".95"/>
+    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="lShadow" x="-12%" y="-24%" width="124%" height="156%">
+    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#13294B" flood-opacity=".10"/>
+  </filter>
+</defs>
+<style>
+    text { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; }
+    .mono { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; }
+    .eyebrow { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size: 10px; letter-spacing: 2.4px; fill: #6B7A93; }
+    .rule { stroke: #E3E7EE; stroke-width: 1; }
+    .pulse { animation: pulse 3.2s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity:1 } 50% { opacity:.35 } }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; opacity: 1 !important; }
+    }
+
+    .lv { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; font-size:9.5px; letter-spacing:1.8px; fill:#3D7FB5; }
+    .url { font-size:12.5px; font-weight:700; fill:#13294B; }
+</style>
+<rect width="450" height="50" fill="#FFFFFF"/>
+
+<rect x="32" y="1" width="386" height="36" rx="13" fill="#EDF3F9" stroke="#DCE6F2"/>
+<circle cx="58" cy="19" r="6" fill="#4B9CD3" opacity=".16"/><circle class="pulse" cx="58" cy="19" r="3" fill="#4B9CD3"/>
+<text class="lv" x="70" y="23">LIVE</text>
+<text class="url" x="108" y="23">chaplain.davishiggins.com</text>
+<text x="392" y="24" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12" font-weight="700" fill="#4B9CD3">&#8599;</text>
+
+</svg>

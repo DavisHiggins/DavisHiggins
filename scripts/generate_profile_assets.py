@@ -26,7 +26,7 @@ from html import escape
 
 import profile_content as C
 from profile_kit import (
-    ASSETS, BLUE, BLUE_DEEP, BLUE_PALE, INK, LINE, LOGO_MARK_H, LOGO_VIEW_H,
+    ASSETS, BLUE, BLUE_DEEP, BLUE_PALE, INK, LINE, LINE_GLASS, LOGO_MARK_H, LOGO_VIEW_H,
     LOGO_VIEW_W, MIST, MONO, MUTED, NAVY, NAVY_SOFT, arrow, glass, logo_paths,
     n, pill, status_dot, svg, sweep, text_width, wrap, write,
 )
@@ -308,6 +308,67 @@ def build_project_cards() -> None:
                   body, css))
 
 
+LIVE_H = 50.0              # slim live-site bar that sits under each showcase card
+
+
+def build_showcase_cards() -> None:
+    """04 Work. Each showcase is two files: a card that links to the showcase
+    repository, and a slim bar beneath it that links to the live site. GitHub
+    cannot make two regions of one image clickable, so the second link needs
+    its own file; drawn together, the pair reads as one card."""
+    for stale in (ASSETS / "cards").glob("work-*.svg"):
+        stale.unlink()
+    for slug, index, name, focus, summary, stack, status, repo, live, label in C.SHOWCASES:
+        del repo, live
+        card_h = 124.0
+        height = card_h + VPAD + 8
+        left, right = CARD_X + 26, CARD_X + CARD_INNER - 26
+        chip, chip_w = pill(0, 0, status, size=9, pad=11, height=21,
+                            fill=MIST, stroke=BLUE_PALE, color=BLUE_DEEP, mono=True)
+        desc = wrap(summary, 12, right - left - 12)[:2]
+        desc_markup = "".join(
+            f'<text class="desc" x="{n(left)}" y="{n(VPAD + 78 + i * 15)}">{escape(line)}</text>'
+            for i, line in enumerate(desc)
+        )
+        body = f"""
+{glass(CARD_X, VPAD, CARD_INNER, card_h, rx=16)}
+<text class="kind" x="{n(left)}" y="{n(VPAD + 26)}">{escape(index)} &#183; {escape(focus)}</text>
+<g transform="translate({n(right - chip_w)},{n(VPAD + 12)})">{chip}</g>
+<text class="name" x="{n(left)}" y="{n(VPAD + 58)}">{escape(name)}</text>
+{desc_markup}
+<text class="stack" x="{n(left)}" y="{n(VPAD + 110)}">{escape(stack)}</text>
+<text class="cta" x="{n(right - 16)}" y="{n(VPAD + 110)}" text-anchor="end">SHOWCASE</text>
+{arrow(right, VPAD + 110, 12)}
+"""
+        css = f"""
+    .kind {{ font-family:{MONO}; font-size:9.5px; letter-spacing:1.8px; fill:{BLUE_DEEP}; }}
+    .name {{ font-size:20px; font-weight:800; letter-spacing:-.4px; fill:{INK}; }}
+    .desc {{ font-size:12px; fill:{MUTED}; }}
+    .stack {{ font-family:{MONO}; font-size:9.5px; letter-spacing:1.2px; fill:{NAVY_SOFT}; }}
+    .cta {{ font-family:{MONO}; font-size:9.5px; letter-spacing:1.6px; fill:{BLUE_DEEP}; }}
+"""
+        write(ASSETS / "cards" / f"work-{index}-{slug}.svg",
+              svg(CARD_W, height, f"{name} showcase - {focus.title()}. {summary} "
+                                  f"Built with {stack}. Status: {status.title()}.", body, css))
+
+        live_body = f"""
+<rect x="{n(CARD_X)}" y="1" width="{n(CARD_INNER)}" height="{n(LIVE_H - 14)}" rx="13" fill="{MIST}" stroke="{LINE_GLASS}"/>
+{status_dot(left, 19, BLUE, 3)}
+<text class="lv" x="{n(left + 12)}" y="23">LIVE</text>
+<text class="url" x="{n(left + 50)}" y="23">{escape(label)}</text>
+{arrow(right, 24, 12)}
+"""
+        live_css = f"""
+    .lv {{ font-family:{MONO}; font-size:9.5px; letter-spacing:1.8px; fill:{BLUE_DEEP}; }}
+    .url {{ font-size:12.5px; font-weight:700; fill:{NAVY}; }}
+"""
+        write(ASSETS / "cards" / f"live-{index}-{slug}.svg",
+              svg(CARD_W, LIVE_H, f"Open the live {name} site: {label}", live_body,
+                  live_css, uid="l"))
+    write(ASSETS / "cards" / "work-spacer.svg", svg(CARD_W, 152, "Spacer", "", uid="s"))
+    write(ASSETS / "cards" / "live-spacer.svg", svg(CARD_W, LIVE_H, "Spacer", "", uid="s"))
+
+
 # 05 Stack
 # ---------------------------------------------------------------------------
 
@@ -445,7 +506,7 @@ def main() -> None:
     build_headers()
     build_profile()
     build_statistics()
-    build_project_cards()
+    build_showcase_cards()
     build_stack()
     build_nav_buttons()
     build_spacer()

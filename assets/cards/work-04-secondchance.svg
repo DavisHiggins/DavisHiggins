@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 152" width="450" height="152" role="img" aria-label="Chaplain Platform showcase - Chapter Platform. Weekly Bible study and semester plan for Phi Delta Theta NC Epsilon. Built with React · Vite · Tailwind. Status: Live.">
-<title>Chaplain Platform showcase - Chapter Platform. Weekly Bible study and semester plan for Phi Delta Theta NC Epsilon. Built with React · Vite · Tailwind. Status: Live.</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 152" width="450" height="152" role="img" aria-label="SecondChance showcase - Predictive Analytics. Team research prototype turning shelter long-stay risk into earlier support. Built with LightGBM · Next.js · Python. Status: Prototype.">
+<title>SecondChance showcase - Predictive Analytics. Team research prototype turning shelter long-stay risk into earlier support. Built with LightGBM · Next.js · Python. Status: Prototype.</title>
 <defs>
   <linearGradient id="gFace" x1="0" y1="0" x2=".25" y2="1">
     <stop offset="0" stop-color="#FFFFFF"/>
@@ -44,11 +44,11 @@
 <rect width="450" height="152" fill="#FFFFFF"/>
 
 <rect x="32" y="20" width="386" height="124" rx="16" fill="url(#gFace)" filter="url(#gShadow)"/><rect x="32.5" y="20.5" width="385" height="123" rx="15.5" fill="none" stroke="#DCE6F2" stroke-width="1"/><rect x="48" y="21" width="354" height="1" fill="url(#gGloss)"/><rect x="32" y="34" width="3" height="96" rx="1.5" fill="url(#gAccent)"/>
-<text class="kind" x="58" y="46">12 &#183; CHAPTER PLATFORM</text>
-<g transform="translate(350.49,32)"><g><rect x="0" y="0" width="41.51" height="21" rx="10.5" fill="#EDF3F9" stroke="#C9E4F3" stroke-width="1"/><text x="20.76" y="13.74" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="9" font-weight="500" fill="#3D7FB5">LIVE</text></g></g>
-<text class="name" x="58" y="78">Chaplain Platform</text>
-<text class="desc" x="58" y="98">Weekly Bible study and semester plan for Phi Delta Theta</text><text class="desc" x="58" y="113">NC Epsilon.</text>
-<text class="stack" x="58" y="130">React · Vite · Tailwind</text>
+<text class="kind" x="58" y="46">04 &#183; PREDICTIVE ANALYTICS</text>
+<g transform="translate(314.49,32)"><g><rect x="0" y="0" width="77.51" height="21" rx="10.5" fill="#EDF3F9" stroke="#C9E4F3" stroke-width="1"/><text x="38.76" y="13.74" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="9" font-weight="500" fill="#3D7FB5">PROTOTYPE</text></g></g>
+<text class="name" x="58" y="78">SecondChance</text>
+<text class="desc" x="58" y="98">Team research prototype turning shelter long-stay risk into</text><text class="desc" x="58" y="113">earlier support.</text>
+<text class="stack" x="58" y="130">LightGBM · Next.js · Python</text>
 <text class="cta" x="376" y="130" text-anchor="end">SHOWCASE</text>
 <text x="392" y="130" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12" font-weight="700" fill="#4B9CD3">&#8599;</text>
 

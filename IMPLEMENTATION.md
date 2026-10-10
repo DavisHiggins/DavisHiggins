@@ -33,11 +33,15 @@ separate regions inside one embedded SVG clickable.
 | Section headers | `assets/headers/NN-*.svg` | 100% |
 | Profile, statistics, stack | `assets/*.svg` | 100% |
 | Activity | `assets/contribution-snake.svg` | 100% |
-| Project cards | `assets/cards/*.svg` | 50% ×2 |
+| Showcase cards (04 Work) | `assets/cards/work-NN-*.svg` | 50% ×2 |
+| Live-site bars under each card | `assets/cards/live-NN-*.svg` | 50% ×2 |
 | Divider, footer | `assets/divider.svg`, `assets/footer.svg` | 100% |
 
-`assets/cards/spacer.svg` pairs with the thirteenth project card so that row
-still ends on a full white line.
+Each showcase is a pair of files: the card links to its documentation showcase
+repository and the slim bar beneath it links to the live site, because GitHub
+cannot make two regions of one image clickable. `work-spacer.svg` and
+`live-spacer.svg` pair with the seventeenth showcase so its rows still end on a
+full white line. Showcase data lives in `SHOWCASES` in `profile_content.py`.
 
 ## Regenerating
 
