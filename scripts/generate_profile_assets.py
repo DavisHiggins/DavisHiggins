@@ -27,13 +27,43 @@ from html import escape
 import profile_content as C
 from profile_kit import (
     ASSETS, BLUE, BLUE_DEEP, BLUE_PALE, INK, LINE, LINE_GLASS, LOGO_MARK_H, LOGO_VIEW_H,
-    LOGO_VIEW_W, MIST, MONO, MUTED, NAVY, NAVY_SOFT, arrow, glass, logo_paths,
+    LOGO_VIEW_W, MIST, MOBILE_SLACK, MONO, MUTED, NAVY, NAVY_SOFT, arrow, glass, logo_paths,
     n, pill, status_dot, svg, sweep, text_width, wrap, write,
 )
 
 PAGE = 900.0
 MARGIN = 56.0
 CONTENT = PAGE - MARGIN * 2  # 788
+
+# Section dividers are drawn as the top band of the header (or footer) that
+# follows them rather than as their own image. On a phone a standalone 900x40
+# divider renders about 16px tall, shorter than the README's line height, and
+# the leftover line box showed the dark page through as a band under it.
+# Merged, the stacked result is identical on desktop.
+DIVIDER_H = 40.0
+# The first divider follows the navigation row. Its top 8 units of white move
+# into the nav buttons, which makes those tall enough to fill a phone line box
+# too; nav + band still stack to exactly the old nav + divider height.
+NAV_H = 64.0 + 8.0
+FIRST_DIVIDER_TRIM = NAV_H - 64.0
+
+
+def divider_band(trim: float = 0.0) -> tuple[str, str]:
+    """Tick rule and travelling highlight, with `trim` units cut off the top."""
+    ticks = ""
+    x = MARGIN
+    step = 0
+    while x <= PAGE - MARGIN:
+        tall = step % 4 == 0
+        ticks += (f'<rect class="tick" x="{n(x)}" y="{n((15 if tall else 18) - trim)}" '
+                  f'width="1" height="{n(10 if tall else 4)}"/>')
+        x += 8
+        step += 1
+    beam, beam_css = sweep("divBeam", MARGIN, 15 - trim, CONTENT, width=120, seconds=6)
+    css = f"""
+    .tick {{ fill:{LINE}; }}{beam_css}
+"""
+    return ticks + beam, css
 
 
 # ---------------------------------------------------------------------------
@@ -78,6 +108,13 @@ def build_hero() -> None:
 
     tagline = ("Data Analyst | Data Science &amp; AI | Python, SQL, Power BI, "
                "Machine Learning | Web Development &amp; Digital Solutions")
+    # The tagline spans the card, so the phone copy steps the size down until
+    # it clears the inner edge with MOBILE_SLACK to spare.
+    tag_room = PAGE - MARGIN - 12 - (MARGIN + 12)
+    tag_plain = tagline.replace("&amp;", "&")
+    tag_m = 14.0
+    while text_width(tag_plain, tag_m) * MOBILE_SLACK > tag_room:
+        tag_m -= .5
     body = f"""
 {glass(MARGIN * .5, card_y, PAGE - MARGIN, card_height, rx=22)}
 <defs>
@@ -99,12 +136,14 @@ def build_hero() -> None:
 <g class="logo" transform="translate({n(logo_x)},{n(logo_y)}) scale({n(scale)})">{logo_paths()}</g>
 <line class="sweepline" x1="{n(MARGIN + 12)}" y1="136" x2="{n(PAGE - MARGIN - 12)}" y2="136"/>
 {beam}
-<text class="tag" x="{n(MARGIN + 12)}" y="160">{tagline}</text>
+<text class="tag d" x="{n(MARGIN + 12)}" y="160">{tagline}</text>
+<text class="tag tagM m" x="{n(MARGIN + 12)}" y="160">{tagline}</text>
 {meta}
 """
     css = f"""
     .name {{ font-size:{n(name_size)}px; font-weight:800; letter-spacing:{n(tracking)}px; fill:{INK}; }}
     .tag {{ font-size:14px; fill:{NAVY_SOFT}; }}
+    .tagM {{ font-size:{n(tag_m)}px; }}
     .logo {{ animation: logo 3.2s ease-in-out infinite; }}
     @keyframes logo {{ 0%,100% {{ opacity:1 }} 50% {{ opacity:.45 }} }}
     .sweepline {{ stroke:{NAVY}; stroke-width:2; }}
@@ -137,8 +176,11 @@ def build_hero() -> None:
 def build_headers() -> None:
     """Oversized numerals and titles. Both are roughly three times the size of
     the small caps headers they replace."""
-    for number, title, caption in C.SECTIONS:
-        height = 138.0
+    for i, (number, title, caption) in enumerate(C.SECTIONS):
+        trim = FIRST_DIVIDER_TRIM if i == 0 else 0.0
+        band_h = DIVIDER_H - trim
+        band, band_css = divider_band(trim)
+        height = 138.0 + band_h
         num_size = 54.0
         title_size = 40.0
         num_w = text_width(number, num_size, bold=True, tracking=-2)
@@ -146,18 +188,21 @@ def build_headers() -> None:
         title_x = divider_x + 26
         beam, beam_css = sweep("hdrBeam", MARGIN, 118, CONTENT, width=140, seconds=6.5)
         body = f"""
+{band}
+<g transform="translate(0,{n(band_h)})">
 <text class="num" x="{n(MARGIN)}" y="98">{escape(number)}</text>
 <line class="split" x1="{n(divider_x)}" y1="44" x2="{n(divider_x)}" y2="106"/>
 <text class="title" x="{n(title_x)}" y="98">{escape(title)}</text>
 <text class="cap" x="{n(PAGE - MARGIN)}" y="98" text-anchor="end">{escape(caption)}</text>
 <line x1="{n(MARGIN)}" y1="118" x2="{n(PAGE - MARGIN)}" y2="118" class="rule"/>
 {beam}
+</g>
 """
         css = f"""
     .num {{ font-size:{n(num_size)}px; font-weight:800; letter-spacing:-2px; fill:{BLUE}; }}
     .title {{ font-size:{n(title_size)}px; font-weight:800; letter-spacing:1.5px; fill:{INK}; }}
     .split {{ stroke:{LINE}; stroke-width:2; }}
-    .cap {{ font-family:{MONO}; font-size:12px; letter-spacing:1.6px; fill:{MUTED}; }}{beam_css}
+    .cap {{ font-family:{MONO}; font-size:12px; letter-spacing:1.6px; fill:{MUTED}; }}{beam_css}{band_css}
 """
         write(ASSETS / "headers" / f"{number}-{title.lower()}.svg",
               svg(PAGE, height, f"Section {number} - {title}: {caption}", body, css))
@@ -175,47 +220,78 @@ def build_profile() -> None:
     prose_w = panel_w - pad * 2
     size, leading, gap = 14.5, 23.0, 18.0
 
-    lines: list[tuple[str, bool]] = []
-    for i, paragraph in enumerate(C.PROFILE_PARAGRAPHS):
-        for j, line in enumerate(wrap(paragraph, size, prose_w)):
-            lines.append((line, i == 0))
-            del j
-        if i < len(C.PROFILE_PARAGRAPHS) - 1:
-            lines.append(("", False))
+    def prose_lines(px: float, width: float, mobile: bool = False) -> list[tuple[str, bool]]:
+        lines: list[tuple[str, bool]] = []
+        for i, paragraph in enumerate(C.PROFILE_PARAGRAPHS):
+            # The phone copy measures the semibold lead as bold for headroom.
+            for line in wrap(paragraph, px, width, bold=mobile and i == 0):
+                lines.append((line, i == 0))
+            if i < len(C.PROFILE_PARAGRAPHS) - 1:
+                lines.append(("", False))
+        return lines
 
-    text_h = sum(leading if line else gap for line, _ in lines)
-    panel_h = max(300.0, 34 + text_h + 26)
+    def block_h(lines: list[tuple[str, bool]]) -> float:
+        return sum(leading if line else gap for line, _ in lines)
+
+    def prose_markup(lines: list[tuple[str, bool]], x: float, cls: str) -> str:
+        out, y = "", 65.5
+        for line, lead in lines:
+            if line:
+                out += (f'<text class="{"lead" if lead else "body"} {cls}" x="{n(x)}" '
+                        f'y="{n(y)}">{escape(line)}</text>')
+                y += leading
+            else:
+                y += gap
+        return out
+
+    def facts_markup(x: float, w: float, panel_h: float) -> str:
+        fact_h = (panel_h - 3 * 14) / 4
+        out = ""
+        for i, (key, value, note) in enumerate(C.PROFILE_FACTS):
+            fy = 24 + i * (fact_h + 14)
+            out += (
+                glass(x, fy, w, fact_h, rx=14)
+                + f'<text class="factK" x="{n(x + 22)}" y="{n(fy + 28)}">{escape(key)}</text>'
+                + f'<text class="factV" x="{n(x + 22)}" y="{n(fy + 50)}">{escape(value)}</text>'
+                + f'<text class="factN" x="{n(x + 22)}" y="{n(fy + 68)}">{escape(note)}</text>'
+            )
+        return out
+
+    lines = prose_lines(size, prose_w)
+    panel_h = max(300.0, 34 + block_h(lines) + 26)
     height = panel_h + 48
 
-    prose = ""
-    y = 65.5
-    for line, lead in lines:
-        if line:
-            prose += (f'<text class="{"lead" if lead else "body"}" x="{n(MARGIN + pad)}" '
-                      f'y="{n(y)}">{escape(line)}</text>')
-            y += leading
-        else:
-            y += gap
-
-    fact_h = (panel_h - 3 * 14) / 4
-    facts = ""
-    for i, (key, value, note) in enumerate(C.PROFILE_FACTS):
-        fy = 24 + i * (fact_h + 14)
-        facts += (
-            glass(facts_x, fy, facts_w, fact_h, rx=14)
-            + f'<text class="factK" x="{n(facts_x + 22)}" y="{n(fy + 28)}">{escape(key)}</text>'
-            + f'<text class="factV" x="{n(facts_x + 22)}" y="{n(fy + 50)}">{escape(value)}</text>'
-            + f'<text class="factN" x="{n(facts_x + 22)}" y="{n(fy + 68)}">{escape(note)}</text>'
-        )
+    # Phone layout. The fact cards only need room for their longest value, so
+    # they narrow and hand that width to the prose, which wraps with
+    # MOBILE_SLACK headroom so it can never run under the fact column. The
+    # copy must fit the same panel height, because the image's aspect ratio is
+    # fixed by the desktop layout.
+    longest_fact = max(text_width(value, 15, bold=True) for _, value, _ in C.PROFILE_FACTS)
+    m_facts_w = 22 + longest_fact * MOBILE_SLACK + 26
+    m_panel_w = CONTENT - 20 - m_facts_w
+    m_room = (m_panel_w - pad * 2) / MOBILE_SLACK
+    m_size = size
+    m_lines = prose_lines(m_size, m_room, mobile=True)
+    while 34 + block_h(m_lines) + 26 > panel_h:
+        m_size -= .5
+        m_lines = prose_lines(m_size, m_room, mobile=True)
 
     body = f"""
+<g class="d">
 {glass(MARGIN, 24, panel_w, panel_h, rx=18)}
-{prose}
-{facts}
+{facts_markup(facts_x, facts_w, panel_h)}
+</g>
+{prose_markup(lines, MARGIN + pad, "d")}
+<g class="m">
+{glass(MARGIN, 24, m_panel_w, panel_h, rx=18)}
+{facts_markup(PAGE - MARGIN - m_facts_w, m_facts_w, panel_h)}
+{prose_markup(m_lines, MARGIN + pad, "proseM")}
+</g>
 """
     css = f"""
     .lead {{ font-size:{n(size)}px; font-weight:600; fill:{INK}; }}
     .body {{ font-size:{n(size)}px; fill:{NAVY_SOFT}; }}
+    .proseM {{ font-size:{n(m_size)}px; }}
     .factK {{ font-family:{MONO}; font-size:9px; letter-spacing:2px; fill:{MUTED}; }}
     .factV {{ font-size:15px; font-weight:700; fill:{NAVY}; }}
     .factN {{ font-size:11.5px; fill:{MUTED}; }}
@@ -319,7 +395,8 @@ def build_stack() -> None:
     for title, items in C.STACK:
         chips, cx, cy, rows = "", 0.0, 0.0, 1
         for item in items:
-            markup, width = pill(0, 0, item, size=12, pad=15, height=pill_h)
+            markup, width = pill(0, 0, item, size=12, pad=15, height=pill_h,
+                                 mobile_size=11)
             if cx and cx + width > inner:
                 cx, cy, rows = 0.0, cy + pill_h + row_gap, rows + 1
             chips += (f'<g transform="translate({n(MARGIN + pad + cx)},'
@@ -350,7 +427,7 @@ def build_stack() -> None:
 def build_nav_buttons() -> None:
     """Five buttons fill one line at width="20%", so each file is a fifth of the
     page. Equal outer and inner gutters fall out of that pitch."""
-    w, h = PAGE / 5, 64.0
+    w, h = PAGE / 5, NAV_H
     inner, x = 140.0, (PAGE / 5 - 140.0) / 2
     for slug, label, detail, url in C.NAV:
         del url
@@ -378,44 +455,49 @@ def build_spacer() -> None:
 # ---------------------------------------------------------------------------
 
 def build_divider() -> None:
-    height = 40.0
-    ticks = ""
-    x = MARGIN
-    step = 0
-    while x <= PAGE - MARGIN:
-        tall = step % 4 == 0
-        ticks += (f'<rect class="tick" x="{n(x)}" y="{n(15 if tall else 18)}" width="1" '
-                  f'height="{n(10 if tall else 4)}"/>')
-        x += 8
-        step += 1
-    beam, beam_css = sweep("divBeam", MARGIN, 15, CONTENT, width=120, seconds=6)
-    css = f"""
-    .tick {{ fill:{LINE}; }}{beam_css}
-"""
-    write(ASSETS / "divider.svg", svg(PAGE, height, "Divider", ticks + beam, css))
+    """Standalone copy of the band the headers and footer now carry."""
+    band, css = divider_band()
+    write(ASSETS / "divider.svg", svg(PAGE, DIVIDER_H, "Divider", band, css))
+
+
+FOOTER_SLACK = 1.06
 
 
 def build_footer() -> None:
-    height, panel_h = 210.0, 162.0
+    """Carries the closing divider as its top band."""
+    height, panel_h = 210.0 + DIVIDER_H, 162.0
+    band, band_css = divider_band()
     words = [("Think.", INK), ("Build.", INK), ("Test.", INK), ("Ship.", NAVY)]
-    markup, x = "", MARGIN + 34
-    for word, color in words:
-        markup += (f'<text class="word" x="{n(x)}" y="98" fill="{color}">{escape(word)}</text>')
-        x += text_width(word, 42, bold=True, tracking=-1.4) + 26
+
+    def wordmark(slack: float, cls: str) -> str:
+        # Phone copy spaces each word with a little extra headroom so a wider
+        # rendering face cannot push one word into the next or under the caret.
+        # The 26-unit gap already absorbs most of that, so the full
+        # MOBILE_SLACK would leave the wordmark looking loose.
+        markup, x = "", MARGIN + 34
+        for word, color in words:
+            markup += (f'<text class="word {cls}" x="{n(x)}" y="98" '
+                       f'fill="{color}">{escape(word)}</text>')
+            x += text_width(word, 42, bold=True, tracking=-1.4) * slack + 26
+        return markup + f'<rect class="caret {cls}" x="{n(x - 14)}" y="70" width="12" height="30"/>'
+
     body = f"""
+{band}
+<g transform="translate(0,{n(DIVIDER_H)})">
 {glass(MARGIN, 24, CONTENT, panel_h, rx=20)}
-{markup}
-<rect class="caret" x="{n(x - 14)}" y="70" width="12" height="30"/>
+{wordmark(1.0, "d")}
+{wordmark(FOOTER_SLACK, "m")}
 <line x1="{n(MARGIN + 34)}" y1="126" x2="{n(PAGE - MARGIN - 34)}" y2="126" class="rule"/>
 <text class="mail" x="{n(MARGIN + 34)}" y="152">davishiggins@icloud.com</text>
 <text class="cap" x="{n(PAGE - MARGIN - 34)}" y="152" text-anchor="end">CHARLOTTE, NC &#183; davishiggins.com</text>
+</g>
 """
     css = f"""
     .word {{ font-size:42px; font-weight:800; letter-spacing:-1.4px; }}
     .caret {{ fill:{BLUE}; animation: blink 1.1s steps(1) infinite; }}
     @keyframes blink {{ 0%,50% {{ opacity:1 }} 51%,100% {{ opacity:0 }} }}
     .mail {{ font-family:{MONO}; font-size:13px; fill:{NAVY}; }}
-    .cap {{ font-family:{MONO}; font-size:9.5px; letter-spacing:2px; fill:{MUTED}; }}
+    .cap {{ font-family:{MONO}; font-size:9.5px; letter-spacing:2px; fill:{MUTED}; }}{band_css}
 """
     write(ASSETS / "footer.svg", svg(PAGE, height, "Think. Build. Test. Ship.", body, css))
 

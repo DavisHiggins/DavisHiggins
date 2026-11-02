@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 176" width="450" height="176" role="img" aria-label="Spacer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 176" width="450" height="176" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Spacer">
 <title>Spacer</title>
 <defs>
   <linearGradient id="sFace" x1="0" y1="0" x2=".25" y2="1">
@@ -33,6 +33,13 @@
     @keyframes pulse { 0%,100% { opacity:1 } 50% { opacity:.35 } }
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; opacity: 1 !important; }
+    }
+
+    .m { display: none; }
+    @media (max-width: 640px) {
+      text { font-family: Helvetica,Arial,sans-serif; }
+      .d { display: none; }
+      .m { display: inline; }
     }
 </style>
 <rect width="450" height="176" fill="#FFFFFF"/>

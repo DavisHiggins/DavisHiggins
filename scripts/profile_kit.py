@@ -43,6 +43,18 @@ MUTED = "#6B7A93"
 SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
 MONO = "ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace"
 
+# Mobile layer. On a phone each 900-unit surface is drawn about 360px wide, and
+# iOS sets -apple-system (San Francisco) with the loose tracking it uses at small
+# optical sizes, which runs roughly 13% wider than the Helvetica metrics the
+# layout is measured with. Copy that fit on desktop then ran past card edges.
+# A media query inside the SVG evaluates against the rendered image width, so
+# narrow renders swap in a Helvetica face (whose metrics the layout uses) and
+# `.m` copies laid out with MOBILE_SLACK headroom. Desktop renders never match
+# the query, so the desktop page is untouched.
+MOBILE_MAX = 640
+MOBILE_SANS = "Helvetica,Arial,sans-serif"
+MOBILE_SLACK = 1.15
+
 # Nothing in this system may start hidden. GitHub renders these files through an
 # HTML <img> element, and a card that begins at opacity:0 can be painted before
 # its animation ever advances, which reads as a blank card.
@@ -55,6 +67,16 @@ BASE_CSS = f"""
     @keyframes pulse {{ 0%,100% {{ opacity:1 }} 50% {{ opacity:.35 }} }}
     @media (prefers-reduced-motion: reduce) {{
       * {{ animation: none !important; opacity: 1 !important; }}
+    }}
+"""
+
+# Appended after each surface's own CSS so the mobile rules win ties.
+MOBILE_CSS = f"""
+    .m {{ display: none; }}
+    @media (max-width: {MOBILE_MAX}px) {{
+      text {{ font-family: {MOBILE_SANS}; }}
+      .d {{ display: none; }}
+      .m {{ display: inline; }}
     }}
 """
 
@@ -146,11 +168,16 @@ def wrap(value: str, size: float, max_width: float, bold: bool = False) -> list[
 def svg(width: float, height: float, label: str, body: str,
         extra_css: str = "", uid: str = "g") -> str:
     """A white-backed SVG document. The base rect is what keeps every section
-    of the README white regardless of the viewer's GitHub theme."""
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {_n(width)} {_n(height)}" width="{_n(width)}" height="{_n(height)}" role="img" aria-label="{escape(label)}">
+    of the README white regardless of the viewer's GitHub theme.
+
+    `slice` fills the image box even when a mobile renderer rounds the box a
+    fraction of a pixel off the file's aspect ratio; letterboxing there showed
+    the dark page through as hairline seams. At an exact ratio, as on desktop,
+    it renders identically to the default."""
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {_n(width)} {_n(height)}" width="{_n(width)}" height="{_n(height)}" preserveAspectRatio="xMidYMid slice" role="img" aria-label="{escape(label)}">
 <title>{escape(label)}</title>
 {glass_defs(uid)}
-<style>{BASE_CSS}{extra_css}</style>
+<style>{BASE_CSS}{extra_css}{MOBILE_CSS}</style>
 <rect width="{_n(width)}" height="{_n(height)}" fill="{WHITE}"/>
 {body}
 </svg>"""
@@ -182,22 +209,30 @@ def glass(x: float, y: float, w: float, h: float, rx: float = 16,
 def pill(x: float, y: float, label: str, size: float = 11.5,
          pad: float = 14, height: float = 26, fill: str = WHITE,
          stroke: str = LINE_GLASS, color: str = NAVY, mono: bool = False,
-         lead: float = 0.0) -> tuple[str, float]:
+         lead: float = 0.0, mobile_size: float | None = None) -> tuple[str, float]:
     """A bordered chip. `lead` reserves room on the left for a status dot and
-    switches the label from centred to left-aligned. Returns the markup and the
-    width it consumed."""
+    switches the label from centred to left-aligned. `mobile_size` adds a
+    smaller `.m` copy of the label for narrow renders, leaving the chip itself
+    unchanged. Returns the markup and the width it consumed."""
     font = MONO if mono else SANS
     width = text_width(label, size, bold=not mono) + pad * 2 + lead
     if lead:
         tx, anchor = x + pad + lead, "start"
     else:
         tx, anchor = x + width / 2, "middle"
+    def label_text(px: float, cls: str = "") -> str:
+        klass = f' class="{cls}"' if cls else ""
+        return (f'<text{klass} x="{_n(tx)}" y="{_n(y + height / 2 + px * .36)}" '
+                f'text-anchor="{anchor}" font-family="{font}" font-size="{_n(px)}" '
+                f'font-weight="{600 if not mono else 500}" fill="{color}">{escape(label)}</text>')
+
+    labels = label_text(size)
+    if mobile_size:
+        labels = label_text(size, "d") + label_text(mobile_size, "m")
     markup = (
         f'<g><rect x="{_n(x)}" y="{_n(y)}" width="{_n(width)}" height="{_n(height)}" '
         f'rx="{_n(height / 2)}" fill="{fill}" stroke="{stroke}" stroke-width="1"/>'
-        f'<text x="{_n(tx)}" y="{_n(y + height / 2 + size * .36)}" '
-        f'text-anchor="{anchor}" font-family="{font}" font-size="{_n(size)}" '
-        f'font-weight="{600 if not mono else 500}" fill="{color}">{escape(label)}</text></g>'
+        f'{labels}</g>'
     )
     return markup, width
 
